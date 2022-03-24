@@ -1,0 +1,97 @@
+.field--name-field-subtiitle {
+  .filter-wrapper {
+    display:none !important;
+  }
+}
+
+.firstlines {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tussenkop {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: bold;
+
+}
+
+.streamer {
+  clear: both;
+  display: block;
+  font-style: italic;
+  color: red;
+  font-size: 14px;
+  margin: 10px 5px 0 0;
+  min-width: 150px;
+  float: left;
+  padding: 20px 20px 20px 0;
+  width: 100%;
+}
+
+.author {
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase; 
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+.photographer{
+    text-transform: uppercase; 
+}
+
+.credit {
+    font-family: "Georgia";
+    font-size: 10px;
+    text-transform: uppercase; 
+}
+
+.noot {
+    font-family: "OswaldRegular";
+    font-size: 11px;
+}
+
+.subscript {
+    font-family: "OswaldRegular";
+    font-size: 11px;
+}
+
+blockquote {
+  width: 33%;
+  float: right;
+}
+
+.kader {
+  background-color: #e7e7e0;
+  padding: 10px 20px;
+  width: 30%;
+  margin: 0 0 0 10px;
+  float:right;
+}
+
+.kader .kaderkop {
+
+    font-family: "OswaldBold";
+    font-size: 20px;
+
+}
+
+#page-wrapper .kader p {
+    font-family: "OswaldLight";
+    font-size: 12px;
+}
+
+.imgleft {
+  margin-right:10px;
+  float:left;
+  
+}
+
+.imgright {
+  margin-left:10px;
+  float:right;
+}
+
+

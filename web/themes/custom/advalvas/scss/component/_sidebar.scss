@@ -1,0 +1,72 @@
+/**
+ * Sidebar styling.
+ */
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
+$grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
+
+
+#block-views-block-meest-gelezen-block-1 {
+	.form-group {
+		background-color: #cfcec0;
+	}
+}
+.region-sidebar-second {	
+
+	.more-link {
+		padding: 15px 10px 5px;
+		text-align: right;
+		background-color: #cfcec0;
+		a {
+			color: #000;
+			font-weight: normal;
+			font-size:12px;
+			text-transform: uppercase;
+			&:hover {
+				color: $advalvas-red;
+			}
+		}
+	}
+
+	@media #{$mobile} {
+		display:none;
+	}
+
+	a {
+		color: #000;
+		font-weight: normal;
+		&:hover {
+			color: $advalvas-red;
+		}
+	}
+
+	.block-views {
+		.block-title {
+			margin:0;
+		}
+		.form-group {
+			
+			.views-row {
+				p {
+					border-bottom: 1px dotted #fff;
+					margin: 0;
+					padding: 5px 10px;
+					
+				}
+			}
+			
+		}
+	}
+
+	.node--type-magazine {
+		@media #{$normal} {
+			margin-left: 18px;
+		}
+		h2{
+			padding: 0;
+			margin: 0;
+		}
+	}
+}

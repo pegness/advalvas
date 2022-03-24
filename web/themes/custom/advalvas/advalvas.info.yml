@@ -1,0 +1,38 @@
+name: Advalvas
+type: theme
+description: Custom theme for advalvas.vu.nl using Bootstrap framework Sass source files.
+base theme: bootstrap
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+package: 'Bootstrap'
+
+libraries:
+  - advalvas/framework
+
+
+#libraries-extend:
+#  bootstrap/framework:
+#    - THEMENAME/framework
+
+ckeditor_stylesheets:
+  - css/component/editor.css
+
+regions:
+  navigation_collapsible: 'Navigation (Collapsible)'
+  search_bar: 'Search Bar'
+  header: 'Header'
+  content_top: 'Top content'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+
+
+
+
+
+

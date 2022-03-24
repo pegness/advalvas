@@ -1,0 +1,59 @@
+
+.mini-menu {
+
+  float:right;
+  .taalkeuze {
+    float:left;
+    margin-right: 3px;
+
+    ul{
+      text-transform: uppercase;
+      list-style-type: none;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    li {
+
+      background-color: red;
+      height: 30px;
+      border-radius:5px;
+      a {
+        font-family: "FoundersGroteskCond-Reg", Arial, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 8px;
+      }
+    }
+
+    @media #{$mobile} {
+
+      li {
+        height: 20px;
+
+        a {
+          line-height: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    li.en {
+
+      a {
+        color: black;
+      }
+    }
+
+    li.nl {
+      a {
+        color: white;
+      }
+    }
+
+    li.is-active {
+        display: none;
+    }
+  }
+
+}

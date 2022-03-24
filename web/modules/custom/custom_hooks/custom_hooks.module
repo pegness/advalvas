@@ -1,0 +1,164 @@
+<?php
+
+function custom_hooks_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form_id =='comment_comment_node_news_form' || $form_id =='comment_comment_node_blog_form' || $form_id=='comment_comment_node_opinie_form' || $form_id=='comment_comment_node_tip_form' || $form_id == 'comment_comment_node_verhalen_form') {
+
+    $form['author']['name']['#required'] = TRUE;
+    $form['actions']['submit']['#value'] = t('Plaatsen');
+    //\Drupal::logger('my_module')->notice('changing the form field');
+    //add class subject
+    /*$form['subject']['widget']['0']['value']['#attributes']['class'][]='newclass_subject';
+
+    //add placeholder subject
+    $form['subject']['widget']['0']['value']['#attributes']['placeholder'] = t('Placeholder Subject');
+
+
+    //add class body
+    $form['comment_body']['widget']['0']['#attributes']['class'][]='newclass_body';
+
+    //add placeholder body
+    $form['comment_body']['widget']['0']['#attributes']['placeholder'] = t('Placeholder Body');*/
+
+    if ($form_id ==  'comment_comment_node_verhalen_form' ) {
+      $form['author']['mail']['#required'] = TRUE;
+    }
+  }
+  if ($form_id =='search_block_form') {
+    $form['keys']['#title'] = t('Zoeken');
+    //exit;
+}
+  
+}
+
+function custom_hooks_preprocess_node(&$variables){
+
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $counter = 0;
+  $comments = [];
+
+ $arr_main_array = $variables['elements'];
+
+
+  // Uitzondering voor verhalen omdat het veld niet met 'comment' begint.
+  If($variables['elements']['#node']->getType() === 'verhalen') {
+    if (isset($variables['elements']['field_comment_node_verhalen'][0]['comments'])) {
+      $comments = $variables['elements']['field_comment_node_verhalen'][0]['comments'];
+    }
+  } else {
+
+    foreach($arr_main_array as $key => $value){
+      $exp_key = explode('_', $key);
+      if($exp_key[0] == 'comment'){
+        $arr_result[] = $value;
+      }
+    }
+
+    if(isset($arr_result)){
+      $comments = $arr_result[0][0]['comments'];
+    }
+
+  }
+
+
+  foreach ($comments as $key => $val) {
+    if (is_int($key)) {
+      $langcode = $val['#comment']->language()->getId();
+      if($langcode == $language) {
+        $counter++;
+      }
+    }
+  }
+
+  $variables['comment_count'] = $counter;
+
+}
+
+
+/**
+ * Implements hook_preprocess_comment().
+ *
+ * Makes a flag for filtering on language. Custom solution for this issue:
+ * https://www.drupal.org/project/drupal/issues/2751267
+ *
+ */
+
+function custom_hooks_preprocess_comment(&$variables, $hook) {
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $langcode = $variables['comment']->get('langcode')->getValue()[0]['value'];
+
+  if ($language == $langcode) {
+    $langfilter = TRUE;
+  }
+  else {
+    $langfilter = FALSE;
+
+  }
+
+  unset($variables['content']['langcode']);
+  $variables['langfilter'] = $langfilter;
+}
+
+function custom_hooks_preprocess_page(&$vars) {
+
+  $site_config = \Drupal::config('system.site');
+
+  $vars['site_name'] = $site_config->get('name');
+  $vars['site_slogan'] = $site_config->get('slogan');
+
+}
+
+
+function custom_hooks_views_pre_render($view) {
+
+  if ($view->id()=='news_overview'  && $view->current_display == 'block_2' || $view->id()=='news_overview'  && $view->current_display == 'block_5') {
+
+
+    $items = $view->result;
+
+    if ($view->result[0]) {
+
+      $entityType = $view->result[0]->_entity->getType();
+
+      if ($entityType != 'news' && $entityType != 'verhalen') {
+        array_swap($view->result, 0, 1);
+        $view->result[0]->index = 0;
+        $view->result[1]->index = 1;
+        $entityType = $view->result[0]->_entity->getType();
+        if ($entityType != 'news' && $entityType != 'verhalen') {
+          array_swap($view->result, 0, 2);
+          $view->result[0]->index = 0;
+          $view->result[1]->index = 1;
+          $view->result[2]->index = 2;
+        }
+      }
+    }
+  }
+
+  return $view;
+
+}
+
+function array_swap(&$array,$swap_a,$swap_b){
+  list($array[$swap_a],$array[$swap_b]) = array($array[$swap_b],$array[$swap_a]);
+}
+
+function custom_hooks_preprocess_search_result(&$variables){
+
+  $dateCreated = $variables['result']['node']->getCreatedTime();
+
+  $dateCreatedFormatted = Drupal::service('date.formatter')->format($dateCreated, 'custom', 'd F Y', NULL, 'nl');
+  $variables['datecreated'] = $dateCreatedFormatted;
+
+}
+
+function custom_hooks_preprocess_node__magazine(&$variables, $hook){
+
+  if($variables['node']->get('field_link_issuu')->getValue()[0]['value']) {
+    $issuu_url = $variables['node']->get('field_link_issuu')->getValue()[0]['value'];
+    $variables['issuu_url'] = $issuu_url;
+  }
+
+}

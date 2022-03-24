@@ -1,0 +1,209 @@
+p {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	letter-spacing: .4px;
+	line-height: $line-height-default;
+	margin-bottom: 10px;
+	margin-top:0;
+	@media #{$mobile} {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+a:link, a:visited {
+	color: $advalvas-red;
+	text-decoration: none;
+	outline-width: 0;
+	letter-spacing: .4px;
+}
+
+.email-link a {
+	color: $advalvas-red !important;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+	
+}
+
+h2 {
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: .6px;
+  @media #{$mobile} {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+.region-content {
+	h2.block-title {
+		font-family: $headings-font-family-light;
+		font-size: 73px;
+		line-height: 73px;
+		color: #d0cfc2;
+		text-transform: uppercase;
+		margin: 0 0 6px 0;
+		@media #{$mobile} {
+			font-size: 3.5em;
+		}
+	}
+}
+
+
+h3 {
+	font-family: $headings-font-family;
+	font-size: 16px;
+	color: #000;
+	padding: 5px 0;
+	margin:0;
+	font-weight:normal;
+}
+
+h3.bigtitle {
+	font-family: $headings-font-family-light;
+	font-size:73px;
+	line-height:73px;
+	color:#D0CFC2;
+	text-transform:uppercase;
+	font-weight:normal;
+	@media #{$mobile} {
+			font-size: 4.5em;
+		}
+}
+
+.subtitle h3, .subtitle h3 p {
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "OswaldRegular";
+	margin-bottom:2px;
+	
+}
+
+.firstlines {
+	font-weight: bold;
+}
+
+.tussenkop {
+	font-size: 16px;
+	text-transform: none;
+	font-family: $font-family-base;
+	font-weight: bold !important;
+
+	@media #{$mobile} {
+		font-size: 22px;
+		padding-top:20px;
+	}
+}
+
+.streamer {
+	clear: both;
+	display: block;
+	font-style: italic;
+	color: $advalvas-red;
+	font-size: 14px;
+	margin: 10px 5px 0 0;
+	font-family: $font-family-base;
+	min-width: 150px;
+	float: left;
+	padding: 20px 20px 20px 0;
+	width: 150px;
+	@media #{$mobile} {
+		font-size: 18px;
+		
+	}
+}
+
+.author {
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase; 
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display:block;
+}
+
+.photographer{
+    text-transform: uppercase; 
+}
+
+.credit {
+    font-family: "Georgia";
+    font-size: 10px;
+    text-transform: uppercase; 
+}
+
+.noot {
+    font-family: "OswaldRegular";
+    font-size: 11px;
+}
+
+.subscript {
+    font-family: "OswaldRegular";
+    font-size: 11px;
+}
+
+blockquote {
+  width: 33%;
+  float: right;
+}
+
+.kader {
+  background-color: #e7e7e0;
+  padding: 10px 20px;
+  width: 30%;
+  margin: 0 0 0 10px;
+  float:right;
+  width: 33%;
+  @media #{$mobile} {
+		float:none;
+		width:100%;
+		margin:30px 0;
+	}
+}
+
+.kader .kaderkop {
+		display: block;
+    font-family: "OswaldBold";
+    font-size: 20px;
+    line-height:20px;
+}
+
+.kader {
+    font-family: "OswaldLight";
+    font-size: 12px;
+}
+
+.imgleft {
+	margin-right:10px;
+	float:left;
+	@media #{$mobile} {
+		float:none;
+	}
+}
+
+.imgright {
+  margin-left:10px;
+  float:right;
+}
+
+.content p {
+	margin-top: 0 !important;
+}
+
+td, td a {
+
+	@media #{$mobile} {
+		font-size:14px;
+	}
+}

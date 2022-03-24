@@ -1,0 +1,12 @@
+/**
+ * Author: Peggy Vullinghs
+ * Visual styles for navigation.
+ */
+
+
+
+
+
+nav#block-advalvas-main-menu li a.active, nav#block-advalvas-main-menu li a:hover, nav#block-advalvas-main-menu li.active-trail a {
+	color:#000000;
+}

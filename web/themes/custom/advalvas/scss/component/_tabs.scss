@@ -1,0 +1,66 @@
+.block-quicktabs {
+.quicktabs-ui-wrapper {
+    border:none;
+    font-family: $font-family-base;
+    margin-bottom:20px;
+    padding:0;
+    
+    ul {
+
+      background:none;
+      border:none;
+      padding:0;
+
+      li {
+        border:none;
+        position:relative;
+        margin:0;
+        background:none;
+        background-color: #e7e7e0;
+        
+        &:before {
+          border-left: 6px solid #CFCEC0;
+          border-top: 6px solid transparent;
+          content: "";
+          height: 32px;
+          position: absolute;
+          right: -6px;
+          top: 0;
+          width: 0;
+        }
+        &.ui-state-default {
+          &:before {
+            border-left: 6px solid #E7E7E0;
+          }
+        }
+
+        &.ui-state-active {
+          background-color: #cfcec0;
+          &:before {
+            border-left: 6px solid #CFCEC0;
+            z-index: 10;
+          }
+        }
+        
+        a {
+          font-family: 'OswaldRegular';
+          font-weight:normal;
+          font-size:14px;
+          color:#000000;
+          padding:5px 0;
+          text-transform:uppercase;
+        }
+      }
+    }
+    .ui-tabs-panel {
+      background-color: #cfcec0;
+
+      .views-row {
+        border-bottom: 1px dotted #fff;
+        margin: 0;
+        padding: 5px 0;
+      }
+    }
+  
+}
+}

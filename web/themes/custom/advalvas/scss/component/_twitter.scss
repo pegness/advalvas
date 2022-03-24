@@ -1,0 +1,105 @@
+/**
+ * Author: Peggy Vullinghs
+ * Visual styles for twitter block.
+ */
+
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
+$grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
+
+#block-twitterblock {
+	position:relative;
+	margin:20px 0;
+	clear:both;
+	height:60px;
+
+	.tweet-list {
+		ul {
+			list-style-type: none;
+  		padding: 0px;
+  		li.tweet {
+  			background: #E7E7E0;
+			  color: #333333;
+			  padding: 0px 10px 0 0;
+			  height:60px;
+			  font-size: 1.077em;
+			  line-height: 1.42857142857143em;
+			  .tweet-message {
+			  	.screen-name {
+			  		img {
+			  			border-radius: 3px;
+  						width:60px;
+  						height:60px;
+			  		}
+			  	}
+
+			  	p {
+			  		margin-left:70px;
+			  		a {
+			  			color:$advalvas-red;
+			  		}
+			  	}
+			  }
+  		}
+		}
+	}
+}
+
+.twitter-status .timestamp{
+  float: right;
+  color: #999999;
+  font-size: 0.85714285714286em;
+}
+
+.twitter-status .name-handle{
+  margin-left: 70px;
+}
+
+.views-field-web-intents {
+    font-size: 0.857143em;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    visibility: hidden;
+    display:block;
+}
+
+
+
+.view-tweets .views-row:hover .views-field-web-intents {
+	visibility: visible;
+}
+
+.twitter-status .text, .view-tweets .views-row .views-field-text{
+  margin-left: 70px;
+  font-size:12px;
+}
+
+.twitter-status .name-handle .name, .twitter-status .name-handle .handle{
+  display: inline;
+}
+
+.twitter-status .name-handle .name a{
+  font-weight: bold;
+  margin-right: 5px;
+  color: #333333;
+}
+
+.twitter-status .name-handle .handle a{
+  color: #999999;
+  font-size: 0.85714285714286em;
+}
+
+.twitter-status .avatar, .views-field-profile-image-url img{
+  float: left;
+  width:60px;
+  height:60px;
+}
+
+.twitter-status .avatar img{
+  border-radius: 3px;
+  width:60px;
+  height:60px;
+}

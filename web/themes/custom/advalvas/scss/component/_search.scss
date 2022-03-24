@@ -1,0 +1,121 @@
+/**
+ * Search field and search landing page styling
+ */
+
+.content-wrapper {
+	ol {
+	padding:0;
+	}
+}
+
+#search-block-form  {
+
+	.form-search {
+		margin-top:-2px;
+		height:23px;
+		color:#999;
+	}
+
+	.input-group {
+		display: block;
+	}
+	.input-group-btn {
+		input {
+			width: 20px;
+			height: 20px;
+			border: none;
+			background-color:transparent;
+			margin-top:-7px;
+		}
+	}
+	.ico-mglass {
+	  position:absolute;
+	  display:inline-block;
+	  background: transparent;
+	  border-radius: 30px;
+	  height: 10px;
+	  width: 10px;
+	  border: 2px solid #fff;
+	  top:4px;
+	  right:10px;
+	  &:after {
+	    content: "";
+	    background: #fff;
+	    position:absolute;
+	    top:7px;
+	    left:5px;
+		height: 2px !important;
+	    width: 5px !important;
+	    -webkit-transform: rotate(45deg);
+	    -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+	  }
+	  
+	}
+}
+#views-exposed-form-search-content-page-1 {
+	#edit-submit-search-content,button[id^="edit-submit-search-content-"], button[id*="edit-submit-search-content"] {
+		color:#fff;
+		padding: 14px;
+		position: relative;
+		margin-right:3px;
+		.ico-mglass {
+			position:absolute;
+			display:inline-block;
+			background: transparent;
+			border-radius: 30px;
+			height: 10px;
+			width: 10px;
+			border: 2px solid #fff;
+			top:8px;
+			right:10px;
+			&:after {
+			content: "";
+			background: #fff;
+			position:absolute;
+			top:7px;
+			left:5px;
+			height: 2px;
+	    	width: 5px;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+			}	
+		}
+	}
+	#edit-reset {
+		color: #fff;
+	}
+}
+.search_result {
+	h3 {
+		a {
+			color:#000;
+		}
+	}
+	.field--name-field-datum, .field--name-field-auteur-blog, .field--name-field-author, .search_date  {display: inline;}
+
+	.field--name-field-auteur {
+	  	display:none;
+		.show_field {
+			display: inline;
+		}
+	}
+
+	.field--name-field-tags .field--item {
+		display: inline;
+		&:after {
+			content: " | ";
+			color:red;
+		}
+		&:last-child {
+			&:after {
+				content: "";
+				color:transparent;
+			}
+		}
+	}
+	
+}

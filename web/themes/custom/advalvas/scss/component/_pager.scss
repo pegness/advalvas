@@ -1,0 +1,27 @@
+/**
+ * Pagination styling
+ */
+
+.pager-nav {
+	text-align:center;
+	ul.pagination {
+		li {
+			a {
+				color:$advalvas-red;
+				background:none;
+				border:none;
+				&:hover {
+					background:none;
+					text-decoration:underline;
+					color:$advalvas-red;
+				}
+			}
+			&.active {
+				a {
+					background:none;
+					color:#000;
+				}
+			}
+		}
+	}
+}
