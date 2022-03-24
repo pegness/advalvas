@@ -1,0 +1,114 @@
+.node-verhalen {
+
+  .subscript {
+    font-family: "OswaldRegular";
+    font-size: 12px;
+    margin-bottom: 10px
+  }
+
+  .category, .sub-date {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .category {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .sub-date-red {
+    color: $advalvas-red;
+    font-family: 'OswaldRegular';
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .verhalen-title {
+    word-wrap: break-word;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 20px 0;
+  }
+
+  .subtitle {
+    font-family: "OswaldLight";
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    font-family: "Georgia";
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .author {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .author-name {
+     font-size: 15px;
+  }
+
+  .photographer {
+    text-transform: uppercase;
+    font-family: "Georgia";
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .field--name-body {
+
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 18px;
+      line-height: 24px;
+
+    }
+    > p:first-of-type::first-letter {
+      font-size: 124px;
+      line-height: 96px;
+      letter-spacing: normal;
+      font-style: normal;
+      text-transform: none;
+      float: left;
+      padding: 0 .05em 0 0;
+    }
+
+    .streamer {
+      font-size: 24px;
+    }
+
+    .tussenkop {
+      font-size: 22px;
+      text-transform: none;
+      font-family: $font-family-base;
+      font-weight: bold !important;
+
+      @media #{$mobile} {
+        font-size: 22px;
+        padding-top:20px;
+      }
+    }
+  }
+}
+
+.block-views-blockrelated-verhalen-block-3,
+.block-views-blockrelated-verhalen-block-2,
+.block-views-blockrelated-verhalen-block-1 {
+  .form-group {
+    background-color: #cfcec0;
+    padding: 1em 1.4em;
+
+    .views-row {
+      border-bottom: 1px dotted #fff;
+      margin: 0 0 .25em 1.5em;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+/**
+ * Custom blocks styling
+ */
+#block-views-block-custom-block-block-2,
+#block-views-block-custom-block-block-1 {
+	width: 137px;
+	float:right;
+
+	.views-row {
+		height:260px;
+		h2{
+			margin:0;
+		}
+		.download_link {
+		  padding: 14px 0 0;
+		  a {
+				color:$advalvas-red;
+			}
+		}
+
+
+	}
+}
+
+#block-views-block-custom-block-block-2,
+#block-views-block-custom-block-block-1 {
+	display: block;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 220px;
+
+ 		h2 {
+ 			margin:0;
+ 			a {
+ 				text-decoration:none;
+				color:#000000;
+				&:hover {
+					color: $advalvas-red;
+				}
+ 			}
+ 		}
+
+ 		p {
+ 			padding:0;
+ 		}
+
+ 		a {
+			color:$advalvas-red;
+			display: block;
+		}
+
+ 		.custom_block_bg {
+ 			background-color: #cfcec0;
+			width:220px;
+			height:147px; 
+			text-align: center;
+			display: table;
+
+			.custom_block {
+				padding: 8px;
+				display: table-cell;
+				vertical-align:middle;
+				.custom_block_info {
+					
+					.custom_block_text {
+						font-family: "OswaldRegular";
+						font-size: 11px;
+						line-height: 14px;
+						color: #000000;
+					}
+					.custom_block_subscript {
+						color:#ffffff;
+					}
+				}
+			}
+			h3 {
+				font-family: "Georgia";
+				color: #000000;
+				font-size: 24px;
+				line-height: 24px;
+			}
+ 		}
+ }

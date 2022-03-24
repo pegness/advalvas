@@ -1,0 +1,122 @@
+/**
+ * Page styling.
+ */
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
+$grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
+
+.nopadding, .no-gutters {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+body {
+	padding-top: 0;
+
+  #edit-field-subtiitle-0-format.filter-wrapper {
+    display:none;
+  }
+
+	
+	#page-wrapper {
+		#page {
+			max-width: 960px;
+			margin: auto;
+			padding: 0 10px; 
+			overflow:hidden;
+
+			#search-bar {
+				display:block;
+				@media #{$mobile} {
+					display:none;
+				}
+			}
+
+			.main-container {
+				@media #{$mobile} {
+					margin-top:0;
+				}
+				.content-wrapper {max-width:540px;}
+
+				aside {
+					float:right;
+					max-width: 380px;
+				}
+				.border-above {
+					border-top: $advalvas-border-thick;
+					@media #{$mobile} {
+						border-top: 0px solid black;
+					}
+				}
+
+				#search-bar-mobile {
+					margin:10px 0 !important;
+					display:none;
+					@media #{$mobile} {
+						display:block;
+					}
+				}
+			}
+
+			
+
+
+
+
+		}  
+		/* footer stuff */
+			.footer {
+				margin-top:20px;
+				background-color:#000000;
+				color:#ffffff;	
+				font-family:'OswaldLight';
+				text-transform:lowercase;
+				clear:both;
+				padding:30px 70px;
+				height:160px;
+				@media #{$mobile} {
+					height:auto;
+					padding:10px;
+					
+				}
+				#block-advalvas-footer {
+					float:left;
+					ul {
+						margin-top:0;
+						@media #{$mobile} {
+								margin-top:0;
+						}
+						li {
+							list-style:none;	
+							display:inline;
+							
+							a {
+								color:#ffffff;	
+								display:inline-block;
+								padding:15px 36px 15px 20px;
+								font-size:15px;
+								outline-width:0;
+								@media #{$mobile} {
+									width:40%;
+									padding:10px;
+								}
+							}
+						}
+					}
+				}
+				.vulogo {
+					float:right;
+					margin-right:20px;
+					img {
+						@media #{$mobile} {
+							width:120px;
+						}
+					}
+				}
+			}
+	}
+}
+
+

@@ -1,0 +1,69 @@
+
+#block-popupblok {
+  display: none;
+}
+
+#block-staytuned {
+  display: none;
+}
+
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+
+.spb-popup-main-wrapper {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  top: 25%;
+        @media #{$mobile} {
+          width:100% !important;
+          margin-left:-50% !important;
+        }
+
+  @media #{$normal} {
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left:0 !important;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .spb-popup-main-wrapper .spb_close {
+    border:none;
+    background: transparent;
+  }
+
+  .spb_close {
+    border:none;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image:url(images/kruisje.png);
+    background-size: 26px 26px;
+    color: #000;
+    background-color: transparent;
+    margin: 14px;
+  }
+
+  @media #{$tablet} {
+    .spb_close {
+      margin: 24px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+    }
+  }
+
+  @media #{$normal} {
+    .spb_close {
+      width: 40px;
+      height: 40px;
+      background-size: 40px 40px;
+      margin: 36px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<style type="text/css">
+	#block-twitterblock p {
+		font-size: 12px;
+		
+	}
+</style>
+<div id="tweet-wrapper" style="height:60px;background-color:#e7e7e0;">
+<div class="tweet-list">
+<ul{{ attributes }}>
+{% for tweet in items %}
+<li class="tweet">
+	
+<div class="tweet-message">
+<span class="screen-name" style="float:left;"><a
+href="{{ tweet.user_url }}"><img src="{{ tweet.icon_url|replace({'http':'https'}) }}" width="60" height="60" /></a></span> {{ tweet.text }}
+</div>
+
+</li>
+{% endfor %}
+</ul>
+</div>
+</div>

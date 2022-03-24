@@ -1,0 +1,62 @@
+/**
+ * Comments styling
+ */
+
+.counter {
+	font-size: 16px;
+  font-family: 'OswaldRegular';
+  margin: 0px 0 0;
+  float: right;
+  color: #000;
+  
+}
+
+.comment_count {
+  color: #989898;
+}
+.comment-wrapper {
+	clear:both;
+	section > h2 {
+	
+		display:none;
+		
+	}
+	.indented {
+		margin-left:20px;
+	}
+	.comment {
+		padding: 5px 0;
+		border-bottom: 1px dotted #000;
+		.links {
+			padding-left:0;
+			margin: 5px 0;
+			li {
+				display:inline;
+				margin-right:5px;
+			}
+		}
+	}	
+}
+
+.comment-form {
+	h2 {
+		display:block
+	}
+	.filter-wrapper {
+		display:none;
+	}
+	.form-item-homepage {
+		display:none;
+	}
+
+	.form-actions {
+		button {
+			margin-top: 10px;
+			background-color:$advalvas-red;
+			color:white;
+			@media #{$mobile} {
+				font-size: 18px;
+			}
+		}
+	}
+}

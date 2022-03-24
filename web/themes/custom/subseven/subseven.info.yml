@@ -1,0 +1,12 @@
+name: Sub Seven
+type: theme
+description: Custom subtheme for custom admin css of Seven
+base theme: seven
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - subseven/global-styling
+
+ckeditor_stylesheets:
+  - css/component/style.css

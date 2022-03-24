@@ -1,0 +1,120 @@
+/**
+ * Achtergrond overview and achtergrond detail page styling
+ */
+
+
+#block-views-block-bloggers-block-1,
+#block-views-block-bloggers-block-3-2 {
+	.views-row {
+		.sub-date {
+			margin-left:0;
+		}
+	}
+}
+
+.node-blog  {
+	.views-row {
+		border-top: 2px dotted red;
+		.node-blog {
+			padding: 10px 0;
+			margin: 5px 0;
+		}
+	}
+	.views-row-first {
+		border:none;
+	}
+}
+#block-views-block-blogger-detail-en-block-1, #block-views-block-blogs-overview-en-block-2,
+#block-views-block-blogger-detail-block-1, #block-views-block-blogs-block-2, .node-blog, #block-views-block-user-profile-block-1 {
+	position:relative;
+	margin-bottom:20px;
+	.form-group {
+		position:unset;	
+	
+		.views-row {
+			position:relative;
+		 	h2 {
+		 		margin: 5px 0;
+		 		@media #{$mobile} {
+					font-size:16px;
+				}
+					
+		 	}
+		 	.portret-blogger {
+		 		display:inline-block;
+				margin-right: 10px;
+				img {
+				 	-webkit-border-radius:220px;
+			 		-moz-border-radius:220px;
+			 		border-radius:220px;
+			 		@media #{$mobile} {
+			 			width:100px;
+			 			-webkit-border-radius:100px;
+			 			-moz-border-radius:100px;
+			 			border-radius:100px;
+					}
+				}
+
+			}
+			.user-text-wrapper {
+				font-size:12px;
+				width: 160px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				text-align:right;
+				.real_name {
+					font-weight: bold;
+					padding: 5px 0;
+					@media #{$mobile} {
+						padding:0;
+					}
+				}
+				.fotograaf {
+					font-size: 9px;
+					padding: 5px 0;
+					font-style: italic;
+					@media #{$mobile} {
+						padding:0;
+					}
+				}
+				a {
+					color:#ff0000;
+				}
+			}
+		}
+	}
+}
+#block-views-block-gerelateerde-content-eng-block-2,
+#block-views-block-related-content-eng-block-1,
+#block-views-block-related-content-block-2,
+#block-views-block-related-content-block-4 {
+	h2 {
+		margin: 5px 0;
+	}
+	.form-group {
+		background-color: #cfcec0;
+		padding: 1em 1.4em;
+		.views-row {
+			border-bottom: 1px dotted #fff;
+			padding: 5px 0;
+		}
+	}
+}
+
+.block-views-blockbloggers-block-3,
+.block-views-blockbloggers-block-1 {
+
+	.bloggers-overview {
+		.views-row {
+			margin-top: 0;
+		}
+
+		// selects all but the first row.
+		.views-row ~ .views-row {
+			margin:20px 0;
+		}
+	}
+
+}
+ 		

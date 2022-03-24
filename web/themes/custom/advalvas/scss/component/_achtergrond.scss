@@ -1,0 +1,117 @@
+/**
+ * Achtergrond overview and achtergrond detail page styling
+ */
+#block-views-block-dossier-overview-block-1 .views-row {
+	padding-bottom:20px;
+}
+
+.node-achtergrond, .node-tip {
+	margin:10px 0;
+
+	h1	{
+		font-family: $headings-font-special;
+		background-image:url(images/achtergrond_icon.png);
+		background-repeat:no-repeat;
+		padding-left:43px;
+		padding-top:10px;
+		margin:0;
+		text-transform:none;
+		line-height:28px;
+		min-height:36px;
+		font-size:20px;
+	}
+}
+
+.node-tip h1 {
+	background-image:url(images/tip_icon.png);
+}
+
+
+
+.bigtitle_block {
+
+	header {
+		margin-bottom:20px;
+	}
+	h2.block-title {
+		font-family: $headings-font-family-light;
+		font-size:73px;
+		line-height:73px;
+		color:#D0CFC2;
+		text-transform:uppercase;
+		margin:0 0 -10px 0;
+		@media #{$mobile} {
+			font-size: 3.5em;
+		}
+	}
+	.views-row {
+		border-top: 2px dotted red;
+		padding:10px 0;
+		h2 {
+			background-image: url(images/achtergrond_icon.png);
+			background-repeat: no-repeat;
+			padding-left: 43px;
+			padding-top: 10px;
+			margin: 0;
+			text-transform: none;
+			line-height: 28px;
+			min-height: 36px;
+			font-family: $headings-font-special;
+			font-size:20px;
+			a {
+				color:#000;
+				&:hover {
+					color: $advalvas-red;
+				}
+			}
+		}
+	}
+}
+
+#block-views-block-dossier-overview-block-1 {
+	.views-row {
+		h2 {
+			background-image: url(images/dossier_icon.png);
+			padding-left: 50px;
+			padding-top: 3px;
+			line-height: 28px;
+		}
+		p {
+			margin:0;
+		}
+		.download_link {
+			float:right;
+			margin-bottom:10px;
+		}
+	}
+}
+
+#block-views-block-achtergrond-overview-block-2,
+#block-views-block-tips-overview-block-2,
+#block-views-block-tips-overview-block-4{
+	border-top: $advalvas-border-thick;
+	clear: both;
+	margin-bottom: 20px;
+	.form-group {
+			background-color: #cfcec0;
+	}
+}
+
+.block-views-block-tips-overview-block-1 {
+
+
+	.views-row {
+		h2 {
+			background-image: url(images/tip_icon.png);
+			padding-left: 35px;
+			padding-top: 8px;
+			line-height: 24px;
+		}
+		p {
+			margin:0;
+		}
+		
+	}
+}
+
+ 		

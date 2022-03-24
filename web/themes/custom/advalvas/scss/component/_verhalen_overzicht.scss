@@ -1,0 +1,28 @@
+
+.block-views-blockverhalen-overview-eng-block-1,
+.block-views-blockverhalen-overview-block-1 {
+  h2.block-title {
+    font-family: $headings-font-family-light;
+    font-size: 73px;
+    line-height: 73px;
+
+    color: #d0cfc2;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+    @media #{$mobile} {
+      font-size: 3.5em;
+    }
+  }
+
+  .views-row {
+    p {
+      margin-bottom: 0;
+    }
+
+    > a {
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+  }
+}
+

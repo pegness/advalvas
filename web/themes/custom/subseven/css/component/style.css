@@ -1,0 +1,40 @@
+.firstlines {
+  font-weight: normal;
+}
+
+.tussenkop {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: bold;
+
+}
+
+.streamer {
+  clear: both;
+  display: block;
+  font-style: italic;
+  color: red;
+  font-size: 14px;
+  margin: 10px 5px 0 0;
+  min-width: 150px;
+  float: left;
+  padding: 20px 20px 20px 0;
+  width: 150px;
+}
+
+.imgleft {
+  margin-right:10px;
+  float:left;
+  
+}
+
+.imgright {
+  margin-left:10px;
+  float:right;
+}
+
+.filter-guidelines-item {
+  display: none;
+}
+
+
