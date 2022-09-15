@@ -1,0 +1,33 @@
+uuid: e3f47885-980e-40f7-8755-5291e45679a9
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:popup:8f4684cd-e996-4530-ba4a-c8dc134b90e5'
+  module:
+    - block_content
+    - language
+  theme:
+    - advalvas
+id: popupblok
+theme: advalvas
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:8f4684cd-e996-4530-ba4a-c8dc134b90e5'
+settings:
+  id: 'block_content:8f4684cd-e996-4530-ba4a-c8dc134b90e5'
+  label: 'Popup blok'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl

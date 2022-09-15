@@ -1,0 +1,14 @@
+uuid: 7f433f40-6d98-4b91-afd7-cca4ea1f99eb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.super_manager
+  module:
+    - user
+id: user_remove_role_action.super_manager
+label: 'De rol super manager verwijderen van de geselecteerde gebruikers(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: super_manager

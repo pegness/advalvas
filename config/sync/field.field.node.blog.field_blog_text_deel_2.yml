@@ -1,0 +1,21 @@
+uuid: 55f33a1f-689d-4438-9f69-851b1020e5d9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_text_deel_2
+    - node.type.blog
+  module:
+    - text
+id: node.blog.field_blog_text_deel_2
+field_name: field_blog_text_deel_2
+entity_type: node
+bundle: blog
+label: 'Blog text deel 2'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

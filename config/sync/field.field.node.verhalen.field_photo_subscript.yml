@@ -1,0 +1,19 @@
+uuid: 95554c0d-ee24-4243-8fae-6452a7e66bc9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_subscript
+    - node.type.verhalen
+id: node.verhalen.field_photo_subscript
+field_name: field_photo_subscript
+entity_type: node
+bundle: verhalen
+label: 'Photo subscript'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

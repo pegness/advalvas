@@ -1,0 +1,15 @@
+description: 'Inhoud zoeken en beheren'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+      empty:
+        area_text_custom:
+          content: 'Geen inhoud beschikbaar.'
+  page_1:
+    display_options:
+      tab_options:
+        description: 'Inhoud vinden en beheren'

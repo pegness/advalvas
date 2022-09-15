@@ -1,0 +1,72 @@
+uuid: 0f70d1da-4521-49e0-a8bc-da7d866ff6f4
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_opinie
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Opinie)'
+source:
+  plugin: d7_node
+  node_type: opinie
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_opinie/0/status: comment
+  body:
+    plugin: get
+    source: body
+  field_subtiitle:
+    plugin: get
+    source: field_subtiitle
+  field_tags:
+    plugin: sub_process
+    source: field_tags
+    process:
+      target_id: tid
+  field_datum:
+    plugin: sub_process
+    source: field_datum
+    process:
+      value:
+        plugin: format_date
+        from_format: 'Y-m-d H:i:s'
+        to_format: 'Y-m-d\TH:i:s'
+        source: value
+  field_auteur:
+    plugin: get
+    source: field_auteur
+  field_fotograaf:
+    plugin: get
+    source: field_fotograaf
+  meta_description: meta_description
+  meta_keywords: meta_keywords
+destination:
+  plugin: 'entity:node'
+  default_bundle: opinie
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

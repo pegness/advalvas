@@ -1,0 +1,21 @@
+uuid: af0b9c2a-9f8e-4b91-8f28-8706e0e6c8f7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datum
+    - node.type.achtergrond
+  module:
+    - datetime
+id: node.achtergrond.field_datum
+field_name: field_datum
+entity_type: node
+bundle: achtergrond
+label: Datum
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

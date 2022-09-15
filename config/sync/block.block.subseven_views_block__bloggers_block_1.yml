@@ -1,0 +1,30 @@
+uuid: 5edb906b-3c5e-40f8-9d54-0b19d0916ef6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.bloggers
+  module:
+    - system
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__bloggers_block_1
+theme: subseven
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:bloggers-block_1'
+settings:
+  id: 'views_block:bloggers-block_1'
+  label: 'Blogs & columns'
+  label_display: visible
+  provider: views
+  views_label: 'Blogs & columns'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /blogs-columns

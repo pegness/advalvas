@@ -1,0 +1,21 @@
+uuid: 97d5c3f8-bb3c-4edd-a36c-33dfb71a88ea
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.advertentie
+  module:
+    - user
+id: node.advertentie.teaser
+targetEntityType: node
+bundle: advertentie
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

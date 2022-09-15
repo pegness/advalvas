@@ -1,0 +1,25 @@
+uuid: 80b7b825-cfff-40cf-88e3-96e9fdcb6d94
+langcode: nl
+status: true
+dependencies:
+  module:
+    - language
+    - user
+id: redactie_url
+label: 'Redactie url'
+type: 'canonical_entities:user'
+pattern: 'redactie/[user:account-name]'
+selection_criteria:
+  9baa3ebf-92c1-4af8-9c6b-dbd8e1a27462:
+    id: language
+    negate: false
+    uuid: 9baa3ebf-92c1-4af8-9c6b-dbd8e1a27462
+    context_mapping:
+      language: 'user:langcode:language'
+    langcodes:
+      nl: nl
+selection_logic: and
+weight: -5
+relationships:
+  'user:langcode:language':
+    label: Language

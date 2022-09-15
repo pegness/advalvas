@@ -1,0 +1,22 @@
+uuid: 1047af52-2af6-42f3-8984-dc95bf7e164b
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: opinie_urls
+label: 'Opinie urls'
+type: 'canonical_entities:node'
+pattern: 'opinie/[node:title]'
+selection_criteria:
+  64fb9ee4-d358-4789-be3a-0ba56782275a:
+    id: node_type
+    negate: false
+    uuid: 64fb9ee4-d358-4789-be3a-0ba56782275a
+    context_mapping:
+      node: node
+    bundles:
+      opinie: opinie
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,21 @@
+uuid: 8704288e-8ac8-499f-95d6-d8752049379c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtiitle
+    - node.type.verhalen
+  module:
+    - text
+id: node.verhalen.field_subtiitle
+field_name: field_subtiitle
+entity_type: node
+bundle: verhalen
+label: Subtitel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

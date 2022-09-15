@@ -1,0 +1,75 @@
+uuid: f536ff46-a656-439e-8dda-3d026d3ff775
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_razende_reporter
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Razende reporter)'
+source:
+  plugin: d7_node_revision
+  node_type: razende_reporter
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_razende_reporter/0/status: comment
+  body:
+    plugin: get
+    source: body
+  field_link_naar_facebook:
+    plugin: get
+    source: field_link_naar_facebook
+  field_news_image:
+    plugin: sub_process
+    source: field_news_image
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_link:
+    plugin: get
+    source: field_link
+  meta_description: meta_description
+  meta_keywords: meta_keywords
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: razende_reporter
+migration_dependencies:
+  required:
+    65: upgrade_d7_node_achtergrond
+    66: upgrade_d7_node_blog
+    67: upgrade_d7_node_classified
+    68: upgrade_d7_node_custom_block
+    69: upgrade_d7_node_dossier
+    70: upgrade_d7_node_magazine
+    71: upgrade_d7_node_main_page
+    72: upgrade_d7_node_news
+    73: upgrade_d7_node_opinie
+    74: upgrade_d7_node_page
+    75: upgrade_d7_node_pdf_archief
+    76: upgrade_d7_node_poll
+    77: upgrade_d7_node_razende_reporter
+    78: upgrade_d7_node_simpleads
+    79: upgrade_d7_node_tip
+  optional: {  }

@@ -1,0 +1,27 @@
+uuid: 04a8501d-a541-4431-a8be-cc589f021899
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - subseven
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: subseven_content
+theme: subseven
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primaire inhoud van de pagina'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

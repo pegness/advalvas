@@ -1,0 +1,18 @@
+uuid: cda9e041-23ed-411c-a540-df44c29917ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.advertentie
+id: node.advertentie.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: advertentie
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

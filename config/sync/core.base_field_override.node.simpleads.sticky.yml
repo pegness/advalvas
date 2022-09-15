@@ -1,0 +1,22 @@
+uuid: 07bd6fc5-5205-4447-a396-c70265cbf8e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.simpleads
+id: node.simpleads.sticky
+field_name: sticky
+entity_type: node
+bundle: simpleads
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

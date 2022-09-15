@@ -1,0 +1,41 @@
+uuid: 963fc730-0f4f-48b0-b524-89308dc56adc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.dossier.body
+    - field.field.node.dossier.field_upload_pdf
+    - node.type.dossier
+  module:
+    - file
+    - text
+    - user
+id: node.dossier.rss
+targetEntityType: node
+bundle: dossier
+mode: rss
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_upload_pdf:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

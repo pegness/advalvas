@@ -1,0 +1,18 @@
+uuid: 2329b9e4-0cb4-49e5-824d-08f85ee70091
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.metatag
+field_name: metatag
+entity_type: node
+bundle: razende_reporter
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

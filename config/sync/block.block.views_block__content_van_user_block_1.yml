@@ -1,0 +1,31 @@
+uuid: bae768d2-fada-4b9f-adf7-355366083e08
+langcode: nl
+status: false
+dependencies:
+  config:
+    - views.view.content_van_user
+  module:
+    - system
+    - views
+  theme:
+    - advalvas
+id: views_block__content_van_user_block_1
+theme: advalvas
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:content_van_user-block_1'
+settings:
+  id: 'views_block:content_van_user-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/user/*'

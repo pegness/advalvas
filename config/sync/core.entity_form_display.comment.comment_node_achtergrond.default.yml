@@ -1,0 +1,36 @@
+uuid: 645b46ca-cf9d-4253-ab72-0739213f8f8e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_achtergrond
+    - field.field.comment.comment_node_achtergrond.comment_body
+  module:
+    - text
+id: comment.comment_node_achtergrond.default
+targetEntityType: comment
+bundle: comment_node_achtergrond
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  subject: true

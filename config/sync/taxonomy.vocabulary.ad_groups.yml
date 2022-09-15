@@ -1,0 +1,8 @@
+uuid: cc369b26-32d8-4c53-9620-11322dad796b
+langcode: nl
+status: true
+dependencies: {  }
+name: 'Ad Groups'
+vid: ad_groups
+description: 'Ad Groups'
+weight: 0

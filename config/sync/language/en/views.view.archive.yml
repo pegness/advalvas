@@ -1,0 +1,12 @@
+label: Archief
+description: 'Alle inhoud, op maand.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Maandelijks archief'
+      exposed_form:
+        options:
+          submit_button: Toepassen
+  block_1:
+    display_title: Blok

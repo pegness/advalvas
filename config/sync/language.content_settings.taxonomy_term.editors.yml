@@ -1,0 +1,11 @@
+uuid: daa80b18-0957-4b9d-bd1d-1bf6960813a5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.editors
+id: taxonomy_term.editors
+target_entity_type_id: taxonomy_term
+target_bundle: editors
+default_langcode: site_default
+language_alterable: true

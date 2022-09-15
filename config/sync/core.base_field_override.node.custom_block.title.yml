@@ -1,0 +1,18 @@
+uuid: 1708e908-e80f-4ec3-80c5-6407c9cd675f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+id: node.custom_block.title
+field_name: title
+entity_type: node
+bundle: custom_block
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

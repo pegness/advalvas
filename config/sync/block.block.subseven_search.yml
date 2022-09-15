@@ -1,0 +1,23 @@
+uuid: 17b4b203-bfc3-479d-b269-3b7dae3b6ee4
+langcode: nl
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - subseven
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: subseven_search
+theme: subseven
+region: sidebar_first
+weight: -9
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Zoeken
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

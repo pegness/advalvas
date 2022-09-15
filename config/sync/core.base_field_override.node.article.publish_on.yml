@@ -1,0 +1,18 @@
+uuid: caa8e9dc-4063-4947-97ad-2e626502db4e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.publish_on
+field_name: publish_on
+entity_type: node
+bundle: article
+label: 'Publiceer op'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

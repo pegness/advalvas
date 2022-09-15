@@ -1,0 +1,22 @@
+uuid: 05ebf07c-7b95-444b-92a7-9df811b60959
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: tip_urls
+label: 'Tip urls'
+type: 'canonical_entities:node'
+pattern: 'tip/[node:title]'
+selection_criteria:
+  7d433955-9c6b-4ec3-9e44-6f7ebc617429:
+    id: node_type
+    negate: false
+    uuid: 7d433955-9c6b-4ec3-9e44-6f7ebc617429
+    context_mapping:
+      node: node
+    bundles:
+      tip: tip
+selection_logic: and
+weight: -5
+relationships: {  }

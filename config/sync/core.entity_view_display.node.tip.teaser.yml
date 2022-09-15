@@ -1,0 +1,39 @@
+uuid: 29d4ab9a-6dfa-4c00-bfa8-cdec5534f0b1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tip.body
+    - field.field.node.tip.field_auteur
+    - field.field.node.tip.field_fotograaf
+    - field.field.node.tip.field_subtitel_long
+    - field.field.node.tip.field_tags
+    - node.type.tip
+  module:
+    - text
+    - user
+id: node.tip.teaser
+targetEntityType: node
+bundle: tip
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_auteur: true
+  field_fotograaf: true
+  field_subtitel_long: true
+  field_tags: true
+  langcode: true

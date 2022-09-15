@@ -1,0 +1,18 @@
+uuid: 0a178047-414b-409c-aeef-1472ab60c2df
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+id: node.custom_block.metatag
+field_name: metatag
+entity_type: node
+bundle: custom_block
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

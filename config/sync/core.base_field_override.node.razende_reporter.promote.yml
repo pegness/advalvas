@@ -1,0 +1,22 @@
+uuid: 1391ba06-8b14-47dc-a406-21bb185defb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.promote
+field_name: promote
+entity_type: node
+bundle: razende_reporter
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

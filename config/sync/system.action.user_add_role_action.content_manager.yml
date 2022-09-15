@@ -1,0 +1,14 @@
+uuid: e80d0949-216a-4091-96b0-6fe665c6d09a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.content_manager
+  module:
+    - user
+id: user_add_role_action.content_manager
+label: 'De rol content manager toewijzen aan de geselecteerde gebruiker(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: content_manager

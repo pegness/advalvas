@@ -1,0 +1,23 @@
+uuid: 7f37c32d-2919-4034-ae60-5408845821aa
+langcode: nl
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: editor_urls
+label: 'Editor urls'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'editor/[term:name]'
+selection_criteria:
+  84bdbca0-b1c0-48b2-b676-d8d0a827ef9d:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 84bdbca0-b1c0-48b2-b676-d8d0a827ef9d
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      editors: editors
+selection_logic: and
+weight: -5
+relationships: {  }

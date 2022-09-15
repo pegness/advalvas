@@ -1,0 +1,104 @@
+uuid: 709944bf-fab2-4dc0-8b0d-1224ae2fa093
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.simpleads.field_ad_category
+    - field.field.node.simpleads.field_ad_end_date
+    - field.field.node.simpleads.field_ad_flash
+    - field.field.node.simpleads.field_ad_image
+    - field.field.node.simpleads.field_ad_start_date
+    - field.field.node.simpleads.field_ad_status
+    - field.field.node.simpleads.field_ad_text
+    - field.field.node.simpleads.field_ad_type
+    - field.field.node.simpleads.field_ad_url
+    - field.field.node.simpleads.field_ad_url_taget
+    - node.type.simpleads
+  module:
+    - file
+    - image
+    - options
+    - text
+    - user
+id: node.simpleads.default
+targetEntityType: node
+bundle: simpleads
+mode: default
+content:
+  field_ad_end_date:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_ad_flash:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_ad_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_ad_start_date:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_ad_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_ad_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_ad_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_ad_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ad_url_taget:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ad_category: true
+  langcode: true

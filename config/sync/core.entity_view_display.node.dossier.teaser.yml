@@ -1,0 +1,40 @@
+uuid: d458cb4b-ce57-4b1a-a183-f94dd937c64c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dossier.body
+    - field.field.node.dossier.field_upload_pdf
+    - node.type.dossier
+  module:
+    - file
+    - text
+    - user
+id: node.dossier.teaser
+targetEntityType: node
+bundle: dossier
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_upload_pdf:
+    type: file_url_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

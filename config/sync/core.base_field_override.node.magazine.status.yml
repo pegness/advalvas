@@ -1,0 +1,22 @@
+uuid: 855ba36e-0d8b-4860-85fe-3e77767a60ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.status
+field_name: status
+entity_type: node
+bundle: magazine
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

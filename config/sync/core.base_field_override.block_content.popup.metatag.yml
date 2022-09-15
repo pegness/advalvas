@@ -1,0 +1,18 @@
+uuid: 9ed11dc5-32fb-438a-8007-902f6e9bc8f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.popup
+id: block_content.popup.metatag
+field_name: metatag
+entity_type: block_content
+bundle: popup
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

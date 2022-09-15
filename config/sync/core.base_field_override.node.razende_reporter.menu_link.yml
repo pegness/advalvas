@@ -1,0 +1,20 @@
+uuid: 26b99470-1d80-4dc3-ae6c-fb6c065cbdc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.menu_link
+field_name: menu_link
+entity_type: node
+bundle: razende_reporter
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

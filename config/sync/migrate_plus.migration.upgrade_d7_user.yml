@@ -1,0 +1,110 @@
+uuid: d879562e-3371-4b4a-96f7-402faccb9ea5
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_user
+class: Drupal\user\Plugin\migrate\User
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'User accounts'
+source:
+  plugin: d7_user
+process:
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  status: status
+  timezone: timezone
+  langcode:
+    plugin: user_langcode
+    source: entity_language
+    fallback_to_site_default: false
+  preferred_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  preferred_admin_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  init: init
+  roles:
+    plugin: migration_lookup
+    migration: upgrade_d7_user_role
+    source: roles
+  user_picture:
+    -
+      plugin: default_value
+      source: picture
+      default_value: null
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_file
+  field_real_name:
+    plugin: sub_process
+    source: field_real_name
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_beschrijving: field_beschrijving
+  field_blog_category: field_blog_category
+  field_fotograaf:
+    plugin: sub_process
+    source: field_fotograaf
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+destination:
+  plugin: 'entity:user'
+migration_dependencies:
+  required:
+    - upgrade_d7_user_role
+  optional:
+    0: upgrade_d7_field_instance
+    1: upgrade_d7_file
+    2: upgrade_language
+    3: upgrade_default_language
+    4: upgrade_user_picture_field_instance
+    5: upgrade_user_picture_entity_display
+    6: upgrade_user_picture_entity_form_display
+    7: upgrade_d7_user_role
+    10: upgrade_d6_filter_format
+    11: upgrade_d7_filter_format

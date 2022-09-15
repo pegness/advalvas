@@ -1,0 +1,38 @@
+uuid: 7788b6b7-8ba1-492f-9b4d-a8ed2e048bd2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.dossier.body
+    - field.field.node.dossier.field_upload_pdf
+    - node.type.dossier
+  module:
+    - file
+    - text
+    - user
+id: node.dossier.default
+targetEntityType: node
+bundle: dossier
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_upload_pdf:
+    type: file_url_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

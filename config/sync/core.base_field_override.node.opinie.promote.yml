@@ -1,0 +1,22 @@
+uuid: 10da200f-9b0a-4604-916c-feaa05f5ff7b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.opinie
+id: node.opinie.promote
+field_name: promote
+entity_type: node
+bundle: opinie
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

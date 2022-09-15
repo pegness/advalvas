@@ -1,0 +1,7 @@
+uuid: e0d2d46a-4bab-49c1-923d-87a9a0792a66
+langcode: nl
+status: false
+dependencies: {  }
+formId: node_custom_block_form
+captchaType: default
+label: null

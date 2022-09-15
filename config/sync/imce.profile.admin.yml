@@ -1,0 +1,41 @@
+uuid: 9024191c-5a79-43b4-a075-c745a1bffa3f
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: A4dUIYbp8-slaBb-hJR6sP7rR_AxXUNNiQyeQnpHrHE
+id: admin
+label: Beheerdersprofiel
+description: 'Configuratie voor site-beheerders'
+conf:
+  extensions: '*'
+  maxsize: !!float 2
+  quota: !!float 0
+  maxwidth: 0
+  maxheight: 0
+  replace: 0
+  folders:
+    -
+      path: bloggers
+      permissions:
+        all: true
+    -
+      path: nieuws
+      permissions:
+        all: true
+    -
+      path: inline-images
+      permissions:
+        all: true
+    -
+      path: customblock
+      permissions:
+        all: true
+    -
+      path: dossiers
+      permissions:
+        all: true
+    -
+      path: magazine
+      permissions:
+        all: true

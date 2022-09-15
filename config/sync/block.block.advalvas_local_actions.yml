@@ -1,0 +1,20 @@
+uuid: a602b4a9-1321-429b-9d59-68b046a7ff85
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - advalvas
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: advalvas_local_actions
+theme: advalvas
+region: content_top
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primaire beheeracties'
+  label_display: '0'
+  provider: core
+visibility: {  }

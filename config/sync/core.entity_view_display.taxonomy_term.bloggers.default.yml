@@ -1,0 +1,28 @@
+uuid: 910b21a0-a1ec-469e-858a-dac200d47ac5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.bloggers.field_categorie
+    - field.field.taxonomy_term.bloggers.field_fotograaf
+    - field.field.taxonomy_term.bloggers.field_portret
+    - taxonomy.vocabulary.bloggers
+  module:
+    - text
+id: taxonomy_term.bloggers.default
+targetEntityType: taxonomy_term
+bundle: bloggers
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_categorie: true
+  field_fotograaf: true
+  field_portret: true
+  langcode: true

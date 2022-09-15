@@ -1,0 +1,17 @@
+uuid: 67dc057c-9d12-41b9-a0c9-030a9f86b7c4
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: J2n0RpFzS0-bgSyxjs6rSdgxB1rb-bTAgqywNx_964M
+name: large
+label: large
+effects:
+  98140645-de14-47b4-a231-54240ce20b57:
+    uuid: 98140645-de14-47b4-a231-54240ce20b57
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 540
+      height: 360
+      anchor: center-center

@@ -1,0 +1,31 @@
+_core:
+  default_config_hash: Q6HMOSKUhb-YgBPZ1JIbcVeOxHPv-eJoBGYmXiG9Pik
+langcode: nl
+bundle_types:
+  - node--news--comment
+  - node--news--comment_node_news
+  - node--blog--comment_node_blog
+  - node--opinie--comment_node_opinie
+  - node--tip--comment_node_tip
+  - node--verhalen--field_comment_node_verhalen
+available_alerts:
+  1: true
+  2: true
+enable_default:
+  watcher: '0'
+  entity_author: false
+mail_templates:
+  watcher:
+    node:
+      subject: null
+      body: null
+  entity_author:
+    node:
+      subject: null
+      body: null
+node_types:
+  - blog
+  - news
+  - opinie
+  - tip
+  - verhalen

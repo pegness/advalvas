@@ -1,0 +1,14 @@
+uuid: 025b243d-93d1-4ff4-b191-02cb1d7314df
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.megauser
+  module:
+    - user
+id: user_remove_role_action.megauser
+label: 'De rol megauser verwijderen van de geselecteerde gebruikers(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: megauser

@@ -1,0 +1,31 @@
+uuid: de1b103b-b687-4fe1-a3ca-7e9cedac8b4a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.blogs
+  module:
+    - system
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__blogs_block_2
+theme: subseven
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:blogs-block_2'
+settings:
+  id: 'views_block:blogs-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/blog/*'

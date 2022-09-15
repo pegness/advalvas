@@ -1,0 +1,23 @@
+uuid: a8d90e60-b694-4f97-9402-84e8ad985e1a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_status
+    - node.type.simpleads
+id: node.simpleads.field_ad_status
+field_name: field_ad_status
+entity_type: node
+bundle: simpleads
+label: Status
+description: 'Please use this field to show or hide ads even if the ad is active and published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

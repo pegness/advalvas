@@ -1,0 +1,23 @@
+uuid: 7b6fa7b4-da10-40e6-9658-5687317a67fc
+langcode: nl
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: blogger_urls
+label: 'Blogger urls'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'blogger/[term:name]'
+selection_criteria:
+  1831a48d-bc9d-4886-b128-4ec736a04e5f:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 1831a48d-bc9d-4886-b128-4ec736a04e5f
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      bloggers: bloggers
+selection_logic: and
+weight: -5
+relationships: {  }

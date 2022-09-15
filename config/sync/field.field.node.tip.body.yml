@@ -1,0 +1,23 @@
+uuid: 94d0b197-0a3b-403e-9f44-c4e1a5264d60
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tip
+  module:
+    - text
+id: node.tip.body
+field_name: body
+entity_type: node
+bundle: tip
+label: Inhoud
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

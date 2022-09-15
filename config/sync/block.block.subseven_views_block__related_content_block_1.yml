@@ -1,0 +1,36 @@
+uuid: 51519687-9b49-40c4-91a3-0da13702b1af
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.related_content
+  module:
+    - node
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__related_content_block_1
+theme: subseven
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'views_block:related_content-block_1'
+settings:
+  id: 'views_block:related_content-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      achtergrond: achtergrond
+      news: news
+      opinie: opinie
+      tip: tip

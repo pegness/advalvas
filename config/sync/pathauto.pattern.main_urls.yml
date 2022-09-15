@@ -1,0 +1,24 @@
+uuid: a03edc87-d596-4a1d-a927-c0a660f96f5a
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: main_urls
+label: 'Main urls'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  9b5751f2-15b8-4a6f-a998-f9cc677915de:
+    id: node_type
+    negate: false
+    uuid: 9b5751f2-15b8-4a6f-a998-f9cc677915de
+    context_mapping:
+      node: node
+    bundles:
+      main_page: main_page
+      page: page
+      razende_reporter: razende_reporter
+selection_logic: and
+weight: -5
+relationships: {  }

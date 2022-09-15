@@ -1,0 +1,7 @@
+uuid: 3cb1ebad-122b-4a3c-8afa-519a67aad998
+langcode: nl
+status: true
+dependencies: {  }
+formId: comment_news_node
+captchaType: recaptcha/reCAPTCHA
+label: comment_node_news_form

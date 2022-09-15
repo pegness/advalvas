@@ -1,0 +1,18 @@
+uuid: 77f55591-ea10-4202-8c63-78883a35e389
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.advertentie
+id: node.advertentie.created
+field_name: created
+entity_type: node
+bundle: advertentie
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

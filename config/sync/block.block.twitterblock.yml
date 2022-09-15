@@ -1,0 +1,32 @@
+uuid: be814df0-b815-4101-a65e-e3370aba362b
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+    - tweets
+  theme:
+    - advalvas
+id: twitterblock
+theme: advalvas
+region: sidebar_second
+weight: -32
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: 'Twitter block'
+  label_display: '0'
+  provider: tweets
+  access_token: 81866305-bbK97AjiLRZJ9VhuCQkhGx0gG27KLSbyIChnpwLsJ
+  token_secret: h61AsyGGNeYFg7wu3YF5hBXpjuKcknrekeRyNLhg
+  consumer_key: h3z4UQPBbAH3XYzLAYLepA
+  consumer_secret: gZeWfxBH2CLh7SSfJfbNUC3vO3alx6zCBEVANWuo
+  tweets_username: advalvas_vu
+  tweets_limit: '20'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/over-ons\r\n/nieuws\r\n/dossiers\r\n/opinie\r\n/tips-trucs\r\n/achtergrond\r\n/razende-reporter\r\n/blogs-columns\r\n/blog-item/*\r\n/verhalen"

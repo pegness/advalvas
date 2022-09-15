@@ -1,0 +1,21 @@
+uuid: f9fbf710-2acb-4558-8098-8f3538f30265
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_blog_category
+  module:
+    - options
+    - user
+id: user.user.field_blog_category
+field_name: field_blog_category
+entity_type: user
+bundle: user
+label: Categorie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: e80aea75-fd70-46e8-939c-f4e0af47a117
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.publish_on
+field_name: publish_on
+entity_type: node
+bundle: magazine
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

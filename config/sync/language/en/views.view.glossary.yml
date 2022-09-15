@@ -1,0 +1,18 @@
+label: Woordenlijst
+description: 'Alle inhoud, op letter.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      fields:
+        changed:
+          label: 'Laatst bijgewerkt'
+      exposed_form:
+        options:
+          submit_button: Toepassen
+  attachment_1:
+    display_title: Bijlage
+  page_1:
+    display_options:
+      menu:
+        title: Woordenlijst

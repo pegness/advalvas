@@ -1,0 +1,19 @@
+uuid: 8e6aa353-e65c-4ce9-8e5c-9c6341bca5f9
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_display_text
+field_name: field_display_text
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

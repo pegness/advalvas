@@ -1,0 +1,8 @@
+uuid: edc1a7b6-4c63-4e54-a796-7f2533b733a2
+langcode: nl
+status: true
+dependencies: {  }
+id: comment_node_achtergrond
+label: 'Achtergrond comment'
+target_entity_type_id: node
+description: ''

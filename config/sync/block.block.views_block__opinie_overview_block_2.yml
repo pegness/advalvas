@@ -1,0 +1,41 @@
+uuid: 4e68a4d0-63a6-4253-90b5-bb154fa3f9cc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.opinie_overview
+  module:
+    - language
+    - node
+    - views
+  theme:
+    - advalvas
+id: views_block__opinie_overview_block_2
+theme: advalvas
+region: sidebar_second
+weight: -18
+provider: null
+plugin: 'views_block:opinie_overview-block_2'
+settings:
+  id: 'views_block:opinie_overview-block_2'
+  label: 'Meer opinie'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Meer opinie'
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      opinie: opinie

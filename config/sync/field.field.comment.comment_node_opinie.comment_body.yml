@@ -1,0 +1,21 @@
+uuid: 89ef9531-926a-4538-8f5e-441dde424369
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_opinie
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_opinie.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_opinie
+label: Reactie
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

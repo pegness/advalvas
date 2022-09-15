@@ -1,0 +1,23 @@
+uuid: 322ec4bc-c53e-4f1b-9fa6-d064cb56f935
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.main_page
+  module:
+    - text
+id: node.main_page.body
+field_name: body
+entity_type: node
+bundle: main_page
+label: Inhoud
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

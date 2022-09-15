@@ -1,0 +1,18 @@
+uuid: accde210-1d3d-490c-850b-e0e15f7a23df
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_achtergrond
+id: comment.comment_node_achtergrond.created
+field_name: created
+entity_type: comment
+bundle: comment_node_achtergrond
+label: Created
+description: 'The time that the comment was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

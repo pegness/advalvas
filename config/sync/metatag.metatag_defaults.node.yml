@@ -1,0 +1,29 @@
+uuid: 504b6ea0-c6aa-4922-8de6-4abc6dfb2b47
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  canonical_url: '[node:url]'
+  image_src: '[node:field_news_image:entity:url]'
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'
+  og_type: article
+  og_image_url: '[node:field_news_image:entity:url] '
+  og_title: '[node:title]'
+  og_description: '[node:summary]'
+  og_site_name: Advalvas
+  og_image_width: '[node:field_news_image:width]'
+  og_updated_time: '[node:changed:custom:c]'
+  og_image: '[node:field_news_image:entity:url] '
+  og_image_height: '[node:field_news_image:height]'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_image_height: '[node:field_news_image:height]'
+  twitter_cards_image_width: '[node:field_news_image:width]'
+  twitter_cards_type: summary_large_image
+  twitter_cards_page_url: '[current-page:url:absolute]'
+  twitter_cards_image: '[node:field_news_image:entity:url] '

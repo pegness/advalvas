@@ -1,0 +1,22 @@
+uuid: 3ca9f8cc-79be-48f5-9cd5-4f435500cc32
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - advalvas
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: advalvas_breadcrumbs
+theme: advalvas
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Kruimelpad
+  label_display: '0'
+  provider: system
+visibility: {  }

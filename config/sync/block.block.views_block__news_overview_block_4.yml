@@ -1,0 +1,38 @@
+uuid: 1c364ee7-75c8-4948-b5da-44714099ce32
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_overview
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - advalvas
+id: views_block__news_overview_block_4
+theme: advalvas
+region: content
+weight: -18
+provider: null
+plugin: 'views_block:news_overview-block_4'
+settings:
+  id: 'views_block:news_overview-block_4'
+  label: News
+  label_display: visible
+  provider: views
+  views_label: News
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/en/news\r\n/news"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

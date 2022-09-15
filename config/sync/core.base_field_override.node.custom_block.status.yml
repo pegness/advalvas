@@ -1,0 +1,22 @@
+uuid: 8010519e-6647-4f24-a2ee-f7ff8d60ddc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+id: node.custom_block.status
+field_name: status
+entity_type: node
+bundle: custom_block
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

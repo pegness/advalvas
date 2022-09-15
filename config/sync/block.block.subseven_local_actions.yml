@@ -1,0 +1,20 @@
+uuid: f0469474-7e01-492f-ae9e-d5f4b8b8a833
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - subseven
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: subseven_local_actions
+theme: subseven
+region: sidebar_first
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primaire beheeracties'
+  label_display: '0'
+  provider: core
+visibility: {  }

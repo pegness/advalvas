@@ -1,0 +1,29 @@
+uuid: a0d2ebf1-16b2-494c-b912-d07ebe540735
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_verhalen
+    - field.field.comment.comment_node_verhalen.comment_body
+  module:
+    - text
+id: comment.comment_node_verhalen.default
+targetEntityType: comment
+bundle: comment_node_verhalen
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

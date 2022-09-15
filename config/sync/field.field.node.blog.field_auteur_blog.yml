@@ -1,0 +1,29 @@
+uuid: ccf21fb4-07c6-46a8-8f12-3f89a7dfd71d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auteur_blog
+    - node.type.blog
+    - taxonomy.vocabulary.bloggers
+id: node.blog.field_auteur_blog
+field_name: field_auteur_blog
+entity_type: node
+bundle: blog
+label: Auteur
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bloggers: bloggers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

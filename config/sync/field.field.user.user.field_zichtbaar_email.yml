@@ -1,0 +1,20 @@
+uuid: be0a87af-7163-492b-bfd0-7bba9e85d2d0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_zichtbaar_email
+  module:
+    - user
+id: user.user.field_zichtbaar_email
+field_name: field_zichtbaar_email
+entity_type: user
+bundle: user
+label: 'Zichtbaar email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

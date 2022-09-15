@@ -1,0 +1,27 @@
+uuid: bbed087d-b291-430a-a22d-921eefe7b1d5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_locatie
+field_name: field_locatie
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: 'Content links'
+    -
+      value: right
+      label: Sidebar
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

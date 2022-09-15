@@ -1,0 +1,78 @@
+uuid: 80b43306-58b4-43eb-b23f-c27e60590bf6
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_menu_links
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Menu links'
+source:
+  plugin: menu_link
+  constants:
+    bundle: menu_link_content
+process:
+  id: mlid
+  bundle: constants/bundle
+  title: link_title
+  description: description
+  menu_name:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_menu
+      source: menu_name
+    -
+      plugin: skip_on_empty
+      method: row
+  link/uri:
+    plugin: link_uri
+    source:
+      - link_path
+  link/options: options
+  route:
+    plugin: route
+    source:
+      - link_path
+      - options
+  route_name: '@route/route_name'
+  route_parameters: '@route/route_parameters'
+  url: '@route/url'
+  options: '@route/options'
+  external: external
+  weight: weight
+  expanded: expanded
+  enabled: enabled
+  parent:
+    plugin: menu_link_parent
+    source:
+      - plid
+      - '@menu_name'
+      - parent_link_path
+  changed: updated
+destination:
+  plugin: 'entity:menu_link_content'
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_menu
+  optional:
+    - upgrade_d7_node_achtergrond
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_classified
+    - upgrade_d7_node_custom_block
+    - upgrade_d7_node_dossier
+    - upgrade_d7_node_magazine
+    - upgrade_d7_node_main_page
+    - upgrade_d7_node_news
+    - upgrade_d7_node_opinie
+    - upgrade_d7_node_page
+    - upgrade_d7_node_pdf_archief
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_razende_reporter
+    - upgrade_d7_node_simpleads
+    - upgrade_d7_node_tip
+    - upgrade_d7_menu

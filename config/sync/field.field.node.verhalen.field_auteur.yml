@@ -1,0 +1,19 @@
+uuid: 08dcca3d-33cc-4150-8f35-2edca72b99cb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auteur
+    - node.type.verhalen
+id: node.verhalen.field_auteur
+field_name: field_auteur
+entity_type: node
+bundle: verhalen
+label: Auteur
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

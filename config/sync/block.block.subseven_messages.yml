@@ -1,0 +1,22 @@
+uuid: 6f6c1c3a-4340-4ee0-9cdc-7f00cbce8fc0
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subseven
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: subseven_messages
+theme: subseven
+region: sidebar_first
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,52 @@
+uuid: 8d413d8f-5620-4091-b294-9371fbbba133
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.advertentie.field_ad_link
+    - field.field.node.advertentie.field_advertentie
+    - field.field.node.advertentie.field_locatie
+    - node.type.advertentie
+  module:
+    - link
+    - options
+    - text
+    - user
+id: node.advertentie.default
+targetEntityType: node
+bundle: advertentie
+mode: default
+content:
+  field_ad_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_advertentie:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_locatie:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

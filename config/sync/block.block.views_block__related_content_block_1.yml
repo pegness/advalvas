@@ -1,0 +1,45 @@
+uuid: b15e2d8c-aac5-4611-80ab-29b3e04e25b9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.related_content
+  module:
+    - language
+    - node
+    - views
+  theme:
+    - advalvas
+id: views_block__related_content_block_1
+theme: advalvas
+region: sidebar_second
+weight: -31
+provider: null
+plugin: 'views_block:related_content-block_1'
+settings:
+  id: 'views_block:related_content-block_1'
+  label: 'Gerelateerde berichten'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Gerelateerde berichten'
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      achtergrond: achtergrond
+      news: news
+      opinie: opinie
+      tip: tip
+      verhalen: verhalen

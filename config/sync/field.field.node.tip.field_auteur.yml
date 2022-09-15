@@ -1,0 +1,19 @@
+uuid: 546a6422-0f98-4327-be42-cda968344d82
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auteur
+    - node.type.tip
+id: node.tip.field_auteur
+field_name: field_auteur
+entity_type: node
+bundle: tip
+label: Auteur
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

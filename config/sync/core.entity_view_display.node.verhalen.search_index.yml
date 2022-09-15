@@ -1,0 +1,58 @@
+uuid: 09291ca4-8730-41ea-86fd-beaefbf1d89b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.verhalen.body
+    - field.field.node.verhalen.field_auteur
+    - field.field.node.verhalen.field_author
+    - field.field.node.verhalen.field_categorie
+    - field.field.node.verhalen.field_comment_node_verhalen
+    - field.field.node.verhalen.field_fotograaf
+    - field.field.node.verhalen.field_intro
+    - field.field.node.verhalen.field_news_image
+    - field.field.node.verhalen.field_photo_subscript
+    - field.field.node.verhalen.field_subtiitle
+    - field.field.node.verhalen.field_tags
+    - node.type.verhalen
+  module:
+    - user
+id: node.verhalen.search_index
+targetEntityType: node
+bundle: verhalen
+mode: search_index
+content:
+  field_author:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_auteur: true
+  field_categorie: true
+  field_comment_node_verhalen: true
+  field_fotograaf: true
+  field_intro: true
+  field_news_image: true
+  field_photo_subscript: true
+  field_subtiitle: true
+  langcode: true
+  links: true

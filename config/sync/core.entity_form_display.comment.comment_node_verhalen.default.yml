@@ -1,0 +1,36 @@
+uuid: 790fa90a-6d45-4d21-8f8d-c2e93e16d2c3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_verhalen
+    - field.field.comment.comment_node_verhalen.comment_body
+  module:
+    - text
+id: comment.comment_node_verhalen.default
+targetEntityType: comment
+bundle: comment_node_verhalen
+mode: default
+content:
+  author:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  subject: true

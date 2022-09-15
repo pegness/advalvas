@@ -1,0 +1,18 @@
+uuid: c3381526-5619-40a3-93fe-7e3b458a81fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_opinie
+id: comment.comment_node_opinie.subject
+field_name: subject
+entity_type: comment
+bundle: comment_node_opinie
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

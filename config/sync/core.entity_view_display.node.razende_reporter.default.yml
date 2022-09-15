@@ -1,0 +1,58 @@
+uuid: 0c0c684b-4ed3-4a4d-af75-475ff90985e0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.razende_reporter.body
+    - field.field.node.razende_reporter.field_link
+    - field.field.node.razende_reporter.field_link_naar_facebook
+    - field.field.node.razende_reporter.field_news_image
+    - node.type.razende_reporter
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.razende_reporter.default
+targetEntityType: node
+bundle: razende_reporter
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link_naar_facebook:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_news_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

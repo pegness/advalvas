@@ -1,0 +1,22 @@
+uuid: e7bca327-753b-47d1-bc81-dd8cde7df113
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - advalvas
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: advalvas_local_tasks
+theme: advalvas
+region: content
+weight: -37
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabbladen
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

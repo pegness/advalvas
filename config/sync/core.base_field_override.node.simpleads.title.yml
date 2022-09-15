@@ -1,0 +1,18 @@
+uuid: 6dfd2a59-909d-437f-9b53-66331f725ecd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.simpleads
+id: node.simpleads.title
+field_name: title
+entity_type: node
+bundle: simpleads
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

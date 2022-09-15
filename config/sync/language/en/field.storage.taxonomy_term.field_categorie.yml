@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    5:
+      label: freshmen
+    2:
+      label: 'editorial team'
+    4:
+      label: 'campus poet'

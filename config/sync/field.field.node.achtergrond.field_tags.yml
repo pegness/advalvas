@@ -1,0 +1,21 @@
+uuid: 390daa80-37cb-4db2-95d7-8ba2f27743eb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.achtergrond
+id: node.achtergrond.field_tags
+field_name: field_tags
+entity_type: node
+bundle: achtergrond
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

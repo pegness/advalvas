@@ -1,0 +1,23 @@
+uuid: 13a356dc-4def-4763-af03-e7997d46247f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_url_taget
+    - node.type.simpleads
+id: node.simpleads.field_ad_url_taget
+field_name: field_ad_url_taget
+entity_type: node
+bundle: simpleads
+label: 'Link Target'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

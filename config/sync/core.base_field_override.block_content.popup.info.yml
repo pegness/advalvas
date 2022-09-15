@@ -1,0 +1,18 @@
+uuid: b731223f-9d4f-410c-a4e8-bde7c4b2107f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.popup
+id: block_content.popup.info
+field_name: info
+entity_type: block_content
+bundle: popup
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

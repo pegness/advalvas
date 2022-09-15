@@ -1,0 +1,21 @@
+uuid: 12f4dfac-6681-47b6-b73f-71d403b8b498
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitel_long
+    - node.type.opinie
+  module:
+    - text
+id: node.opinie.field_subtitel_long
+field_name: field_subtitel_long
+entity_type: node
+bundle: opinie
+label: Subtitel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

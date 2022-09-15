@@ -1,0 +1,23 @@
+uuid: 29c666b4-3ec0-4376-9cf5-b662e89a8195
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_categorie
+    - taxonomy.vocabulary.editors
+  module:
+    - options
+id: taxonomy_term.editors.field_categorie
+field_name: field_categorie
+entity_type: taxonomy_term
+bundle: editors
+label: Categorie
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: redactie
+default_value_callback: ''
+settings: {  }
+field_type: list_string

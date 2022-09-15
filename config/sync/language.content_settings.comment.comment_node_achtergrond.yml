@@ -1,0 +1,18 @@
+uuid: 42bf2410-7dba-4d99-b904-18cf8ed6ad94
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_achtergrond
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: comment.comment_node_achtergrond
+target_entity_type_id: comment
+target_bundle: comment_node_achtergrond
+default_langcode: current_interface
+language_alterable: false

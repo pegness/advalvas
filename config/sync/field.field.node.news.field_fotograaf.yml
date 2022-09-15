@@ -1,0 +1,19 @@
+uuid: a46305e1-470b-460a-81aa-9ac1d750b01d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fotograaf
+    - node.type.news
+id: node.news.field_fotograaf
+field_name: field_fotograaf
+entity_type: node
+bundle: news
+label: Fotograaf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

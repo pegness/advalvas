@@ -1,0 +1,39 @@
+uuid: 5a267a47-ed83-4aa0-9a5a-ab6167dc77d3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.blogger_detail
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - advalvas
+id: views_block__blogger_detail_block_1
+theme: advalvas
+region: sidebar_second
+weight: -23
+provider: null
+plugin: 'views_block:blogger_detail-block_1'
+settings:
+  id: 'views_block:blogger_detail-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/blogger/*\r\n/editor/*"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl

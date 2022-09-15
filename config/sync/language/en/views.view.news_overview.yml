@@ -1,0 +1,8 @@
+display:
+  block_3:
+    display_options:
+      footer:
+        area:
+          content:
+            value: "<div class=\"more\">{<a href=\"/nieuws\">volledig nieuwsoverzicht</a>}</div>\r\n"
+            format: filtered_html

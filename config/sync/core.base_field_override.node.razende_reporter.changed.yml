@@ -1,0 +1,18 @@
+uuid: 6980606b-70f9-442e-88fb-0b627f908949
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.changed
+field_name: changed
+entity_type: node
+bundle: razende_reporter
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

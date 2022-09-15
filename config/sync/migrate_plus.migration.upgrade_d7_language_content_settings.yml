@@ -1,0 +1,55 @@
+uuid: 2205a54a-370b-4afc-bdfa-462ce977ca86
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_language_content_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 language content settings'
+source:
+  plugin: d7_language_content_settings
+  constants:
+    target_type: node
+process:
+  target_bundle: type
+  target_entity_type_id: constants/target_type
+  default_langcode:
+    -
+      plugin: static_map
+      source: language_content_type
+      map:
+        0: null
+        1: current_interface
+        2: current_interface
+        4: und
+      default_value: null
+    -
+      plugin: skip_on_empty
+      method: row
+  language_alterable:
+    plugin: static_map
+    source: i18n_lock_node
+    map:
+      - true
+      - false
+  third_party_settings/content_translation/enabled:
+    plugin: static_map
+    source: language_content_type
+    map:
+      0: null
+      1: false
+      2: true
+      4: true
+destination:
+  plugin: 'entity:language_content_settings'
+  content_translation_update_definitions:
+    - node
+migration_dependencies:
+  required:
+    - upgrade_d7_node_type
+  optional: {  }

@@ -1,0 +1,58 @@
+uuid: 0739c9e8-ee3d-49e8-9384-79b0a6505138
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.news.body
+    - field.field.node.news.comment
+    - field.field.node.news.comment_node_news
+    - field.field.node.news.field_auteur
+    - field.field.node.news.field_author
+    - field.field.node.news.field_categorie
+    - field.field.node.news.field_fotograaf
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_photo_subscript
+    - field.field.node.news.field_subtiitle
+    - field.field.node.news.field_tags
+    - node.type.news
+  module:
+    - user
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  field_author:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  comment: true
+  comment_node_news: true
+  field_auteur: true
+  field_categorie: true
+  field_fotograaf: true
+  field_news_image: true
+  field_photo_subscript: true
+  field_subtiitle: true
+  langcode: true
+  links: true

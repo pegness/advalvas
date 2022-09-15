@@ -1,0 +1,23 @@
+uuid: 879808ac-2e23-4c75-bf5c-24f4b56d429e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_categorie
+    - taxonomy.vocabulary.bloggers
+  module:
+    - options
+id: taxonomy_term.bloggers.field_categorie
+field_name: field_categorie
+entity_type: taxonomy_term
+bundle: bloggers
+label: Categorie
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: blog
+default_value_callback: ''
+settings: {  }
+field_type: list_string

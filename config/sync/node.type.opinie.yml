@@ -1,0 +1,17 @@
+uuid: a4a8a74c-4085-46ea-a1f9-a326ef0e0b3f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Opinie
+type: opinie
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

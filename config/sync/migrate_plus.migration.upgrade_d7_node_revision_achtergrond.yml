@@ -1,0 +1,87 @@
+uuid: ad5241ba-1d62-43be-8f59-948d04e165f9
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_achtergrond
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Achtergrond)'
+source:
+  plugin: d7_node_revision
+  node_type: achtergrond
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_achtergrond/0/status: comment
+  body:
+    plugin: get
+    source: body
+  meta_description: meta_description
+  meta_keywords: meta_keywords
+  field_subtiitle:
+    plugin: get
+    source: field_subtiitle
+  field_datum:
+    plugin: sub_process
+    source: field_datum
+    process:
+      value:
+        plugin: format_date
+        from_format: 'Y-m-d H:i:s'
+        to_format: 'Y-m-d\TH:i:s'
+        source: value
+  field_tags:
+    plugin: sub_process
+    source: field_tags
+    process:
+      target_id: tid
+  field_auteur:
+    plugin: get
+    source: field_auteur
+  field_upload_pdf:
+    plugin: sub_process
+    source: field_upload_pdf
+    process:
+      target_id: fid
+      display: display
+      description: description
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: achtergrond
+migration_dependencies:
+  required:
+    65: upgrade_d7_node_achtergrond
+    66: upgrade_d7_node_blog
+    67: upgrade_d7_node_classified
+    68: upgrade_d7_node_custom_block
+    69: upgrade_d7_node_dossier
+    70: upgrade_d7_node_magazine
+    71: upgrade_d7_node_main_page
+    72: upgrade_d7_node_news
+    73: upgrade_d7_node_opinie
+    74: upgrade_d7_node_page
+    75: upgrade_d7_node_pdf_archief
+    76: upgrade_d7_node_poll
+    77: upgrade_d7_node_razende_reporter
+    78: upgrade_d7_node_simpleads
+    79: upgrade_d7_node_tip
+  optional: {  }

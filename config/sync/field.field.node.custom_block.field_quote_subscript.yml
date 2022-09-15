@@ -1,0 +1,19 @@
+uuid: 6536f060-4215-4c75-b837-00d598895455
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_subscript
+    - node.type.custom_block
+id: node.custom_block.field_quote_subscript
+field_name: field_quote_subscript
+entity_type: node
+bundle: custom_block
+label: 'Quote subscript'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

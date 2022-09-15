@@ -1,0 +1,30 @@
+uuid: 9c9db31b-a7bf-43a9-a7a6-4a1ab16352da
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ad_type
+field_name: field_ad_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: graphic
+      label: 'Image Ad'
+    -
+      value: text
+      label: 'Text Ad'
+    -
+      value: flash
+      label: 'Flash Ad'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

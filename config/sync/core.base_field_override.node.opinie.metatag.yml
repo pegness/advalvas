@@ -1,0 +1,18 @@
+uuid: 2c88166a-d8b6-407a-8fb0-e9e889577c18
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opinie
+id: node.opinie.metatag
+field_name: metatag
+entity_type: node
+bundle: opinie
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

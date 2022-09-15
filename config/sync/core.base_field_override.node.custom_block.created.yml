@@ -1,0 +1,18 @@
+uuid: cc284038-b2ae-4c06-bb58-75ce3ae1f115
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+id: node.custom_block.created
+field_name: created
+entity_type: node
+bundle: custom_block
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

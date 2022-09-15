@@ -1,0 +1,21 @@
+uuid: 1a2831db-5e52-4616-a40b-0e73907f7a86
+langcode: nl
+status: false
+dependencies:
+  theme:
+    - advalvas
+id: search2
+theme: advalvas
+region: search_bar
+weight: -35
+provider: null
+plugin: 'block_content:5a975db2-2528-4d27-9aa9-5d60aeff3bf1'
+settings:
+  id: 'block_content:5a975db2-2528-4d27-9aa9-5d60aeff3bf1'
+  label: 'Search En'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

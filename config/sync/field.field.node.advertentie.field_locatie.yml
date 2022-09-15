@@ -1,0 +1,21 @@
+uuid: 3f347c58-70f7-486a-8bd1-d7fec321d305
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locatie
+    - node.type.advertentie
+  module:
+    - options
+id: node.advertentie.field_locatie
+field_name: field_locatie
+entity_type: node
+bundle: advertentie
+label: Locatie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

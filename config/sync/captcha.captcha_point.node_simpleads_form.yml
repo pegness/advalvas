@@ -1,0 +1,7 @@
+uuid: 4fffa6d8-7858-4ee3-a570-b0905accc7ec
+langcode: nl
+status: false
+dependencies: {  }
+formId: node_simpleads_form
+captchaType: default
+label: null
