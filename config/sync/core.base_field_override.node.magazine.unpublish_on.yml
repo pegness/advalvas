@@ -1,0 +1,18 @@
+uuid: 647f7e38-a1f8-4208-834a-4ceaf3c44cc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: magazine
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

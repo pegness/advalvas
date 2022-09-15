@@ -1,0 +1,28 @@
+description: 'Recente logberichten'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Recente logberichten'
+      fields:
+        nothing:
+          admin_label: Pictogram
+        wid:
+          label: Watchdog-ID
+        severity:
+          label: Ernst
+        timestamp:
+          label: Datum
+        message:
+          label: Bericht
+      exposed_form:
+        options:
+          submit_button: Filter
+      empty:
+        area:
+          admin_label: 'Geen logberichten beschikbaar.'
+          content: 'Geen logberichten beschikbaar.'
+      filters:
+        severity:
+          expose:
+            label: Ernst

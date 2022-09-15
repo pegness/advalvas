@@ -1,0 +1,52 @@
+label: Reacties
+description: 'Zoek en beheer reacties.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: Reacties
+      fields:
+        subject:
+          label: Onderwerp
+        entity_id:
+          label: 'Geplaatst in'
+      exposed_form:
+        options:
+          submit_button: Filter
+      empty:
+        area_text_custom:
+          content: 'No comments available.'
+      filters:
+        subject:
+          expose:
+            label: Onderwerp
+        combine:
+          expose:
+            label: 'Naam auteur'
+      use_more_text: meer
+  page_published:
+    display_title: 'Gepubliceerde reacties'
+    display_options:
+      display_description: 'Lijst met goedgekeurde reacties.'
+      menu:
+        title: Reacties
+        description: 'Reacties gepubliceerd.'
+  page_unapproved:
+    display_title: 'Niet-goedgekeurde reacties'
+    display_options:
+      fields:
+        subject:
+          label: Onderwerp
+        entity_id:
+          label: 'Geplaatst in'
+      filters:
+        subject:
+          expose:
+            label: Onderwerp
+        combine:
+          expose:
+            label: Auteursnaam
+      display_description: 'Lijst met afgekeurde reacties.'
+      menu:
+        title: 'Niet-goedgekeurde reacties'
+        description: 'Reacties afgekeurd'

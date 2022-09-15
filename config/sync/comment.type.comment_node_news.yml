@@ -1,0 +1,8 @@
+uuid: 0698f749-d8a2-4ed7-b7c8-443b1677e4c2
+langcode: nl
+status: true
+dependencies: {  }
+id: comment_node_news
+label: 'Nieuws comment'
+target_entity_type_id: node
+description: ''

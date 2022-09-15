@@ -1,0 +1,23 @@
+uuid: 4012c64f-004f-4d90-ba12-8df10ff7314b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_naar_facebook
+    - node.type.razende_reporter
+id: node.razende_reporter.field_link_naar_facebook
+field_name: field_link_naar_facebook
+entity_type: node
+bundle: razende_reporter
+label: 'Link naar facebook'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

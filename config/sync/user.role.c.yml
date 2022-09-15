@@ -1,0 +1,166 @@
+uuid: 91005983-3b72-4cac-bcb3-70093da294bc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - node.type.achtergrond
+    - node.type.advertentie
+    - node.type.blog
+    - node.type.custom_block
+    - node.type.dossier
+    - node.type.magazine
+    - node.type.main_page
+    - node.type.news
+    - node.type.opinie
+    - node.type.page
+    - node.type.razende_reporter
+    - node.type.tip
+    - node.type.verhalen
+    - taxonomy.vocabulary.bloggers
+    - taxonomy.vocabulary.editors
+    - taxonomy.vocabulary.news_categories
+    - taxonomy.vocabulary.tags
+  module:
+    - captcha
+    - comment
+    - content_translation
+    - eu_cookie_compliance
+    - file
+    - filter
+    - imce
+    - node
+    - path
+    - quickedit
+    - redirect
+    - responsive_image
+    - scheduler
+    - shortcut
+    - taxonomy
+    - unpublished_node_permissions
+id: c
+label: 'Content manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access shortcuts'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer imce'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'administer responsive images'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'change own username'
+  - 'create achtergrond content'
+  - 'create advertentie content'
+  - 'create blog content'
+  - 'create content translations'
+  - 'create custom_block content'
+  - 'create dossier content'
+  - 'create magazine content'
+  - 'create news content'
+  - 'create opinie content'
+  - 'create razende_reporter content'
+  - 'create terms in bloggers'
+  - 'create terms in editors'
+  - 'create terms in news_categories'
+  - 'create terms in tags'
+  - 'create tip content'
+  - 'create url aliases'
+  - 'create verhalen content'
+  - 'delete any achtergrond content'
+  - 'delete any advertentie content'
+  - 'delete any blog content'
+  - 'delete any custom_block content'
+  - 'delete any dossier content'
+  - 'delete any magazine content'
+  - 'delete any news content'
+  - 'delete any opinie content'
+  - 'delete any page content'
+  - 'delete any razende_reporter content'
+  - 'delete any tip content'
+  - 'delete any verhalen content'
+  - 'delete content translations'
+  - 'delete own achtergrond content'
+  - 'delete own advertentie content'
+  - 'delete own blog content'
+  - 'delete own custom_block content'
+  - 'delete own dossier content'
+  - 'delete own magazine content'
+  - 'delete own news content'
+  - 'delete own opinie content'
+  - 'delete own razende_reporter content'
+  - 'delete own tip content'
+  - 'delete own verhalen content'
+  - 'delete terms in bloggers'
+  - 'delete terms in editors'
+  - 'delete terms in news_categories'
+  - 'delete terms in tags'
+  - 'delete verhalen revisions'
+  - 'display eu cookie compliance popup'
+  - 'edit any achtergrond content'
+  - 'edit any advertentie content'
+  - 'edit any blog content'
+  - 'edit any custom_block content'
+  - 'edit any dossier content'
+  - 'edit any magazine content'
+  - 'edit any news content'
+  - 'edit any opinie content'
+  - 'edit any page content'
+  - 'edit any razende_reporter content'
+  - 'edit any tip content'
+  - 'edit any verhalen content'
+  - 'edit own achtergrond content'
+  - 'edit own advertentie content'
+  - 'edit own blog content'
+  - 'edit own comments'
+  - 'edit own custom_block content'
+  - 'edit own dossier content'
+  - 'edit own magazine content'
+  - 'edit own main_page content'
+  - 'edit own news content'
+  - 'edit own opinie content'
+  - 'edit own page content'
+  - 'edit own razende_reporter content'
+  - 'edit own tip content'
+  - 'edit own verhalen content'
+  - 'edit terms in bloggers'
+  - 'edit terms in editors'
+  - 'edit terms in news_categories'
+  - 'edit terms in tags'
+  - 'schedule publishing of nodes'
+  - 'skip CAPTCHA'
+  - 'translate achtergrond node'
+  - 'translate blog node'
+  - 'translate bloggers taxonomy_term'
+  - 'translate custom_block node'
+  - 'translate dossier node'
+  - 'translate magazine node'
+  - 'translate news node'
+  - 'translate opinie node'
+  - 'translate page node'
+  - 'translate razende_reporter node'
+  - 'translate tip node'
+  - 'translate verhalen node'
+  - 'update content translations'
+  - 'use text format filtered_html'
+  - 'view achtergrond unpublished content'
+  - 'view advertentie unpublished content'
+  - 'view blog unpublished content'
+  - 'view custom_block unpublished content'
+  - 'view dossier unpublished content'
+  - 'view magazine unpublished content'
+  - 'view news unpublished content'
+  - 'view opinie unpublished content'
+  - 'view own unpublished content'
+  - 'view page unpublished content'
+  - 'view razende_reporter unpublished content'
+  - 'view scheduled content'
+  - 'view tip unpublished content'
+  - 'view verhalen revisions'
+  - 'view verhalen unpublished content'

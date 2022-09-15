@@ -1,0 +1,45 @@
+uuid: ec737e98-e94e-48b7-a91d-c83275a19da8
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.related_content
+  module:
+    - language
+    - node
+    - views
+  theme:
+    - advalvas
+id: views_block__related_content_block_1_2
+theme: advalvas
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:related_content-block_1'
+settings:
+  id: 'views_block:related_content-block_1'
+  label: 'Related content'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Related content'
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      achtergrond: achtergrond
+      news: news
+      opinie: opinie
+      tip: tip
+      verhalen: verhalen

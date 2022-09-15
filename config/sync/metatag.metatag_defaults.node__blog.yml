@@ -1,0 +1,7 @@
+uuid: b5211359-b2d8-4e33-a1c1-592d4032b830
+langcode: nl
+status: true
+dependencies: {  }
+id: node__blog
+label: 'Content: Blog-item'
+tags: {  }

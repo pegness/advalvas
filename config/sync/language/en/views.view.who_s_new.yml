@@ -1,0 +1,15 @@
+label: 'Wie is nieuw'
+description: 'Toont een lijst van de nieuwste gebruikersaccounts op de website.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Wie is nieuw'
+      exposed_form:
+        options:
+          submit_button: Toepassen
+  block_1:
+    display_title: 'Wie is nieuw'
+    display_options:
+      display_description: 'Een lijst van nieuwe gebruikers'
+      block_description: 'Wie is nieuw'

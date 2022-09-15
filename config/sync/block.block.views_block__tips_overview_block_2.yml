@@ -1,0 +1,41 @@
+uuid: 3f059491-9408-4a96-a05c-135f155e8b13
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.tips_overview
+  module:
+    - language
+    - node
+    - views
+  theme:
+    - advalvas
+id: views_block__tips_overview_block_2
+theme: advalvas
+region: sidebar_second
+weight: -16
+provider: null
+plugin: 'views_block:tips_overview-block_2'
+settings:
+  id: 'views_block:tips_overview-block_2'
+  label: 'Meer tips'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Meer tips'
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      tip: tip

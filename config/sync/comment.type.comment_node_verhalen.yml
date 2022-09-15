@@ -1,0 +1,8 @@
+uuid: dc97dafc-a00c-4aad-babd-ece0ea660859
+langcode: nl
+status: true
+dependencies: {  }
+id: comment_node_verhalen
+label: 'Verhalen Comment'
+target_entity_type_id: node
+description: ''

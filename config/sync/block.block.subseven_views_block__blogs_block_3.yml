@@ -1,0 +1,31 @@
+uuid: f754226b-1995-498a-95e0-6d8c3dfc0e49
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.blogs
+  module:
+    - system
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__blogs_block_3
+theme: subseven
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:blogs-block_3'
+settings:
+  id: 'views_block:blogs-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/taxonomy/term/*'

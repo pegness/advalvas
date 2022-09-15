@@ -1,0 +1,33 @@
+uuid: 23d6266f-82e9-4eb7-bd9a-56d0331702b6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.comment_text
+  module:
+    - comment
+    - comment_notify
+    - eu_cookie_compliance
+    - filter
+    - media
+    - search
+    - statistics
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access user profiles'
+  - 'display eu cookie compliance popup'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'subscribe to comments'
+  - 'use text format comment_text'
+  - 'view media'
+  - 'view post access counter'

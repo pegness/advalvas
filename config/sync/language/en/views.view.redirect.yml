@@ -1,0 +1,32 @@
+label: Doorverwijzen
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+      fields:
+        redirect_bulk_form:
+          action_title: 'Met selectie'
+      filters:
+        status_code:
+          expose:
+            label: Statuscode
+          group_info:
+            label: Statuscode
+            group_items:
+              1:
+                title: '300 meerdere keuzes'
+              2:
+                title: '301 Permanente omleiding'
+              3:
+                title: '302 Gevonden'
+              4:
+                title: '303 Zie andere'
+              5:
+                title: '304 Niet gewijzigd'
+              6:
+                title: '305 Gebruik proxy'
+              7:
+                title: '307 Tijdelijke omleiding'
+      title: Doorverwijzen

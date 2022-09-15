@@ -1,0 +1,41 @@
+uuid: 251004eb-6150-4ad2-94d6-ef7a3c206654
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_beschrijving
+    - field.field.user.user.field_blog_category
+    - field.field.user.user.field_fotograaf
+    - field.field.user.user.field_real_name
+    - field.field.user.user.field_zichtbaar_email
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_beschrijving: true
+  field_blog_category: true
+  field_fotograaf: true
+  field_real_name: true
+  field_zichtbaar_email: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

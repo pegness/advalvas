@@ -1,0 +1,22 @@
+uuid: 723753f7-beb0-4490-a25b-3c52b7df9365
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.sticky
+field_name: sticky
+entity_type: node
+bundle: razende_reporter
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

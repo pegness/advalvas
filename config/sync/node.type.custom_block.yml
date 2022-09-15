@@ -1,0 +1,18 @@
+uuid: 08e82e97-1b0b-4f75-ba7c-69229bbabea3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Custom block'
+type: custom_block
+description: 'Custom block for: Razende Reporter, Opinie, Blogger, Column en Prijsvraag.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

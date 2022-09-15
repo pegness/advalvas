@@ -1,0 +1,57 @@
+label: Bestanden
+description: 'Bestanden vinden en beheren.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: Bestanden
+      fields:
+        filename:
+          label: Naam
+        filemime:
+          label: MIME-type
+        filesize:
+          label: Grootte
+        status:
+          settings:
+            format_custom_false: Tijdelijk
+        created:
+          label: Uploaddatum
+        changed:
+          label: Aanpassingsdatum
+        count:
+          label: 'Gebruikt in'
+      exposed_form:
+        options:
+          submit_button: Filter
+      empty:
+        area_text_custom:
+          content: 'Geen bestanden beschikbaar.'
+      filters:
+        filename:
+          expose:
+            label: Bestandsnaam
+        filemime:
+          expose:
+            label: MIME-type
+  page_1:
+    display_title: Bestandenoverzicht
+    display_options:
+      menu:
+        title: Bestanden
+  page_2:
+    display_title: Bestandsgebruik
+    display_options:
+      title: Bestandsgebruik
+      fields:
+        entity_label:
+          label: Entiteit
+        type:
+          label: Entiteitstype
+        module:
+          label: 'Module registreren'
+        count:
+          label: Gebruiksfrequentie
+      arguments:
+        fid:
+          title: 'Bestandsgebruikinformatie voor {{ arguments.fid }}'

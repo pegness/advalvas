@@ -1,0 +1,22 @@
+uuid: effe984d-8329-4985-83b1-ea0f6bdc4dc0
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - advalvas
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: advalvas_powered
+theme: advalvas
+region: navigation_collapsible
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Gebouwd met Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

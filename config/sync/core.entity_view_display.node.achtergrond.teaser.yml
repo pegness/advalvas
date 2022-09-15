@@ -1,0 +1,39 @@
+uuid: 9760fb47-0d4d-4a00-83e9-389d1711e9bc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.achtergrond.body
+    - field.field.node.achtergrond.field_auteur
+    - field.field.node.achtergrond.field_datum
+    - field.field.node.achtergrond.field_tags
+    - field.field.node.achtergrond.field_upload_pdf
+    - node.type.achtergrond
+  module:
+    - text
+    - user
+id: node.achtergrond.teaser
+targetEntityType: node
+bundle: achtergrond
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_auteur: true
+  field_datum: true
+  field_tags: true
+  field_upload_pdf: true
+  langcode: true

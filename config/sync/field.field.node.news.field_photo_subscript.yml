@@ -1,0 +1,19 @@
+uuid: 31829acd-adaa-4f7b-ae50-74f9c065d0e7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_subscript
+    - node.type.news
+id: node.news.field_photo_subscript
+field_name: field_photo_subscript
+entity_type: node
+bundle: news
+label: 'Photo subscript'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 1f352f24-4ff9-45f0-9675-1c26048407f9
+langcode: nl
+status: true
+dependencies:
+  module:
+    - language
+    - user
+id: redactie_url_eng
+label: 'Redactie url ENG'
+type: 'canonical_entities:user'
+pattern: 'editors/[user:account-name]'
+selection_criteria:
+  eb287fbe-5706-478c-a189-2e56e7e7ae72:
+    id: language
+    negate: false
+    uuid: eb287fbe-5706-478c-a189-2e56e7e7ae72
+    context_mapping:
+      language: 'user:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -5
+relationships:
+  'user:langcode:language':
+    label: Language

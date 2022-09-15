@@ -1,0 +1,18 @@
+uuid: 4445993f-fc70-45ea-97fa-16b7185fef80
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.magazine
+target_entity_type_id: node
+target_bundle: magazine
+default_langcode: site_default
+language_alterable: true

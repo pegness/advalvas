@@ -1,0 +1,22 @@
+uuid: f5070192-414a-4653-b29d-d5dfef1c8aac
+langcode: nl
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - advalvas
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: advalvas_help
+theme: advalvas
+region: content_top
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

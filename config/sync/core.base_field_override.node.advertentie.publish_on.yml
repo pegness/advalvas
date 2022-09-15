@@ -1,0 +1,18 @@
+uuid: ff05b4c2-a14d-432b-8cad-61bc8e0c428e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.advertentie
+id: node.advertentie.publish_on
+field_name: publish_on
+entity_type: node
+bundle: advertentie
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

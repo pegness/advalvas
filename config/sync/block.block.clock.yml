@@ -1,0 +1,31 @@
+uuid: ffeb2ccc-d2bf-422d-9c64-be83439d7099
+langcode: nl
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:849c11db-245c-44c2-a99a-2a7bfbe1d448'
+  module:
+    - block_content
+    - system
+  theme:
+    - advalvas
+id: clock
+theme: advalvas
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:849c11db-245c-44c2-a99a-2a7bfbe1d448'
+settings:
+  id: 'block_content:849c11db-245c-44c2-a99a-2a7bfbe1d448'
+  label: Clock
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

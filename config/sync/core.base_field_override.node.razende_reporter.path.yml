@@ -1,0 +1,20 @@
+uuid: ef4073e8-accd-4518-a0a6-53db371218a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+  module:
+    - path
+id: node.razende_reporter.path
+field_name: path
+entity_type: node
+bundle: razende_reporter
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

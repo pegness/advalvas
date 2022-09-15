@@ -1,0 +1,21 @@
+uuid: 480d8078-cfb6-49f4-846a-3c22959f6dfd
+langcode: nl
+status: false
+dependencies:
+  theme:
+    - advalvas
+id: test
+theme: advalvas
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:04407df4-cdef-44ae-a883-1a63ed8eb4f3'
+settings:
+  id: 'block_content:04407df4-cdef-44ae-a883-1a63ed8eb4f3'
+  label: Test
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

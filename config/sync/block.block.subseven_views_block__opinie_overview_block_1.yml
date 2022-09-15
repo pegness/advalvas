@@ -1,0 +1,30 @@
+uuid: 0e252a33-12b1-4356-9bd5-d8a6ae721744
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.opinie_overview
+  module:
+    - system
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__opinie_overview_block_1
+theme: subseven
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:opinie_overview-block_1'
+settings:
+  id: 'views_block:opinie_overview-block_1'
+  label: Opinie
+  label_display: visible
+  provider: views
+  views_label: Opinie
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /opinie

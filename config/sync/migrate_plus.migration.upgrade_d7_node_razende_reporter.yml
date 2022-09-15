@@ -1,0 +1,64 @@
+uuid: 146edc26-5ce5-4333-8150-617be8875feb
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_razende_reporter
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Razende reporter)'
+source:
+  plugin: d7_node
+  node_type: razende_reporter
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_razende_reporter/0/status: comment
+  body:
+    plugin: get
+    source: body
+  field_link_naar_facebook:
+    plugin: get
+    source: field_link_naar_facebook
+  field_news_image:
+    plugin: sub_process
+    source: field_news_image
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_link:
+    plugin: get
+    source: field_link
+  meta_description: meta_description
+  meta_keywords: meta_keywords
+destination:
+  plugin: 'entity:node'
+  default_bundle: razende_reporter
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

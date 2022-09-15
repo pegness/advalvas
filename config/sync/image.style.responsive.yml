@@ -1,0 +1,7 @@
+uuid: 91431b04-c675-4041-82fd-d9efabd8efa4
+langcode: nl
+status: true
+dependencies: {  }
+name: responsive
+label: Responsive
+effects: {  }

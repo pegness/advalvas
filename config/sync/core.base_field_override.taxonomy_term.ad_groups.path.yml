@@ -1,0 +1,20 @@
+uuid: e795d75a-70c7-44ab-9aed-b249195e44ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ad_groups
+  module:
+    - path
+id: taxonomy_term.ad_groups.path
+field_name: path
+entity_type: taxonomy_term
+bundle: ad_groups
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

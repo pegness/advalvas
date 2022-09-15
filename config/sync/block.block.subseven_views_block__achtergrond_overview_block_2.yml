@@ -1,0 +1,33 @@
+uuid: 265af664-813c-431a-b809-3f407331f079
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.achtergrond_overview
+  module:
+    - ctools
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__achtergrond_overview_block_2
+theme: subseven
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_block:achtergrond_overview-block_2'
+settings:
+  id: 'views_block:achtergrond_overview-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      achtergrond: achtergrond

@@ -1,0 +1,59 @@
+uuid: aeb4a785-6d16-493f-bac9-3eede43fee6d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.news.body
+    - field.field.node.news.comment
+    - field.field.node.news.comment_node_news
+    - field.field.node.news.field_auteur
+    - field.field.node.news.field_author
+    - field.field.node.news.field_categorie
+    - field.field.node.news.field_fotograaf
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_photo_subscript
+    - field.field.node.news.field_subtiitle
+    - field.field.node.news.field_tags
+    - node.type.news
+  module:
+    - text
+    - user
+id: node.news.rss
+targetEntityType: node
+bundle: news
+mode: rss
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_categorie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  comment_node_news: true
+  field_auteur: true
+  field_author: true
+  field_fotograaf: true
+  field_news_image: true
+  field_photo_subscript: true
+  field_subtiitle: true
+  field_tags: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,39 @@
+uuid: 824e7e34-717f-47ed-a220-cad7e11ccb24
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.tip.body
+    - field.field.node.tip.field_auteur
+    - field.field.node.tip.field_fotograaf
+    - field.field.node.tip.field_subtitel_long
+    - field.field.node.tip.field_tags
+    - node.type.tip
+  module:
+    - text
+    - user
+id: node.tip.rss
+targetEntityType: node
+bundle: tip
+mode: rss
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_auteur: true
+  field_fotograaf: true
+  field_subtitel_long: true
+  field_tags: true
+  langcode: true

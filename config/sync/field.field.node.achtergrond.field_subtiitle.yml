@@ -1,0 +1,21 @@
+uuid: a094714e-7d44-4c98-95e3-0f5c7588a09c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtiitle
+    - node.type.achtergrond
+  module:
+    - text
+id: node.achtergrond.field_subtiitle
+field_name: field_subtiitle
+entity_type: node
+bundle: achtergrond
+label: Subtiitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

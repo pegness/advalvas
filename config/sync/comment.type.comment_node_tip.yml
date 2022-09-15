@@ -1,0 +1,8 @@
+uuid: 1330714b-e30e-4934-9944-846d5335518b
+langcode: nl
+status: true
+dependencies: {  }
+id: comment_node_tip
+label: 'Tip comment'
+target_entity_type_id: node
+description: ''

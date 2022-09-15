@@ -1,0 +1,65 @@
+uuid: 7b0929be-799d-4caf-a197-32961fb55153
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.opinie.body
+    - field.field.node.opinie.comment_node_opinie
+    - field.field.node.opinie.field_auteur
+    - field.field.node.opinie.field_author
+    - field.field.node.opinie.field_categorie
+    - field.field.node.opinie.field_datum
+    - field.field.node.opinie.field_fotograaf
+    - field.field.node.opinie.field_subtiitle
+    - field.field.node.opinie.field_subtitel_long
+    - field.field.node.opinie.field_tags
+    - node.type.opinie
+  module:
+    - datetime
+    - user
+id: node.opinie.search_index
+targetEntityType: node
+bundle: opinie
+mode: search_index
+content:
+  field_auteur:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_datum:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  comment_node_opinie: true
+  field_author: true
+  field_categorie: true
+  field_fotograaf: true
+  field_subtiitle: true
+  field_subtitel_long: true
+  langcode: true
+  links: true

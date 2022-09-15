@@ -1,0 +1,20 @@
+uuid: 942ef7b5-34c5-4e4b-beff-9505ad3246ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.uid
+field_name: uid
+entity_type: node
+bundle: razende_reporter
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

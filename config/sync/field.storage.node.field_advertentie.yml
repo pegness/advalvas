@@ -1,0 +1,19 @@
+uuid: 6bf23ce0-1a51-4df4-a3d7-ca60a195189a
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_advertentie
+field_name: field_advertentie
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

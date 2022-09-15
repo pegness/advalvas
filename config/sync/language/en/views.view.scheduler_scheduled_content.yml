@@ -1,0 +1,24 @@
+label: 'Scheduled Content'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+      fields:
+        type:
+          label: 'Content Type'
+        publish_on:
+          label: 'Publish on'
+        unpublish_on:
+          label: 'Unpublish on'
+  overview:
+    display_options:
+      menu:
+        title: Scheduled
+        description: 'Content that is scheduled for publishing or unpublishing'
+  user_page:
+    display_options:
+      menu:
+        title: Scheduled
+    display_title: User

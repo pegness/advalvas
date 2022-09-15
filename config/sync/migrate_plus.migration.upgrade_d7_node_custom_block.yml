@@ -1,0 +1,68 @@
+uuid: ae47b336-0c5d-407c-9d97-6d71d1c196db
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_custom_block
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Custom block)'
+source:
+  plugin: d7_node
+  node_type: custom_block
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_custom_block/0/status: comment
+  field_block_image:
+    plugin: sub_process
+    source: field_block_image
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_display_text:
+    plugin: get
+    source: field_display_text
+  field_link_more:
+    plugin: field_link
+    source: field_link_more
+  field_quote:
+    plugin: get
+    source: field_quote
+  field_quote_subscript:
+    plugin: get
+    source: field_quote_subscript
+  field_quote_author:
+    plugin: get
+    source: field_quote_author
+destination:
+  plugin: 'entity:node'
+  default_bundle: custom_block
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

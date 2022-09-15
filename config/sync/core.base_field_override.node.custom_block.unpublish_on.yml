@@ -1,0 +1,18 @@
+uuid: 3d7c823f-a93a-4312-81a4-0011d4c9124e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+id: node.custom_block.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: custom_block
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

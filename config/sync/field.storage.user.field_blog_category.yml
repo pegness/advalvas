@@ -1,0 +1,36 @@
+uuid: 217be975-87b2-45df-bec8-d1ea27437733
+langcode: und
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_blog_category
+field_name: field_blog_category
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blogger
+      label: blogger
+    -
+      value: columnist
+      label: columnist
+    -
+      value: kopzorgen
+      label: kopzorgen
+    -
+      value: campusdichter
+      label: campusdichter
+    -
+      value: nieuwelichting
+      label: 'nieuwe lichting'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

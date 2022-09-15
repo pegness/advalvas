@@ -1,0 +1,20 @@
+uuid: 28e553be-1e73-4797-8fa2-ca7882966ada
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_fotograaf
+  module:
+    - user
+id: user.user.field_fotograaf
+field_name: field_fotograaf
+entity_type: user
+bundle: user
+label: Fotograaf
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,63 @@
+uuid: f028c2ec-1901-4088-9167-df0a9a8e6ee7
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_tip
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Tip)'
+source:
+  plugin: d7_node
+  node_type: tip
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_tip/0/status: comment
+  body:
+    plugin: get
+    source: body
+  field_tags:
+    plugin: sub_process
+    source: field_tags
+    process:
+      target_id: tid
+  field_auteur:
+    plugin: get
+    source: field_auteur
+  field_fotograaf:
+    plugin: get
+    source: field_fotograaf
+  meta_description: meta_description
+  meta_keywords: meta_keywords
+  field_subtitel_long:
+    plugin: get
+    source: field_subtitel_long
+destination:
+  plugin: 'entity:node'
+  default_bundle: tip
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

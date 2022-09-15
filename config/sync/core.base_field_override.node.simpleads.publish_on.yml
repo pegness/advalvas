@@ -1,0 +1,18 @@
+uuid: 3ded4826-2e8d-47a0-b009-bdceebe78b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.simpleads
+id: node.simpleads.publish_on
+field_name: publish_on
+entity_type: node
+bundle: simpleads
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

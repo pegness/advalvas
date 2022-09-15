@@ -1,0 +1,20 @@
+uuid: 8b833777-a3f3-462e-bb61-b1df12b5f62b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opinie
+  module:
+    - path
+id: node.opinie.path
+field_name: path
+entity_type: node
+bundle: opinie
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

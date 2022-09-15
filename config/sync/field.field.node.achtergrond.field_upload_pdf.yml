@@ -1,0 +1,27 @@
+uuid: c18b8584-06c5-4e2b-8d5b-64b0b4f78e05
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_pdf
+    - node.type.achtergrond
+  module:
+    - file
+id: node.achtergrond.field_upload_pdf
+field_name: field_upload_pdf
+entity_type: node
+bundle: achtergrond
+label: 'Upload pdf'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

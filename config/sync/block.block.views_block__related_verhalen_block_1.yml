@@ -1,0 +1,41 @@
+uuid: 7d29890b-c5a3-4526-adbe-1fdf59cc3a4a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.related_verhalen
+  module:
+    - language
+    - node
+    - views
+  theme:
+    - advalvas
+id: views_block__related_verhalen_block_1
+theme: advalvas
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'views_block:related_verhalen-block_1'
+settings:
+  id: 'views_block:related_verhalen-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      verhalen: verhalen
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl

@@ -1,0 +1,22 @@
+uuid: 33f684fb-584c-4f27-999e-09b75097f816
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: achtergrond_urls
+label: 'Achtergrond urls'
+type: 'canonical_entities:node'
+pattern: 'achtergrond/[node:title]'
+selection_criteria:
+  4621f0d7-3110-411b-a17f-9344d26b4907:
+    id: node_type
+    negate: false
+    uuid: 4621f0d7-3110-411b-a17f-9344d26b4907
+    context_mapping:
+      node: node
+    bundles:
+      achtergrond: achtergrond
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,25 @@
+uuid: d52a2e65-a067-426b-8407-4a054f0b0cc1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d5a8f857-a2d7-4924-b18a-169e6ef6f1a0'
+  module:
+    - block_content
+  theme:
+    - advalvas
+id: search2_2
+theme: advalvas
+region: search_bar
+weight: 0
+provider: null
+plugin: 'block_content:d5a8f857-a2d7-4924-b18a-169e6ef6f1a0'
+settings:
+  id: 'block_content:d5a8f857-a2d7-4924-b18a-169e6ef6f1a0'
+  label: 'Search 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

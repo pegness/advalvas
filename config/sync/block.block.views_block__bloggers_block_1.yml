@@ -1,0 +1,39 @@
+uuid: 32b5a443-289c-492f-bc79-d777451900f9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.bloggers
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - advalvas
+id: views_block__bloggers_block_1
+theme: advalvas
+region: content
+weight: -35
+provider: null
+plugin: 'views_block:bloggers-block_1'
+settings:
+  id: 'views_block:bloggers-block_1'
+  label: 'Blogs & columns'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Blogs & columns'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /blogs-columns
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      nl: nl

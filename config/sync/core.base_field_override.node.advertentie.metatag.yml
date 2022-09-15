@@ -1,0 +1,18 @@
+uuid: 03001ccf-d339-4e53-8eea-50152eca1e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.advertentie
+id: node.advertentie.metatag
+field_name: metatag
+entity_type: node
+bundle: advertentie
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,38 @@
+uuid: 76e675e7-2f1c-4d83-b4c8-847fe2ef61fd
+langcode: nl
+status: true
+dependencies:
+  module:
+    - block
+    - eu_cookie_compliance
+    - filter
+    - node
+    - system
+id: megauser
+label: megauser
+weight: 999
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access user profiles'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer filters'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer users'
+  - 'bypass node access'
+  - 'cancel account'
+  - 'change own username'
+  - 'display eu cookie compliance popup'
+  - 'select account cancellation method'
+  - 'view own unpublished content'
+  - 'view the administration theme'

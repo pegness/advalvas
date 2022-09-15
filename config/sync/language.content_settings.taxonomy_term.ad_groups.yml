@@ -1,0 +1,18 @@
+uuid: 584a9308-5a15-4cff-b26b-d8cdc4c901b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ad_groups
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.ad_groups
+target_entity_type_id: taxonomy_term
+target_bundle: ad_groups
+default_langcode: site_default
+language_alterable: true

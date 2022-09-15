@@ -1,0 +1,22 @@
+uuid: 0772fba6-05c9-4fef-8fe0-43551b52ee5d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.main_page
+id: node.main_page.promote
+field_name: promote
+entity_type: node
+bundle: main_page
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

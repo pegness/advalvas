@@ -1,0 +1,14 @@
+uuid: 7e547a22-bb79-47c3-923d-ff162087b6d4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.blogger
+  module:
+    - user
+id: user_add_role_action.blogger
+label: 'De rol blogger toewijzen aan de geselecteerde gebruiker(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blogger

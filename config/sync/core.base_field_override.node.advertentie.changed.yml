@@ -1,0 +1,18 @@
+uuid: bc9a4b9e-ff15-4667-bbf4-77ace22cb6ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.advertentie
+id: node.advertentie.changed
+field_name: changed
+entity_type: node
+bundle: advertentie
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

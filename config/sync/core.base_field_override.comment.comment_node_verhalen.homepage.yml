@@ -1,0 +1,18 @@
+uuid: 3400ed20-92ff-4948-bb39-8838d3a60d36
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_verhalen
+id: comment.comment_node_verhalen.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment_node_verhalen
+label: Homepage
+description: 'The comment author''s home page address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

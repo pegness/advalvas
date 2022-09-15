@@ -1,0 +1,20 @@
+uuid: c81c420b-2ba8-4235-a502-5d604cd138d2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - comment
+    - eu_cookie_compliance
+    - node
+id: blogger
+label: blogger
+weight: 5
+is_admin: null
+permissions:
+  - 'create blog content'
+  - 'display eu cookie compliance popup'
+  - 'edit own blog content'
+  - 'skip comment approval'
+  - 'view own unpublished content'

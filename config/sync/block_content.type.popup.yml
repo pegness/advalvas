@@ -1,0 +1,8 @@
+uuid: 13d6eda5-ea79-4fff-a2b8-958dbfe1c0bf
+langcode: nl
+status: true
+dependencies: {  }
+id: popup
+label: Popup
+revision: 0
+description: 'Dit is een voorbeeld popup'

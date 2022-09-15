@@ -1,0 +1,18 @@
+uuid: 502dc34a-1459-43ec-8992-cc9be72095c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_news
+id: comment.comment_node_news.subject
+field_name: subject
+entity_type: comment
+bundle: comment_node_news
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

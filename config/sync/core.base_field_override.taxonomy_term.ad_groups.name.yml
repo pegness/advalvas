@@ -1,0 +1,18 @@
+uuid: e43f6a1c-a342-4e85-8da3-737ab5532cec
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ad_groups
+id: taxonomy_term.ad_groups.name
+field_name: name
+entity_type: taxonomy_term
+bundle: ad_groups
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

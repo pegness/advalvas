@@ -1,0 +1,18 @@
+uuid: dbd052b6-6dee-438f-8d59-5b1e7dbb5043
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.razende_reporter
+id: node.razende_reporter.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: razende_reporter
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

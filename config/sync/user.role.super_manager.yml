@@ -1,0 +1,130 @@
+uuid: be4d8fe4-5ac7-4833-93b4-819e69415252
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.achtergrond
+    - node.type.blog
+    - node.type.custom_block
+    - node.type.dossier
+    - node.type.magazine
+    - node.type.main_page
+    - node.type.news
+    - node.type.opinie
+    - node.type.page
+    - node.type.razende_reporter
+    - node.type.simpleads
+    - node.type.tip
+    - node.type.verhalen
+    - taxonomy.vocabulary.bloggers
+    - taxonomy.vocabulary.news_categories
+    - taxonomy.vocabulary.tags
+  module:
+    - block
+    - captcha
+    - comment
+    - config_translation
+    - content_translation
+    - contextual
+    - eu_cookie_compliance
+    - locale
+    - node
+    - path
+    - redirect
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
+id: super_manager
+label: 'super manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer blocks'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer redirects'
+  - 'administer scheduler'
+  - 'administer site configuration'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'bypass node access'
+  - 'change own username'
+  - 'create achtergrond content'
+  - 'create blog content'
+  - 'create custom_block content'
+  - 'create dossier content'
+  - 'create news content'
+  - 'create opinie content'
+  - 'create razende_reporter content'
+  - 'create simpleads content'
+  - 'create tip content'
+  - 'create url aliases'
+  - 'create verhalen content'
+  - 'delete any achtergrond content'
+  - 'delete any blog content'
+  - 'delete any custom_block content'
+  - 'delete any dossier content'
+  - 'delete any news content'
+  - 'delete any opinie content'
+  - 'delete any razende_reporter content'
+  - 'delete any simpleads content'
+  - 'delete any tip content'
+  - 'delete any verhalen content'
+  - 'delete own blog content'
+  - 'delete own custom_block content'
+  - 'delete own dossier content'
+  - 'delete own news content'
+  - 'delete own opinie content'
+  - 'delete own razende_reporter content'
+  - 'delete own simpleads content'
+  - 'delete own tip content'
+  - 'delete own verhalen content'
+  - 'delete verhalen revisions'
+  - 'display eu cookie compliance popup'
+  - 'edit any achtergrond content'
+  - 'edit any blog content'
+  - 'edit any custom_block content'
+  - 'edit any dossier content'
+  - 'edit any magazine content'
+  - 'edit any main_page content'
+  - 'edit any news content'
+  - 'edit any opinie content'
+  - 'edit any page content'
+  - 'edit any razende_reporter content'
+  - 'edit any simpleads content'
+  - 'edit any tip content'
+  - 'edit any verhalen content'
+  - 'edit own achtergrond content'
+  - 'edit own blog content'
+  - 'edit own comments'
+  - 'edit own custom_block content'
+  - 'edit own dossier content'
+  - 'edit own magazine content'
+  - 'edit own main_page content'
+  - 'edit own news content'
+  - 'edit own opinie content'
+  - 'edit own page content'
+  - 'edit own razende_reporter content'
+  - 'edit own simpleads content'
+  - 'edit own tip content'
+  - 'edit own verhalen content'
+  - 'schedule publishing of nodes'
+  - 'skip CAPTCHA'
+  - 'skip comment approval'
+  - 'translate bloggers taxonomy_term'
+  - 'translate configuration'
+  - 'translate interface'
+  - 'translate news_categories taxonomy_term'
+  - 'translate tags taxonomy_term'
+  - 'view own unpublished content'
+  - 'view scheduled content'
+  - 'view the administration theme'
+  - 'view verhalen revisions'

@@ -1,0 +1,19 @@
+uuid: 20f13102-a79d-4833-953b-8105cc0fe1a6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_streamer
+    - node.type.blog
+id: node.blog.field_streamer
+field_name: field_streamer
+entity_type: node
+bundle: blog
+label: Streamer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

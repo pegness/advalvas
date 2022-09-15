@@ -1,0 +1,23 @@
+uuid: 15f89890-8060-4fc3-a558-e45fa70a3323
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.razende_reporter
+  module:
+    - text
+id: node.razende_reporter.body
+field_name: body
+entity_type: node
+bundle: razende_reporter
+label: Inhoud
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

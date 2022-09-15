@@ -1,0 +1,30 @@
+uuid: ff815535-50ad-4cc4-b9bb-8ec9a1a13cf9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.news_overview
+  module:
+    - system
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__news_overview_block_3
+theme: subseven
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:news_overview-block_3'
+settings:
+  id: 'views_block:news_overview-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

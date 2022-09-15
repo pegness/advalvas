@@ -1,0 +1,20 @@
+uuid: 2f54d6f3-d863-4a5b-8471-15f823e26a26
+langcode: nl
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_comment_node_verhalen
+field_name: field_comment_node_verhalen
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_verhalen
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

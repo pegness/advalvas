@@ -1,0 +1,50 @@
+uuid: 511e55fd-4efc-451a-a4c9-7b965baa50e8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.tip.body
+    - field.field.node.tip.comment_node_tip
+    - field.field.node.tip.field_auteur
+    - field.field.node.tip.field_fotograaf
+    - field.field.node.tip.field_subtitel_long
+    - field.field.node.tip.field_tags
+    - field.field.node.tip.field_volgorde
+    - node.type.tip
+  module:
+    - user
+id: node.tip.search_index
+targetEntityType: node
+bundle: tip
+mode: search_index
+content:
+  field_auteur:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  comment_node_tip: true
+  field_fotograaf: true
+  field_subtitel_long: true
+  field_volgorde: true
+  langcode: true
+  links: true

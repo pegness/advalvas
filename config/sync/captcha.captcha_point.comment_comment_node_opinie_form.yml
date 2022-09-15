@@ -1,0 +1,7 @@
+uuid: d100ea37-e74a-48e4-9560-3342e43b94ae
+langcode: nl
+status: true
+dependencies: {  }
+formId: comment_comment_node_opinie_form
+captchaType: recaptcha/reCAPTCHA
+label: comment_comment_node_opinie_form

@@ -1,0 +1,14 @@
+uuid: 18fa7ee2-ec87-4ebe-a9c3-962b5b70d9f1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.megauser
+  module:
+    - user
+id: user_add_role_action.megauser
+label: 'De rol megauser toewijzen aan de geselecteerde gebruiker(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: megauser

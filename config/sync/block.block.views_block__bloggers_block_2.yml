@@ -1,0 +1,31 @@
+uuid: b1a81088-9bc7-40b1-9221-ea3f751b8293
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.bloggers
+  module:
+    - system
+    - views
+  theme:
+    - advalvas
+id: views_block__bloggers_block_2
+theme: advalvas
+region: content
+weight: -22
+provider: null
+plugin: 'views_block:bloggers-block_2'
+settings:
+  id: 'views_block:bloggers-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/tags/*'

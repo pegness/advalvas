@@ -1,0 +1,22 @@
+uuid: 3978d866-e154-4cad-ac2d-95acb67272bc
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: verhalen_urls
+label: 'Verhalen urls'
+type: 'canonical_entities:node'
+pattern: '/verhalen/[node:title]'
+selection_criteria:
+  3f9dcbee-8308-43c4-b0ff-98aa8a8f0e0d:
+    id: node_type
+    negate: false
+    uuid: 3f9dcbee-8308-43c4-b0ff-98aa8a8f0e0d
+    context_mapping:
+      node: node
+    bundles:
+      verhalen: verhalen
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -14,9 +14,9 @@ vendor/*
 vendor
 
 # Config not used on server
-config
-config/*
-config/**/*
+#config
+#config/*
+#config/**/*
 
 # Ignore SimpleTest multi-site environment.
 /sites/simpletest

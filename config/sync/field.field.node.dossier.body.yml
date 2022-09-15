@@ -1,0 +1,23 @@
+uuid: c097e1d5-d02b-4bc1-b6a6-d3fe915ecdb2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.dossier
+  module:
+    - text
+id: node.dossier.body
+field_name: body
+entity_type: node
+bundle: dossier
+label: Beschrijving
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

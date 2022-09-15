@@ -1,0 +1,18 @@
+uuid: 9f07b9f2-ac54-49da-a91d-ffc959ace960
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.tip
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.tip
+target_entity_type_id: node
+target_bundle: tip
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,28 @@
+uuid: 9dd7ba02-1c34-4875-b4f6-de63b7f87ef8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_opinie
+    - field.field.comment.comment_node_opinie.comment_body
+  module:
+    - text
+id: comment.comment_node_opinie.default
+targetEntityType: comment
+bundle: comment_node_opinie
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

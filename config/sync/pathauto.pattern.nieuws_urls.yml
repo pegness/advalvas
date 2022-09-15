@@ -1,0 +1,22 @@
+uuid: 83396c0b-747f-4e21-b4dc-25ca126c648b
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: nieuws_urls
+label: 'Nieuws urls'
+type: 'canonical_entities:node'
+pattern: '/nieuws/[node:title]'
+selection_criteria:
+  06f01424-5271-4752-bdda-53d410ca45e0:
+    id: node_type
+    negate: false
+    uuid: 06f01424-5271-4752-bdda-53d410ca45e0
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

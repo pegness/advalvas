@@ -1,0 +1,21 @@
+uuid: 5fd9c168-4407-4f1d-882a-c6230a79cd9e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_advertentie
+    - node.type.advertentie
+  module:
+    - text
+id: node.advertentie.field_advertentie
+field_name: field_advertentie
+entity_type: node
+bundle: advertentie
+label: Advertentie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

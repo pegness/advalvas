@@ -1,0 +1,33 @@
+uuid: e2b9f4d2-8812-4a17-8f99-0e412b25eae2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie
+    - node.type.opinie
+    - taxonomy.vocabulary.news_categories
+  content:
+    - 'taxonomy_term:news_categories:673c1731-5737-41d5-b581-0700e0f843f0'
+id: node.opinie.field_categorie
+field_name: field_categorie
+entity_type: node
+bundle: opinie
+label: Categorie
+description: 'Dit veld kan op ''opinie'' blijven staan'
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 673c1731-5737-41d5-b581-0700e0f843f0
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_categories: news_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

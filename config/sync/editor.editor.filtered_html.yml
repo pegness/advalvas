@@ -1,0 +1,73 @@
+uuid: 87752337-ede3-43c8-aa32-fbc71c9b84e8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - ckeditor
+format: filtered_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Opmaak
+          items:
+            - Underline
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - Link
+            - Unlink
+            - Anchor
+        -
+          name: Lijsten
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - DrupalImage
+            - ImceImage
+        -
+          name: Hulpmiddelen
+          items:
+            - Source
+            - RemoveFormat
+        -
+          name: Stijl
+          items:
+            - Table
+            - Styles
+        -
+          name: Plakken
+          items:
+            - Paste
+            - Cut
+            - PasteFromWord
+            - Copy
+        -
+          name: Uitlijnen
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+  plugins:
+    stylescombo:
+      styles: "h3.tussenkop|Tussenkop\r\np.firstlines|Aanhef\r\nspan.author|auteur\r\nspan.subscript|Bijschrift\r\nspan.credit|Credit\r\nspan.noot|Note\r\ndiv.kader|Kader\r\nspan.kaderkop|Kaderkop\r\np.streamer|Streamer"
+    language:
+      language_list: un
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

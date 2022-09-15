@@ -1,0 +1,8 @@
+uuid: ccab140a-6d95-465a-91fe-af894112c4dc
+langcode: nl
+status: true
+dependencies: {  }
+id: comment_node_opinie
+label: 'Opinie comment'
+target_entity_type_id: node
+description: ''

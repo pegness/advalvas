@@ -1,0 +1,20 @@
+uuid: 694885db-8423-4d1a-b70a-ead08de6c81c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+  module:
+    - path
+id: node.custom_block.path
+field_name: path
+entity_type: node
+bundle: custom_block
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

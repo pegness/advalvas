@@ -1,0 +1,50 @@
+uuid: f6c91094-fa3a-4a16-bee4-8620c30e9520
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.magazine.field_image
+    - field.field.node.magazine.field_link_issuu
+    - field.field.node.magazine.field_upload_pdf
+    - node.type.magazine
+  module:
+    - file
+    - image
+    - user
+id: node.magazine.default
+targetEntityType: node
+bundle: magazine
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link_issuu:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_upload_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

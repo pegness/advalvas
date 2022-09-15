@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Search all content'
+            label: Zoeken
+      exposed_form:
+        options:
+          submit_button: Zoeken
+          text_input_required: 'Vul enkele woorden toe aan het zoekveld.'
+      header:
+        result:
+          content: 'Display results @start - @end of @total'
+  page_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Search

@@ -1,0 +1,18 @@
+uuid: 30610848-b9e6-4d4b-b018-077f16c6f1f6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: article
+label: 'Depubliceer op'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

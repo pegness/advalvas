@@ -1,0 +1,18 @@
+uuid: d3e16ed2-f31c-4c0b-8be5-38292669111c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opinie
+id: node.opinie.title
+field_name: title
+entity_type: node
+bundle: opinie
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

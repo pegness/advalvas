@@ -1,0 +1,28 @@
+uuid: 88648c12-3b27-474e-8dbb-c3db6839e7bc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_achtergrond
+    - field.field.comment.comment_node_achtergrond.comment_body
+  module:
+    - text
+id: comment.comment_node_achtergrond.default
+targetEntityType: comment
+bundle: comment_node_achtergrond
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,29 @@
+uuid: 547493b6-3aff-4bda-a9a8-33da8cf5a8e8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.opinie
+    - taxonomy.vocabulary.tags
+id: node.opinie.field_tags
+field_name: field_tags
+entity_type: node
+bundle: opinie
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

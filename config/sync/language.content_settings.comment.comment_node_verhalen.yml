@@ -1,0 +1,18 @@
+uuid: c81062d8-e3df-4f46-ab03-0e60114de44a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_verhalen
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: comment.comment_node_verhalen
+target_entity_type_id: comment
+target_bundle: comment_node_verhalen
+default_langcode: current_interface
+language_alterable: false

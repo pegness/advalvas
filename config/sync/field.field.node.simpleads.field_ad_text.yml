@@ -1,0 +1,21 @@
+uuid: b85bccd6-07b8-4d48-acd1-4b518197f39e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_text
+    - node.type.simpleads
+  module:
+    - text
+id: node.simpleads.field_ad_text
+field_name: field_ad_text
+entity_type: node
+bundle: simpleads
+label: 'Text Ad'
+description: 'Enter your text ad. If you would like to embed media, please configure WYSIWYG editor and input format settings.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

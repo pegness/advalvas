@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: nl
+uuid: 5b962aab-827a-4a4d-8d25-772de796e83a
+name: Advalvas
+mail: website.advalvas@vu.nl
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/6497
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: nl
+mail_notification: ''

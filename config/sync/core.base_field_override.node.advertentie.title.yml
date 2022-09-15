@@ -1,0 +1,18 @@
+uuid: 152b8392-b4ab-4734-be3b-ebeabe470a88
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.advertentie
+id: node.advertentie.title
+field_name: title
+entity_type: node
+bundle: advertentie
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

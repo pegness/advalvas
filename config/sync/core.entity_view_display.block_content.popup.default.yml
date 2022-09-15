@@ -1,0 +1,23 @@
+uuid: 5aa253d5-a59f-42ce-a96f-c408440de22d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.popup
+    - field.field.block_content.popup.body
+  module:
+    - text
+id: block_content.popup.default
+targetEntityType: block_content
+bundle: popup
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

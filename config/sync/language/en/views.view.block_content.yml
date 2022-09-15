@@ -1,0 +1,29 @@
+label: 'Aangepaste blokken-bibliotheek'
+description: 'Aangepaste blokken zoeken en beheren'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Aangepaste blokken-bibliotheek'
+      fields:
+        info:
+          label: Blokbeschrijving
+        type:
+          label: 'Blok type'
+      exposed_form:
+        options:
+          submit_button: Toepassen
+      empty:
+        area_text_custom:
+          content: 'Er zijn geen aangepaste blokken beschikbaar.'
+      filters:
+        info:
+          expose:
+            label: Blokbeschrijving
+        type:
+          expose:
+            label: 'Blok type'
+  page_1:
+    display_options:
+      menu:
+        title: 'Aangepaste blokken-bibliotheek'

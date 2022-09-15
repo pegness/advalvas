@@ -1,0 +1,22 @@
+uuid: 3bd70f89-2d8d-4e79-ad53-ea1f9ed927b3
+langcode: nl
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - subseven
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: subseven_help
+theme: subseven
+region: sidebar_first
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

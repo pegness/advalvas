@@ -1,0 +1,15 @@
+uuid: 1a7c3ed1-c6f6-43c3-931d-8a50106fb726
+langcode: nl
+status: true
+dependencies: {  }
+name: magazine
+label: Magazine
+effects:
+  bbe3fe95-3044-4dc6-bfdc-a2448aa99d94:
+    uuid: bbe3fe95-3044-4dc6-bfdc-a2448aa99d94
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 180
+      upscale: false

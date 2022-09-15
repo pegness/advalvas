@@ -1,0 +1,21 @@
+uuid: eb68a0c2-a0db-4dbf-849e-69f5858cc198
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datum
+    - node.type.opinie
+  module:
+    - datetime
+id: node.opinie.field_datum
+field_name: field_datum
+entity_type: node
+bundle: opinie
+label: Datum
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

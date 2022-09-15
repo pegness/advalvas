@@ -1,0 +1,25 @@
+uuid: f0bef02b-fd1b-40d3-aef4-966ab8e14d71
+langcode: nl
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - advalvas
+id: quicktabstipsdossierstab
+theme: advalvas
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'quicktabs_block:tips_dossiers_tab'
+settings:
+  id: 'quicktabs_block:tips_dossiers_tab'
+  label: 'QuickTabs - Tips & Dossiers tab'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

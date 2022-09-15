@@ -1,0 +1,18 @@
+uuid: bb9cda55-b499-41a8-9ff6-825d8315ebc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_achtergrond
+id: comment.comment_node_achtergrond.subject
+field_name: subject
+entity_type: comment
+bundle: comment_node_achtergrond
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

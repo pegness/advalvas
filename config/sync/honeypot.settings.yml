@@ -1,0 +1,40 @@
+_core:
+  default_config_hash: 9bVDfWSa_In6VzTXmy04jJ_3ZQobihKjO9isuuUCPaw
+langcode: nl
+protect_all_forms: false
+unprotected_forms:
+  - user_login_form
+  - search_form
+  - search_block_form
+  - views_exposed_form
+  - honeypot_settings_form
+log: true
+element_name: url
+time_limit: 3
+expire: 300
+form_settings:
+  user_register_form: false
+  user_pass: false
+  contact_message_feedback_form: false
+  contact_message_personal_form: false
+  node_achtergrond_form: false
+  node_advertentie_form: false
+  node_blog_form: false
+  node_custom_block_form: false
+  node_dossier_form: false
+  node_magazine_form: false
+  node_main_page_form: false
+  node_news_form: false
+  node_opinie_form: false
+  node_page_form: false
+  node_razende_reporter_form: false
+  node_simpleads_form: false
+  node_tip_form: false
+  node_verhalen_form: false
+  comment_comment_form: true
+  comment_comment_node_achtergrond_form: true
+  comment_comment_node_blog_form: true
+  comment_comment_node_news_form: true
+  comment_comment_node_opinie_form: true
+  comment_comment_node_tip_form: true
+  comment_comment_node_verhalen_form: true

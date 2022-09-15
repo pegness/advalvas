@@ -1,0 +1,21 @@
+uuid: 2ae33ddc-034e-461c-86aa-9a23cdd42447
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtiitle
+    - node.type.opinie
+  module:
+    - text
+id: node.opinie.field_subtiitle
+field_name: field_subtiitle
+entity_type: node
+bundle: opinie
+label: Subtitel
+description: 'Een aantal html tags kunnen gebruikt worden, zoals ''ul'' om te onderstrepen'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

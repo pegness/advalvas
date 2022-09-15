@@ -1,0 +1,45 @@
+uuid: 2a5bcbdf-52fb-4b5c-9d90-7142b32f0ee7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_image
+    - node.type.custom_block
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.custom_block.field_block_image
+field_name: field_block_image
+entity_type: node
+bundle: custom_block
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 500KB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

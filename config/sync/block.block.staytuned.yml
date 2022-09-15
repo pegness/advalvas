@@ -1,0 +1,33 @@
+uuid: 2ef8b0df-ec6c-4813-aad7-9ee8dedd4a1c
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:popup:573d43a9-6939-449d-a25a-923566031a16'
+  module:
+    - block_content
+    - language
+  theme:
+    - advalvas
+id: staytuned
+theme: advalvas
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:573d43a9-6939-449d-a25a-923566031a16'
+settings:
+  id: 'block_content:573d43a9-6939-449d-a25a-923566031a16'
+  label: 'Stay Tuned'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

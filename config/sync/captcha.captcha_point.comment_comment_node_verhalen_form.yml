@@ -1,0 +1,7 @@
+uuid: 4247d898-1243-4ddb-83e4-244eb36c3b5d
+langcode: nl
+status: true
+dependencies: {  }
+formId: comment_comment_node_verhalen_form
+captchaType: recaptcha/reCAPTCHA
+label: comment_comment_node_verhalen_form

@@ -1,0 +1,30 @@
+uuid: 91aa6ad2-d41e-4883-b335-39d78530e461
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.news_overview
+  module:
+    - system
+    - views
+  theme:
+    - subseven
+id: subseven_views_block__news_overview_block_2
+theme: subseven
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:news_overview-block_2'
+settings:
+  id: 'views_block:news_overview-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

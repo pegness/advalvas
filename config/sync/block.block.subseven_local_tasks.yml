@@ -1,0 +1,22 @@
+uuid: be8f5863-80b0-4f20-a835-fe5f197d9646
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - subseven
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: subseven_local_tasks
+theme: subseven
+region: content
+weight: -17
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabbladen
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

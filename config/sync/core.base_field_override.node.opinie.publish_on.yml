@@ -1,0 +1,18 @@
+uuid: bed8c332-15e7-445d-a499-517dfda071f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opinie
+id: node.opinie.publish_on
+field_name: publish_on
+entity_type: node
+bundle: opinie
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

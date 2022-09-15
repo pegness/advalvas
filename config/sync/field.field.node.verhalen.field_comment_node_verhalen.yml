@@ -1,0 +1,33 @@
+uuid: 45d92c72-91e9-4db0-9073-a04714b9430a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comment_node_verhalen
+    - node.type.verhalen
+  module:
+    - comment
+id: node.verhalen.field_comment_node_verhalen
+field_name: field_comment_node_verhalen
+entity_type: node
+bundle: verhalen
+label: comment_node_verhalen
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 1
+  form_location: true
+  preview: 0
+field_type: comment

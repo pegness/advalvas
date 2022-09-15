@@ -1,0 +1,18 @@
+uuid: a8ac8de4-a274-4437-a8f3-355e1c7e8880
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.created
+field_name: created
+entity_type: node
+bundle: magazine
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

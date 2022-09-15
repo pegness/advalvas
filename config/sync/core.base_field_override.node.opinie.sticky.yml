@@ -1,0 +1,22 @@
+uuid: f1bd26de-e23c-4e11-80d4-84bf1c103d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opinie
+id: node.opinie.sticky
+field_name: sticky
+entity_type: node
+bundle: opinie
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

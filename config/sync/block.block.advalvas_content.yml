@@ -1,0 +1,27 @@
+uuid: 4000edb1-8761-4b50-9772-c6d290881893
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - advalvas
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: advalvas_content
+theme: advalvas
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primaire inhoud van de pagina'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

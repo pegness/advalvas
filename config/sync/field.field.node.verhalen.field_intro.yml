@@ -1,0 +1,19 @@
+uuid: 89f91cca-71cb-4d78-bff5-795e7dc9d96d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - node.type.verhalen
+id: node.verhalen.field_intro
+field_name: field_intro
+entity_type: node
+bundle: verhalen
+label: 'Intro / aanhef'
+description: "Het is toegestaan om html tags te gebruiken. (bijvoorbeeld voor dikgedrukte 'b' of italic 'i' tekst.)\r\nDit veld ondersteunt tokens."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,19 @@
+uuid: fd2ca576-9e61-45b1-9284-0bac84b809ad
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fotograaf
+    - taxonomy.vocabulary.bloggers
+id: taxonomy_term.bloggers.field_fotograaf
+field_name: field_fotograaf
+entity_type: taxonomy_term
+bundle: bloggers
+label: Fotograaf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

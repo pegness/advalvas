@@ -1,0 +1,65 @@
+uuid: 87f222ac-6f4d-42bf-83a2-e47738ce7e16
+langcode: nl
+status: true
+dependencies: {  }
+id: upgrade_d7_node_magazine
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Magazine)'
+source:
+  plugin: d7_node
+  node_type: magazine
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_magazine/0/status: comment
+  field_image:
+    plugin: sub_process
+    source: field_image
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_link_issuu:
+    plugin: get
+    source: field_link_issuu
+  meta_description: meta_description
+  meta_keywords: meta_keywords
+  field_upload_pdf:
+    plugin: sub_process
+    source: field_upload_pdf
+    process:
+      target_id: fid
+      display: display
+      description: description
+destination:
+  plugin: 'entity:node'
+  default_bundle: magazine
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

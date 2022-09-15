@@ -1,0 +1,58 @@
+uuid: 2a27f5ed-a62c-46aa-91d9-15dcf495da24
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.opinie.body
+    - field.field.node.opinie.comment_node_opinie
+    - field.field.node.opinie.field_auteur
+    - field.field.node.opinie.field_author
+    - field.field.node.opinie.field_categorie
+    - field.field.node.opinie.field_datum
+    - field.field.node.opinie.field_fotograaf
+    - field.field.node.opinie.field_subtiitle
+    - field.field.node.opinie.field_subtitel_long
+    - field.field.node.opinie.field_tags
+    - node.type.opinie
+  module:
+    - datetime
+    - text
+    - user
+id: node.opinie.teaser
+targetEntityType: node
+bundle: opinie
+mode: teaser
+content:
+  field_datum:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subtiitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  comment_node_opinie: true
+  field_auteur: true
+  field_author: true
+  field_categorie: true
+  field_fotograaf: true
+  field_subtitel_long: true
+  field_tags: true
+  langcode: true
+  search_api_excerpt: true

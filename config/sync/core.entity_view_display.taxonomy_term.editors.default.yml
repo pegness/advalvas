@@ -1,0 +1,19 @@
+uuid: 9c26ce75-1a65-472d-a911-2d7da1e7dd91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.editors.field_categorie
+    - field.field.taxonomy_term.editors.field_portret
+    - taxonomy.vocabulary.editors
+id: taxonomy_term.editors.default
+targetEntityType: taxonomy_term
+bundle: editors
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_categorie: true
+  field_portret: true
+  langcode: true
+  search_api_excerpt: true

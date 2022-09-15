@@ -1,0 +1,18 @@
+uuid: e3b8f7d6-88df-49ac-9b40-f074296c3001
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.custom_block
+id: node.custom_block.publish_on
+field_name: publish_on
+entity_type: node
+bundle: custom_block
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

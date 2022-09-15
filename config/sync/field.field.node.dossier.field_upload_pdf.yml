@@ -1,0 +1,27 @@
+uuid: 506d194d-721c-4961-9626-a681cebd296c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_pdf
+    - node.type.dossier
+  module:
+    - file
+id: node.dossier.field_upload_pdf
+field_name: field_upload_pdf
+entity_type: node
+bundle: dossier
+label: 'Upload pdf'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: dossiers
+  file_extensions: pdf
+  max_filesize: '1 MB'
+  description_field: false
+field_type: file

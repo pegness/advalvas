@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: pfrv6lPS72f5WG1UB4wHkgQV2invlHwVpaCy_mY-ClQ
+langcode: nl
+default_challenge: recaptcha/reCAPTCHA
+description: 'Deze vraag is om te controleren dat u een mens bent, om geautomatiseerde invoer (spam) te voorkomen.'
+administration_mode: false
+allow_on_admin_pages: false
+add_captcha_description: true
+default_validation: 0
+persistence: 0
+enable_stats: false
+log_wrong_responses: false

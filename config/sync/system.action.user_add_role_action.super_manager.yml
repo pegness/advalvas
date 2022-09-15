@@ -1,0 +1,14 @@
+uuid: cd872915-3870-432c-92ad-fa43dbd7086f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.super_manager
+  module:
+    - user
+id: user_add_role_action.super_manager
+label: 'De rol super manager toewijzen aan de geselecteerde gebruiker(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: super_manager
