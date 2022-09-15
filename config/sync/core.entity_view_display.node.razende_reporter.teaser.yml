@@ -31,6 +31,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -43,3 +45,4 @@ hidden:
   field_link: true
   field_link_naar_facebook: true
   langcode: true
+  search_api_excerpt: true

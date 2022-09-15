@@ -5,7 +5,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
       empty:
         area_text_custom:
           content: 'Geen inhoud beschikbaar.'

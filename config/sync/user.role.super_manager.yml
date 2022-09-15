@@ -35,6 +35,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - update
 id: super_manager
 label: 'super manager'
 weight: 4
@@ -127,4 +128,5 @@ permissions:
   - 'view own unpublished content'
   - 'view scheduled content'
   - 'view the administration theme'
+  - 'view update notifications'
   - 'view verhalen revisions'

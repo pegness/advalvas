@@ -10,7 +10,7 @@ type: 'canonical_entities:node'
 pattern: '/blog/[node:title]'
 selection_criteria:
   d5577160-a08e-4483-9aa8-5fd2bf5d268d:
-    id: node_type
+    id: 'entity_bundle:node'
     negate: false
     uuid: d5577160-a08e-4483-9aa8-5fd2bf5d268d
     context_mapping:

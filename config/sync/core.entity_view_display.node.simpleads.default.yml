@@ -47,6 +47,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: -1
     region: content
@@ -102,3 +104,4 @@ content:
 hidden:
   field_ad_category: true
   langcode: true
+  search_api_excerpt: true

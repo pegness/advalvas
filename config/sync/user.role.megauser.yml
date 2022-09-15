@@ -8,6 +8,7 @@ dependencies:
     - filter
     - node
     - system
+    - update
 id: megauser
 label: megauser
 weight: 999
@@ -36,3 +37,4 @@ permissions:
   - 'select account cancellation method'
   - 'view own unpublished content'
   - 'view the administration theme'
+  - 'view update notifications'

@@ -10,9 +10,14 @@ display:
           label: Onderwerp
         entity_id:
           label: 'Geplaatst in'
+      pager:
+        options:
+          tags:
+            next: 'next ›'
+            previous: '‹ previous'
       exposed_form:
         options:
-          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
       empty:
         area_text_custom:
           content: 'No comments available.'

@@ -7,8 +7,7 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
+          exposed_sorts_label: 'Sort by'
       empty:
         area_text_custom:
           content: 'Er is nog geen inhoud gemaakt voor de voorpagina.<br />Volg de <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Gebruikershandleiding</a> om uw site te bouwen.'
-        title:
-          title: 'Welkom op [site:name]'

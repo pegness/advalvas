@@ -8,5 +8,6 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
+          exposed_sorts_label: 'Sort by'
   block_1:
     display_title: Blok

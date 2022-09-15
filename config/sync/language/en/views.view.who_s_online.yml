@@ -8,6 +8,7 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
+          exposed_sorts_label: 'Sort by'
       empty:
         area_text_custom:
           content: 'Er zijn nu 0 gebruikers online.'

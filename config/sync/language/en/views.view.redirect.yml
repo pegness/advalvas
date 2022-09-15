@@ -4,7 +4,12 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
       fields:
         redirect_bulk_form:
           action_title: 'Met selectie'
