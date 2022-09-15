@@ -9,7 +9,13 @@ display:
       exposed_form:
         options:
           submit_button: Zoeken
+          exposed_sorts_label: 'Sort by'
           text_input_required: 'Vul enkele woorden toe aan het zoekveld.'
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
       header:
         result:
           content: 'Display results @start - @end of @total'

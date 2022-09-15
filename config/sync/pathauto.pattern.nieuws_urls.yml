@@ -10,7 +10,7 @@ type: 'canonical_entities:node'
 pattern: '/nieuws/[node:title]'
 selection_criteria:
   06f01424-5271-4752-bdda-53d410ca45e0:
-    id: node_type
+    id: 'entity_bundle:node'
     negate: false
     uuid: 06f01424-5271-4752-bdda-53d410ca45e0
     context_mapping:

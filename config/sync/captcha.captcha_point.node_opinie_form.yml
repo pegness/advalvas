@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_opinie_form
 captchaType: default
-label: null
+label: node_opinie_form

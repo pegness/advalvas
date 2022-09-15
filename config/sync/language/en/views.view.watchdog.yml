@@ -17,7 +17,7 @@ display:
           label: Bericht
       exposed_form:
         options:
-          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
       empty:
         area:
           admin_label: 'Geen logberichten beschikbaar.'

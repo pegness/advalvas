@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_achtergrond_form
 captchaType: default
-label: null
+label: node_achtergrond_form

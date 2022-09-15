@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_custom_block_form
 captchaType: default
-label: null
+label: node_custom_block_form

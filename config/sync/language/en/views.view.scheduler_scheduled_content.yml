@@ -4,7 +4,12 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
       fields:
         type:
           label: 'Content Type'
@@ -12,6 +17,7 @@ display:
           label: 'Publish on'
         unpublish_on:
           label: 'Unpublish on'
+      title: 'Scheduled Content'
   overview:
     display_options:
       menu:

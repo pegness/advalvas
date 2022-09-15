@@ -54,8 +54,6 @@ settings:
   plugins:
     stylescombo:
       styles: "h3.tussenkop|Tussenkop\r\np.firstlines|Aanhef\r\nauthor|auteur\r\nsubscript|Bijschrift\r\ncapitals|Capitals\r\ncredit|Credit\r\nblockquote.kader|Kader\r\np.kaderkop|Kaderkop\r\nnoot|Note\r\np.streamer|Streamer"
-    language:
-      language_list: un
 image_upload:
   status: true
   scheme: public

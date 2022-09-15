@@ -22,7 +22,7 @@ display:
           label: 'Laatste toegang'
       exposed_form:
         options:
-          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
       empty:
         area_text_custom:
           content: 'Geen personen beschikbaar.'
