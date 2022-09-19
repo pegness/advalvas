@@ -4444,6 +4444,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Schema missing": "https://www.drupal.org/files/issues/2022-02-25/simple_popup_blocks-config_schema_missing-3266467-2.patch"
                 }
             },
             "installation-source": "dist",

@@ -114,6 +114,9 @@
           
           "drupal/admin_toolbar_tools": {
             "Devel execute call fix": "https://www.drupal.org/files/issues/2019-01-31/admin-toolbar-devel-route-error-3009193-38.patch"
+          },
+          "drupal/simple_popup_blocks": {
+            "Schema missing": "https://www.drupal.org/files/issues/2022-02-25/simple_popup_blocks-config_schema_missing-3266467-2.patch"
           }
         },
         "drupal-core-project-message": {
