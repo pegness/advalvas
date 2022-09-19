@@ -8,10 +8,10 @@ web/sites
 
 # Core's dependencies are managed with Composer.
 # vendor
-vendor/**/.git
-vendor/**/*
-vendor/*
-vendor
+#vendor/**/.git
+#vendor/**/*
+#vendor/*
+#vendor
 
 # Config not used on server
 #config
