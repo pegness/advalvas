@@ -14,7 +14,7 @@
 		var h = $('.navbar-default').height();
 		var h2 = $('.navbar-toggle').height();
                     
-                    
+    $('.simple-popup-blocks-global .spb_close').html('');            
 		
 		if (isMobile) {
 			// $('.navbar-toggle').css("top", (h-h2)/2);
