@@ -5,7 +5,7 @@
 	padding-bottom:20px;
 }
 
-.node-achtergrond, .node-tip {
+.node-achtergrond, .node-tip, .node-dossier {
 	margin:10px 0;
 
 	h1	{
@@ -26,7 +26,20 @@
 	background-image:url(images/tip_icon.png);
 }
 
-
+.node-dossier {
+	h1 {
+	background-image:url(images/dossier_icon.png);
+	padding-left:50px;
+	padding-bottom: 10px;
+	}
+	.download_link {
+		float:right;
+		margin-bottom:10px;
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
 
 .bigtitle_block {
 

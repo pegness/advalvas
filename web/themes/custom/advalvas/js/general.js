@@ -41,11 +41,11 @@
 			$("#footer").remove();
 		}
 
-		//if(document.getElementById("block-views-tweets-block-1") !== null) {
+		if($("#block-views-tweets-block-1").length) {
 			var options = {speed: 1000, pause: 8000, animation: 'fade'};
 			//$("#block-views-tweets-block .view-tweets .item-list").vTicker('init', options);
 			$(".tweet-list").vTicker('init', options);	
-		//}	
+		}	
 		
 	});	
 })(jQuery);
