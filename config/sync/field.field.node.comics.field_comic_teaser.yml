@@ -1,0 +1,38 @@
+uuid: b4fa24fa-39bc-4e4c-9217-2b1e9ca1db24
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comic_teaser
+    - node.type.comics
+  module:
+    - image
+id: node.comics.field_comic_teaser
+field_name: field_comic_teaser
+entity_type: node
+bundle: comics
+label: 'Comic teaser'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 500KB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

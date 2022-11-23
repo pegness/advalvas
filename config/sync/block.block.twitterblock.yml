@@ -1,6 +1,6 @@
 uuid: be814df0-b815-4101-a65e-e3370aba362b
 langcode: nl
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ dependencies:
 id: twitterblock
 theme: advalvas
 region: sidebar_second
-weight: -32
+weight: -11
 provider: null
 plugin: twitter_block
 settings:

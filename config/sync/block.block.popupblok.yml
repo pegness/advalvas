@@ -12,7 +12,7 @@ dependencies:
 id: popupblok
 theme: advalvas
 region: content
-weight: -13
+weight: -14
 provider: null
 plugin: 'block_content:8f4684cd-e996-4530-ba4a-c8dc134b90e5'
 settings:

@@ -1,0 +1,45 @@
+uuid: 0d3a6120-866d-4799-a237-84eba248f0f1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.comics
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.comics.field_image
+field_name: field_image
+entity_type: node
+bundle: comics
+label: 'Comic image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

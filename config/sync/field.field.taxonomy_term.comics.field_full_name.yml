@@ -1,0 +1,19 @@
+uuid: cf8730a6-5012-4891-b403-371b1ff4c3c4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_full_name
+    - taxonomy.vocabulary.comics
+id: taxonomy_term.comics.field_full_name
+field_name: field_full_name
+entity_type: taxonomy_term
+bundle: comics
+label: 'Full name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

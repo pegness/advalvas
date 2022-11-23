@@ -12,7 +12,7 @@ dependencies:
 id: views_block__blogger_detail_en_block_1
 theme: advalvas
 region: sidebar_second
-weight: -22
+weight: -28
 provider: null
 plugin: 'views_block:blogger_detail_en-block_1'
 settings:

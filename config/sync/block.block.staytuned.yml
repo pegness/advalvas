@@ -12,7 +12,7 @@ dependencies:
 id: staytuned
 theme: advalvas
 region: content
-weight: -12
+weight: -13
 provider: null
 plugin: 'block_content:573d43a9-6939-449d-a25a-923566031a16'
 settings:

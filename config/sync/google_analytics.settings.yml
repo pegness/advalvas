@@ -27,11 +27,13 @@ track:
   displayfeatures: false
 privacy:
   anonymizeip: true
-custom: {  }
+custom:
+  parameters: {  }
 codesnippet:
   create: {  }
-  before: 'ga("set", "anonymizeIp", "true");'
+  before: ''
   after: ''
 translation_set: false
 cache: false
 debug: false
+ua_legacy: null

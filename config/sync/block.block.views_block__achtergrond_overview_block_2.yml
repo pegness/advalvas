@@ -12,7 +12,7 @@ dependencies:
 id: views_block__achtergrond_overview_block_2
 theme: advalvas
 region: sidebar_second
-weight: -24
+weight: -30
 provider: null
 plugin: 'views_block:achtergrond_overview-block_2'
 settings:
