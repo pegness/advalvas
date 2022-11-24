@@ -236,7 +236,7 @@
     if (this.processedOnce[id]) {
       return this;
     }
-    callback.call(this, this.settings);
+    //callback.call(this, this.settings);
     this.processedOnce[id] = true;
     return this;
   };

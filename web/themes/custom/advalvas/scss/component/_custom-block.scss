@@ -7,7 +7,7 @@
 	float:right;
 
 	.views-row {
-		height:260px;
+		
 		h2{
 			margin:0;
 		}
@@ -82,3 +82,42 @@
 			}
  		}
  }
+
+ #block-views-block-comic-teaser-block-1, #block-views-block-comic-teaser-block-2 {
+	margin-bottom:20px;
+	position:relative;
+	.views-row {
+		
+		h2 {margin:0px;}
+		.comic_teaser {
+			
+			margin-bottom:20px;
+			.comic_teaser_left {
+				float:left;
+				margin-right:20px;
+			}
+			.comic_teaser_right {
+				position:relative;
+				height:220px;
+				.more {
+					position:absolute;
+					right:0;
+					bottom:0;
+				}
+
+			}
+		}
+		.field--name-field-full-name {
+			font-family: "OswaldRegular";
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 16px;
+			letter-spacing: .6px;
+		}
+	}
+
+ }
+ #block-views-block-comics-overview-block-1 .views-row,  #block-views-block-comics-overview-block-2 .views-row {
+	margin-top:20px;
+ }
+

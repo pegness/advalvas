@@ -12,7 +12,7 @@ dependencies:
 id: views_block__bloggers_block_2
 theme: advalvas
 region: content
-weight: -22
+weight: -23
 provider: null
 plugin: 'views_block:bloggers-block_2'
 settings:

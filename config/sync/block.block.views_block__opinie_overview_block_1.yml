@@ -13,15 +13,15 @@ dependencies:
 id: views_block__opinie_overview_block_1
 theme: advalvas
 region: content
-weight: -24
+weight: -25
 provider: null
 plugin: 'views_block:opinie_overview-block_1'
 settings:
   id: 'views_block:opinie_overview-block_1'
-  label: Opinie
+  label: Opinion
   label_display: visible
   provider: views
-  views_label: Opinie
+  views_label: Opinion
   items_per_page: none
 visibility:
   request_path:

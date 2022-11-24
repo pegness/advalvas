@@ -37,7 +37,6 @@ dependencies:
     - redirect
     - responsive_image
     - scheduler
-    - search
     - shortcut
     - statistics
     - system
@@ -148,7 +147,6 @@ permissions:
   - 'edit terms in tags'
   - 'post comments'
   - 'schedule publishing of nodes'
-  - 'search content'
   - 'skip CAPTCHA'
   - 'skip comment approval'
   - 'subscribe to comments'

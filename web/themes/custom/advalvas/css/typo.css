@@ -62,7 +62,7 @@
 
 @font-face {
   font-family: "FoundersGroteskCond-Reg";
-  src: url("/fonts/FoundersGroteskCond-Reg.otf") format("opentype");
+  src: url("fonts/FoundersGroteskCond-Reg.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }

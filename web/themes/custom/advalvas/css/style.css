@@ -12365,11 +12365,6 @@ h2.news-title a:hover {
   width: 137px;
   float: right;
 }
-/* line 9, ../scss/component/_custom-block.scss */
-#block-views-block-custom-block-block-2 .views-row,
-#block-views-block-custom-block-block-1 .views-row {
-  height: 260px;
-}
 /* line 11, ../scss/component/_custom-block.scss */
 #block-views-block-custom-block-block-2 .views-row h2,
 #block-views-block-custom-block-block-1 .views-row h2 {
@@ -12460,6 +12455,49 @@ h2.news-title a:hover {
   line-height: 24px;
 }
 
+/* line 86, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1, #block-views-block-comic-teaser-block-2 {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 91, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row h2, #block-views-block-comic-teaser-block-2 .views-row h2 {
+  margin: 0px;
+}
+/* line 92, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row .comic_teaser, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser {
+  margin-bottom: 20px;
+}
+/* line 95, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row .comic_teaser .comic_teaser_left, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser .comic_teaser_left {
+  float: left;
+  margin-right: 20px;
+}
+/* line 99, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row .comic_teaser .comic_teaser_right, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser .comic_teaser_right {
+  position: relative;
+  height: 220px;
+}
+/* line 102, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row .comic_teaser .comic_teaser_right .more, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser .comic_teaser_right .more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* line 110, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row .field--name-field-full-name, #block-views-block-comic-teaser-block-2 .views-row .field--name-field-full-name {
+  font-family: "OswaldRegular";
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: .6px;
+}
+
+/* line 120, ../scss/component/_custom-block.scss */
+#block-views-block-comics-overview-block-1 .views-row, #block-views-block-comics-overview-block-2 .views-row {
+  margin-top: 20px;
+}
+
 /**
  * Achtergrond overview and achtergrond detail page styling
  */
@@ -12469,11 +12507,11 @@ h2.news-title a:hover {
 }
 
 /* line 8, ../scss/component/_achtergrond.scss */
-.node-achtergrond, .node-tip {
+.node-achtergrond, .node-tip, .node-dossier {
   margin: 10px 0;
 }
 /* line 11, ../scss/component/_achtergrond.scss */
-.node-achtergrond h1, .node-tip h1 {
+.node-achtergrond h1, .node-tip h1, .node-dossier h1 {
   font-family: "MerriweatherBold";
   background-image: url(images/achtergrond_icon.png);
   background-repeat: no-repeat;
@@ -12491,11 +12529,27 @@ h2.news-title a:hover {
   background-image: url(images/tip_icon.png);
 }
 
-/* line 33, ../scss/component/_achtergrond.scss */
+/* line 30, ../scss/component/_achtergrond.scss */
+.node-dossier h1 {
+  background-image: url(images/dossier_icon.png);
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+/* line 35, ../scss/component/_achtergrond.scss */
+.node-dossier .download_link {
+  float: right;
+  margin-bottom: 10px;
+}
+/* line 38, ../scss/component/_achtergrond.scss */
+.node-dossier .download_link a:hover {
+  text-decoration: underline;
+}
+
+/* line 46, ../scss/component/_achtergrond.scss */
 .bigtitle_block header {
   margin-bottom: 20px;
 }
-/* line 36, ../scss/component/_achtergrond.scss */
+/* line 49, ../scss/component/_achtergrond.scss */
 .bigtitle_block h2.block-title {
   font-family: "OswaldLight";
   font-size: 73px;
@@ -12505,17 +12559,17 @@ h2.news-title a:hover {
   margin: 0 0 -10px 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 36, ../scss/component/_achtergrond.scss */
+  /* line 49, ../scss/component/_achtergrond.scss */
   .bigtitle_block h2.block-title {
     font-size: 3.5em;
   }
 }
-/* line 47, ../scss/component/_achtergrond.scss */
+/* line 60, ../scss/component/_achtergrond.scss */
 .bigtitle_block .views-row {
   border-top: 2px dotted red;
   padding: 10px 0;
 }
-/* line 50, ../scss/component/_achtergrond.scss */
+/* line 63, ../scss/component/_achtergrond.scss */
 .bigtitle_block .views-row h2 {
   background-image: url(images/achtergrond_icon.png);
   background-repeat: no-repeat;
@@ -12528,33 +12582,33 @@ h2.news-title a:hover {
   font-family: "MerriweatherBold";
   font-size: 20px;
 }
-/* line 61, ../scss/component/_achtergrond.scss */
+/* line 74, ../scss/component/_achtergrond.scss */
 .bigtitle_block .views-row h2 a {
   color: #000;
 }
-/* line 63, ../scss/component/_achtergrond.scss */
+/* line 76, ../scss/component/_achtergrond.scss */
 .bigtitle_block .views-row h2 a:hover {
   color: #ff0000;
 }
 
-/* line 73, ../scss/component/_achtergrond.scss */
+/* line 86, ../scss/component/_achtergrond.scss */
 #block-views-block-dossier-overview-block-1 .views-row h2 {
   background-image: url(images/dossier_icon.png);
   padding-left: 50px;
   padding-top: 3px;
   line-height: 28px;
 }
-/* line 79, ../scss/component/_achtergrond.scss */
+/* line 92, ../scss/component/_achtergrond.scss */
 #block-views-block-dossier-overview-block-1 .views-row p {
   margin: 0;
 }
-/* line 82, ../scss/component/_achtergrond.scss */
+/* line 95, ../scss/component/_achtergrond.scss */
 #block-views-block-dossier-overview-block-1 .views-row .download_link {
   float: right;
   margin-bottom: 10px;
 }
 
-/* line 89, ../scss/component/_achtergrond.scss */
+/* line 102, ../scss/component/_achtergrond.scss */
 #block-views-block-achtergrond-overview-block-2,
 #block-views-block-tips-overview-block-2,
 #block-views-block-tips-overview-block-4 {
@@ -12562,21 +12616,21 @@ h2.news-title a:hover {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 95, ../scss/component/_achtergrond.scss */
+/* line 108, ../scss/component/_achtergrond.scss */
 #block-views-block-achtergrond-overview-block-2 .form-group,
 #block-views-block-tips-overview-block-2 .form-group,
 #block-views-block-tips-overview-block-4 .form-group {
   background-color: #cfcec0;
 }
 
-/* line 104, ../scss/component/_achtergrond.scss */
+/* line 117, ../scss/component/_achtergrond.scss */
 .block-views-block-tips-overview-block-1 .views-row h2 {
   background-image: url(images/tip_icon.png);
   padding-left: 35px;
   padding-top: 8px;
   line-height: 24px;
 }
-/* line 110, ../scss/component/_achtergrond.scss */
+/* line 123, ../scss/component/_achtergrond.scss */
 .block-views-block-tips-overview-block-1 .views-row p {
   margin: 0;
 }

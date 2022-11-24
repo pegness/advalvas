@@ -12,7 +12,7 @@ dependencies:
 id: views_block__blogs_overview_en_block_3
 theme: advalvas
 region: content
-weight: -33
+weight: -34
 provider: null
 plugin: 'views_block:blogs_overview_en-block_3'
 settings:

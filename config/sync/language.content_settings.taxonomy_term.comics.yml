@@ -1,0 +1,11 @@
+uuid: 65807dae-6042-40cf-a889-9d8312f68b60
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.comics
+id: taxonomy_term.comics
+target_entity_type_id: taxonomy_term
+target_bundle: comics
+default_langcode: site_default
+language_alterable: false

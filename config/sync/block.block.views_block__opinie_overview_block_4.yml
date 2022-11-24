@@ -13,7 +13,7 @@ dependencies:
 id: views_block__opinie_overview_block_4
 theme: advalvas
 region: sidebar_second
-weight: -17
+weight: -23
 provider: null
 plugin: 'views_block:opinie_overview-block_4'
 settings:

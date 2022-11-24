@@ -13,7 +13,7 @@ dependencies:
 id: views_block__news_overview_block_4
 theme: advalvas
 region: content
-weight: -18
+weight: -19
 provider: null
 plugin: 'views_block:news_overview-block_4'
 settings:

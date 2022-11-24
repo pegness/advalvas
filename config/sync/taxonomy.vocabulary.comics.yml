@@ -1,0 +1,8 @@
+uuid: f079e47b-9953-4e33-9b3d-c2f1086ba705
+langcode: nl
+status: true
+dependencies: {  }
+name: Comics
+vid: comics
+description: 'Comic drawers'
+weight: 0

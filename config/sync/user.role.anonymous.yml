@@ -10,7 +10,6 @@ dependencies:
     - eu_cookie_compliance
     - filter
     - media
-    - search
     - statistics
     - system
 _core:
@@ -25,7 +24,6 @@ permissions:
   - 'access user profiles'
   - 'display eu cookie compliance popup'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'subscribe to comments'
   - 'use text format comment_text'

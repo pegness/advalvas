@@ -17,7 +17,7 @@ third_party_settings:
 id: views_block__achtergrond_overview_block_1
 theme: advalvas
 region: content
-weight: -36
+weight: -37
 provider: null
 plugin: 'views_block:achtergrond_overview-block_1'
 settings:

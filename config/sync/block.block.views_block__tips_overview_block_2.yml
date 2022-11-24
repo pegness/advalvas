@@ -13,7 +13,7 @@ dependencies:
 id: views_block__tips_overview_block_2
 theme: advalvas
 region: sidebar_second
-weight: -16
+weight: -22
 provider: null
 plugin: 'views_block:tips_overview-block_2'
 settings:

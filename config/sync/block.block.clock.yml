@@ -12,7 +12,7 @@ dependencies:
 id: clock
 theme: advalvas
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'block_content:849c11db-245c-44c2-a99a-2a7bfbe1d448'
 settings:

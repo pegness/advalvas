@@ -6,14 +6,13 @@ dependencies:
     - views.view.blogs
   module:
     - language
-    - system
     - views
   theme:
     - advalvas
 id: views_block__blogs_block_2
 theme: advalvas
 region: sidebar_second
-weight: -21
+weight: -27
 provider: null
 plugin: 'views_block:blogs-block_2'
 settings:
@@ -25,11 +24,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
-    negate: false
-    context_mapping: {  }
-    pages: '/blog/*'
   language:
     id: language
     negate: false
