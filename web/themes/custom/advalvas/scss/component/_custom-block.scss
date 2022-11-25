@@ -95,6 +95,10 @@
 			.comic_teaser_left {
 				float:left;
 				margin-right:20px;
+				a {
+				position:relative;
+				z-index:10;
+				}
 			}
 			.comic_teaser_right {
 				position:relative;
