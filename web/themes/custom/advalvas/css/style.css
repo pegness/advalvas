@@ -12473,18 +12473,23 @@ h2.news-title a:hover {
   float: left;
   margin-right: 20px;
 }
-/* line 99, ../scss/component/_custom-block.scss */
+/* line 98, ../scss/component/_custom-block.scss */
+#block-views-block-comic-teaser-block-1 .views-row .comic_teaser .comic_teaser_left a, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser .comic_teaser_left a {
+  position: relative;
+  z-index: 10;
+}
+/* line 103, ../scss/component/_custom-block.scss */
 #block-views-block-comic-teaser-block-1 .views-row .comic_teaser .comic_teaser_right, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser .comic_teaser_right {
   position: relative;
   height: 220px;
 }
-/* line 102, ../scss/component/_custom-block.scss */
+/* line 106, ../scss/component/_custom-block.scss */
 #block-views-block-comic-teaser-block-1 .views-row .comic_teaser .comic_teaser_right .more, #block-views-block-comic-teaser-block-2 .views-row .comic_teaser .comic_teaser_right .more {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 110, ../scss/component/_custom-block.scss */
+/* line 114, ../scss/component/_custom-block.scss */
 #block-views-block-comic-teaser-block-1 .views-row .field--name-field-full-name, #block-views-block-comic-teaser-block-2 .views-row .field--name-field-full-name {
   font-family: "OswaldRegular";
   text-transform: uppercase;
@@ -12493,7 +12498,7 @@ h2.news-title a:hover {
   letter-spacing: .6px;
 }
 
-/* line 120, ../scss/component/_custom-block.scss */
+/* line 124, ../scss/component/_custom-block.scss */
 #block-views-block-comics-overview-block-1 .views-row, #block-views-block-comics-overview-block-2 .views-row {
   margin-top: 20px;
 }
