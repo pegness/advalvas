@@ -125,15 +125,13 @@
   {% if node.field_image[0] is not empty %}
     {% set imagestyle = {
       '#theme':      'image_style',
-      '#style_name': 'large',
+      '#style_name': 'responsive',
       '#uri':        node.field_image[0].entity.uri.value,
       '#alt':        node.field_image[0].alt,
       '#attributes': { class: 'comic-image' },
     } %}
-     
-    {{ imagestyle }}
   {% endif %}
-
+  {{ imagestyle }}
 </div>
  
  
