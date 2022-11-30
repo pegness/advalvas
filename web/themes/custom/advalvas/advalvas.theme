@@ -5,27 +5,3 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 
 // all functional functions are moved to modules/custom_hooks
 
-function advalvas_preprocess_node(&$variables) {
-	
-	if (\Drupal::languageManager()->getCurrentLanguage()->getId() == 'en'){
-	  if($variables['node']->hasTranslation('en') == 1){
-	  	
-		} else {
-			$url = Url::fromRoute('<front>', [], ['language' => 'en']);
-			$response = new RedirectResponse($url->toString());
- 			$response->send();
- 			\Drupal::messenger()->addWarning('No translation found for this article');
-		}
-	}
-	if (\Drupal::languageManager()->getCurrentLanguage()->getId() == 'nl'){
-	  if($variables['node']->hasTranslation('nl') == 1){
-	  	
-		} else {
-			$url = Url::fromRoute('<front>', [], ['language' => 'nl']);
-			$response = new RedirectResponse($url->toString());
- 			$response->send();
- 			\Drupal::messenger()->addWarning('Geen vertaling gevonden voor dit artikel');
-		}
-	}
-
-}

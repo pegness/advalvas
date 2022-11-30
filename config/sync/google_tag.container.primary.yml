@@ -1,5 +1,7 @@
+uuid: null
 langcode: nl
 status: true
+dependencies: {  }
 id: primary
 label: Primary
 weight: 0
@@ -40,3 +42,4 @@ status_toggle: 'exclude listed'
 status_list: |-
   403
   404
+conditions: {  }

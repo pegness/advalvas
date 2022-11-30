@@ -25,7 +25,8 @@ Install as normal (see http://drupal.org/documentation/install/modules-themes).
 
 CONFIGURATION
 -------------
-This module does not have any configuration.
+You can configure this module at /admin/config/development/twig-debugger,
+By checking the checkbox twig debugging will be enabled on your site.
 
 
 MAINTAINERS

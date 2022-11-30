@@ -2,12 +2,15 @@
 
 namespace Drupal\ajax_loader;
 
+use Drupal\Core\Extension\ModuleExtensionList;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Plugin\PluginBase;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Class ThrobberBase.
  */
-abstract class ThrobberPluginBase extends PluginBase implements ThrobberPluginInterface {
+abstract class ThrobberPluginBase extends PluginBase implements ThrobberPluginInterface, ContainerFactoryPluginInterface {
 
   protected $path;
   protected $markup;
@@ -25,12 +28,36 @@ abstract class ThrobberPluginBase extends PluginBase implements ThrobberPluginIn
    * @param mixed $plugin_definition
    *   Plugin definition value.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, ModuleExtensionList $extensionList) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
 
-    $this->path = '/' . drupal_get_path('module', 'ajax_loader');
+    $this->path = '/' . $extensionList->getPath('ajax_loader');
     $this->markup = $this->setMarkup();
     $this->css_file = $this->setCssFile();
+  }
+
+  /**
+   * Creates an instance of the plugin.
+   *
+   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
+   *   The container to pull out services used in the plugin.
+   * @param array $configuration
+   *   A configuration array containing information about the plugin instance.
+   * @param string $plugin_id
+   *   The plugin ID for the plugin instance.
+   * @param mixed $plugin_definition
+   *   The plugin implementation definition.
+   *
+   * @return static
+   *   Returns an instance of this plugin.
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('extension.list.module'),
+    );
   }
 
   /**
