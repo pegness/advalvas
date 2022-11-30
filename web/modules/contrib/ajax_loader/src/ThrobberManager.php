@@ -23,13 +23,14 @@ class ThrobberManager extends DefaultPluginManager implements ThrobberManagerInt
    * {@inheritdoc}
    */
   public function __construct(\Traversable $namespaces,
-  CacheBackendInterface $cache_backend,
-  ModuleHandlerInterface $module_handler,
+                              CacheBackendInterface $cache_backend,
+                              ModuleHandlerInterface $module_handler,
                               AdminContext $admin_context,
-  RequestStack $request_stack,
-  ConfigFactoryInterface $config_factory) {
+                              RequestStack $request_stack,
+                              ConfigFactoryInterface $config_factory) {
     parent::__construct('Plugin/ajax_loader', $namespaces, $module_handler, 'Drupal\ajax_loader\ThrobberPluginInterface', 'Drupal\ajax_loader\Annotation\Throbber');
 
+    $this->setCacheBackend($cache_backend, 'throbber_manager');
     $this->adminContext = $admin_context;
     $this->configFactory = $config_factory;
     $this->request = $request_stack->getCurrentRequest();

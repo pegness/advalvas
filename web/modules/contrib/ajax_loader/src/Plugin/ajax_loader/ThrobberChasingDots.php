@@ -20,9 +20,13 @@ class ThrobberChasingDots extends ThrobberPluginBase {
    * @inheritdoc
    */
   protected function setMarkup() {
-    return '<div class="ajax-throbber sk-chasing-dots">
-              <div class="sk-child sk-dot1"></div>
-              <div class="sk-child sk-dot2"></div>
+    return '<div class="ajax-throbber sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
             </div>';
   }
 

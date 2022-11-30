@@ -20,10 +20,10 @@ class ThrobberThreeBounce extends ThrobberPluginBase {
    * @inheritdoc
    */
   protected function setMarkup() {
-    return '<div class="ajax-throbber sk-three-bounce">
-              <div class="sk-child sk-bounce1"></div>
-              <div class="sk-child sk-bounce2"></div>
-              <div class="sk-child sk-bounce3"></div>
+    return '<div class="ajax-throbber sk-flow">
+              <div class="sk-flow-dot"></div>
+              <div class="sk-flow-dot"></div>
+              <div class="sk-flow-dot"></div>
             </div>';
   }
 

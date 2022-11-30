@@ -8,7 +8,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function ajax_loader_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     case 'help.page.ajax_loader':
-      $output = file_get_contents(drupal_get_path('module', 'ajax_loader') . '/README.txt');
+      $output = file_get_contents(\Drupal::service('extension.list.module')->getPath('ajax_loader')  . '/README.txt');
       return '<pre>' . $output . '</pre>';
   }
 }
@@ -44,8 +44,8 @@ function ajax_loader_library_info_alter(&$libraries, $module) {
  * Implements hook_page_attachments().
  */
 function ajax_loader_page_attachments(array &$page) {
-  /** @var \Drupal\ajax_loader\ThrobberManagerInterface $throbber_manager */
   $settings = \Drupal::config('ajax_loader.settings');
+  /** @var \Drupal\ajax_loader\ThrobberManagerInterface $throbber_manager */
   $throbber_manager = Drupal::service('ajax_loader.throbber_manager');
   $throbber = $settings->get('throbber');
 

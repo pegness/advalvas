@@ -20,7 +20,7 @@ class ThrobberRotatingPlane extends ThrobberPluginBase {
    * @inheritdoc
    */
   protected function setMarkup() {
-    return '<div class="ajax-throbber sk-rotating-plane"></div>';
+    return '<div class="ajax-throbber sk-plane"></div>';
   }
 
   /**

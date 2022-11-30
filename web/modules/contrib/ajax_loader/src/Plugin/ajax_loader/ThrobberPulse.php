@@ -20,7 +20,7 @@ class ThrobberPulse extends ThrobberPluginBase {
    * @inheritdoc
    */
   protected function setMarkup() {
-    return '<div class="ajax-throbber sk-spinner sk-spinner-pulse"></div>';
+    return '<div class="ajax-throbber sk-pulse"></div>';
   }
 
   /**

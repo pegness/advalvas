@@ -20,9 +20,11 @@ class ThrobberWanderingCubes extends ThrobberPluginBase {
    * @inheritdoc
    */
   protected function setMarkup() {
-    return '<div class="ajax-throbber sk-wandering-cubes">
-              <div class="sk-cube sk-cube1"></div>
-              <div class="sk-cube sk-cube2"></div>
+    return '<div class="ajax-throbber sk-wander">
+              <div class="sk-wander-cube"></div>
+              <div class="sk-wander-cube"></div>
+              <div class="sk-wander-cube"></div>
+              <div class="sk-wander-cube"></div>
             </div>';
   }
 
