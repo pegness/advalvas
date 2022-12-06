@@ -5,4 +5,4 @@ dependencies: {  }
 id: comment_node_news
 label: 'Nieuws comment'
 target_entity_type_id: node
-description: ''
+description: 'Houd je bij het onderwerp, en toon respect: com zijn nie'
