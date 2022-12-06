@@ -12382,7 +12382,7 @@ h2.news-title a:hover {
 }
 
 /* line 25, ../scss/component/_custom-block.scss */
-#block-views-block-magazine-block-1 {
+#block-views-block-magazine-block-1, #block-views-block-magazine-block-2 {
   float: none;
   display: inline-block;
   margin-bottom: 20px !important;
