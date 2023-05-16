@@ -29,7 +29,7 @@ class BufferedConsoleOutput extends BufferedOutput implements ConsoleOutputInter
     /**
      * {@inheritdoc}
      */
-    public function getErrorOutput(): BufferedOutput
+    public function getErrorOutput()
     {
         return $this->stderr;
     }
@@ -37,7 +37,7 @@ class BufferedConsoleOutput extends BufferedOutput implements ConsoleOutputInter
     /**
      * {@inheritdoc}
      */
-    public function setErrorOutput(OutputInterface $error): void
+    public function setErrorOutput(OutputInterface $error)
     {
         $this->stderr = $error;
     }

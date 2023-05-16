@@ -3,6 +3,7 @@
 namespace Drush\Symfony;
 
 use Symfony\Component\Console\Input\ArgvInput;
+
 use Symfony\Component\Console\Exception\RuntimeException;
 
 /**
@@ -58,7 +59,7 @@ class LessStrictArgvInput extends ArgvInput
         return false;
     }
 
-    protected function setTokens(array $tokens): void
+    protected function setTokens(array $tokens)
     {
         $this->tokens = $tokens;
     }
@@ -66,7 +67,7 @@ class LessStrictArgvInput extends ArgvInput
     /**
      * {@inheritdoc}
      */
-    protected function parse(): void
+    protected function parse()
     {
         $parseOptions = true;
         $this->parsed = $this->tokens;
@@ -92,7 +93,7 @@ class LessStrictArgvInput extends ArgvInput
      *
      * @param string $token The current token
      */
-    private function parseShortOption($token): void
+    private function parseShortOption($token)
     {
         $name = substr($token, 1);
 
@@ -113,7 +114,7 @@ class LessStrictArgvInput extends ArgvInput
      *
      * @param string $name The current token
      */
-    private function parseShortOptionSet($name): void
+    private function parseShortOptionSet($name)
     {
         $len = strlen($name);
         for ($i = 0; $i < $len; ++$i) {
@@ -137,7 +138,7 @@ class LessStrictArgvInput extends ArgvInput
      *
      * @param string $token The current token
      */
-    private function parseLongOption($token): void
+    private function parseLongOption($token)
     {
         $name = substr($token, 2);
 
@@ -163,7 +164,7 @@ class LessStrictArgvInput extends ArgvInput
      *
      * @throws RuntimeException When too many arguments are given
      */
-    private function parseArgument($token): void
+    private function parseArgument($token)
     {
         $c = count($this->arguments);
 
@@ -196,7 +197,7 @@ class LessStrictArgvInput extends ArgvInput
      *
      * @throws RuntimeException When option given doesn't exist
      */
-    private function addShortOption($shortcut, $value): void
+    private function addShortOption($shortcut, $value)
     {
         if (!$this->definition->hasShortcut($shortcut)) {
             // Hard to know what to do with unknown short options. Maybe
@@ -209,7 +210,7 @@ class LessStrictArgvInput extends ArgvInput
         $this->addLongOption($this->definition->getOptionForShortcut($shortcut)->getName(), $value);
     }
 
-    public function injectAdditionalOptions($additionalOptions): void
+    public function injectAdditionalOptions($additionalOptions)
     {
         $this->additionalOptions += $additionalOptions;
         $this->options += $additionalOptions;
@@ -223,7 +224,7 @@ class LessStrictArgvInput extends ArgvInput
      *
      * @throws RuntimeException When option given doesn't exist
      */
-    private function addLongOption($name, $value): void
+    private function addLongOption($name, $value)
     {
         if (!$this->definition->hasOption($name)) {
             // If we don't know anything about this option, then we'll
@@ -283,7 +284,7 @@ class LessStrictArgvInput extends ArgvInput
     /**
      * {@inheritdoc}
      */
-    public function hasParameterOption($values, $onlyParams = false): bool
+    public function hasParameterOption($values, $onlyParams = false)
     {
         $values = (array) $values;
 
@@ -292,7 +293,7 @@ class LessStrictArgvInput extends ArgvInput
                 return false;
             }
             foreach ($values as $value) {
-                if ($token === $value || 0 === strpos($token, $value . '=')) {
+                if ($token === $value || 0 === strpos($token, $value.'=')) {
                     return true;
                 }
             }
@@ -316,7 +317,7 @@ class LessStrictArgvInput extends ArgvInput
             }
 
             foreach ($values as $value) {
-                if ($token === $value || 0 === strpos($token, $value . '=')) {
+                if ($token === $value || 0 === strpos($token, $value.'=')) {
                     if (false !== $pos = strpos($token, '=')) {
                         return substr($token, $pos + 1);
                     }
@@ -338,7 +339,7 @@ class LessStrictArgvInput extends ArgvInput
     {
         $tokens = array_map(function ($token) {
             if (preg_match('{^(-[^=]+=)(.+)}', $token, $match)) {
-                return $match[1] . $this->escapeToken($match[2]);
+                return $match[1].$this->escapeToken($match[2]);
             }
 
             if ($token && $token[0] !== '-') {

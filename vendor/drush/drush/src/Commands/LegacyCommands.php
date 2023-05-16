@@ -1,20 +1,8 @@
 <?php
-
 namespace Drush\Commands;
 
 class LegacyCommands extends DrushCommands
 {
-    /**
-     * The core:init command was removed. Please edit your .bashrc manually.
-     *
-     * @command core:init
-     * @aliases init
-     * @hidden
-     * @obsolete
-     */
-    public function init(): void
-    {
-    }
 
     /**
      * Drupal 8 does not support disabling modules. See pm:uninstall command.
@@ -24,7 +12,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function disable(): void
+    public function disable()
     {
     }
 
@@ -36,7 +24,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function info(): void
+    public function info()
     {
     }
 
@@ -49,7 +37,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function projectInfo(): void
+    public function projectInfo()
     {
     }
 
@@ -61,7 +49,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function refresh(): void
+    public function refresh()
     {
     }
 
@@ -75,7 +63,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function updatestatus(): void
+    public function updatestatus()
     {
     }
 
@@ -89,7 +77,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function updatecode(): void
+    public function updatecode()
     {
     }
 
@@ -101,7 +89,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function releaseNotes(): void
+    public function releaseNotes()
     {
     }
 
@@ -113,7 +101,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function releases(): void
+    public function releases()
     {
     }
 
@@ -125,7 +113,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function make(): void
+    public function make()
     {
     }
 
@@ -137,7 +125,19 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function download(): void
+    public function download()
+    {
+    }
+
+    /**
+     * field-create has been removed. Please try `generate field` command.
+     *
+     * @command field:create
+     * @aliases field-create
+     * @hidden
+     * @obsolete
+     */
+    public function field()
     {
     }
 
@@ -149,7 +149,7 @@ class LegacyCommands extends DrushCommands
      * @hidden
      * @obsolete
      */
-    public function execute(): void
+    public function execute()
     {
     }
 }

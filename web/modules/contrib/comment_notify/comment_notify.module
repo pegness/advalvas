@@ -67,7 +67,7 @@ function comment_notify_form_comment_form_alter(&$form, FormStateInterface $form
     }
     $form['#validate'][] = 'comment_notify_comment_validate';
   }
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
   /** @var \Drupal\comment_notify\UserNotificationSettings $user_settings */
   $user_settings = \Drupal::service('comment_notify.user_settings');
   $preference = $user_settings->getSetting($user->id(), 'comment_notify');
@@ -137,7 +137,7 @@ function comment_notify_comment_publish($comment) {
  * Additional submit handler for the comment form.
  */
 function _comment_notify_submit_comment_form(array &$form, FormStateInterface $form_state) {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
 
   /** @var \Drupal\comment\CommentInterface $comment */
   $comment = $form_state->getFormObject()->getEntity();
@@ -193,7 +193,7 @@ function comment_notify_comment_update(CommentInterface $comment) {
  * Implements hook_comment_insert().
  */
 function comment_notify_comment_insert(CommentInterface $comment) {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
 
   // And send notifications - the real purpose of the module.
   if ($comment->isPublished()) {
@@ -205,7 +205,7 @@ function comment_notify_comment_insert(CommentInterface $comment) {
  * Deletes all the notifications when a comment is deleted.
  */
 function comment_notify_comment_delete(CommentInterface $comment) {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
   comment_notify_remove_all_notifications($comment->id());
 }
 
@@ -230,7 +230,7 @@ function _comment_notify_get_comment_enabled_bundles() {
  * Implements hook_form_alter().
  */
 function comment_notify_form_user_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
 
   /** @var \Drupal\user\UserInterface $user */
   $user = $form_state->getFormObject()->getEntity();
@@ -300,7 +300,7 @@ function comment_notify_form_user_form_alter(&$form, FormStateInterface &$form_s
  * Additional submit handler for the user form.
  */
 function _comment_notify_submit_user_form(array &$form, FormStateInterface $form_state) {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
 
   /** @var \Drupal\user\UserInterface $user */
   $user = $form_state->getFormObject()->getEntity();
@@ -373,7 +373,7 @@ function comment_notify_comment_load($comments) {
  *   The comment entity.
  */
 function _comment_notify_mailalert(CommentInterface $comment) {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
 
   $config = \Drupal::config('comment_notify.settings');
   $user = \Drupal::currentUser();
@@ -565,7 +565,7 @@ function comment_notify_get_unsubscribe_url(CommentInterface $comment) {
  * Implements hook_field_extra_fields().
  */
 function comment_notify_entity_extra_field_info() {
-  module_load_include('inc', 'comment_notify', 'comment_notify');
+  \Drupal::moduleHandler()->loadInclude('comment_notify', 'inc');
   $extras = [];
   $config = \Drupal::config('comment_notify.settings');
 

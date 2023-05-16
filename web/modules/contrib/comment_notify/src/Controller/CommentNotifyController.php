@@ -19,7 +19,7 @@ class CommentNotifyController extends ControllerBase {
    *   A renderable array.
    */
   public function disable($hash) {
-    module_load_include('inc', 'comment_notify', 'comment_notify');
+    $this->moduleHandler()->loadInclude('comment_notify', 'inc');
     if (comment_notify_unsubscribe_by_hash($hash)) {
       return ['#markup' => $this->t('Your comment follow-up notification for this post was disabled. Thanks.')];
     }

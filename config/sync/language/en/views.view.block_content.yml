@@ -2,7 +2,7 @@ label: 'Aangepaste blokken-bibliotheek'
 description: 'Aangepaste blokken zoeken en beheren'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       title: 'Aangepaste blokken-bibliotheek'
       fields:

@@ -84,6 +84,8 @@ MAINTAINERS
 -----------
 
  * Greg Knaddison (greggles) - https://www.drupal.org/u/greggles
+ * David Valdez (gnuget) - https://www.drupal.org/u/gnuget
+ * Stefanos Petrakis (stefanospetrakis) - https://www.drupal.org/u/stefanospetrakis
 
 Supporting organizations:
 

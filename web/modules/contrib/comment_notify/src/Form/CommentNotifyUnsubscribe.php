@@ -5,6 +5,7 @@ namespace Drupal\comment_notify\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Messenger\MessengerInterface;
+use Drupal\Core\Extension\ModuleHandlerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -20,11 +21,19 @@ class CommentNotifyUnsubscribe extends FormBase {
   protected $messenger;
 
   /**
+   * The module handler.
+   *
+   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+   */
+  protected $moduleHandler;
+
+  /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('messenger')
+      $container->get('messenger'),
+      $container->get('module_handler')
     );
   }
 
@@ -34,8 +43,9 @@ class CommentNotifyUnsubscribe extends FormBase {
    * @param \Drupal\Core\Messenger\MessengerInterface $messenger
    *   Messenger service.
    */
-  public function __construct(MessengerInterface $messenger) {
+  public function __construct(MessengerInterface $messenger, ModuleHandlerInterface $module_handler) {
     $this->messenger = $messenger;
+    $this->moduleHandler = $module_handler;
   }
 
   /**
@@ -68,7 +78,7 @@ class CommentNotifyUnsubscribe extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    module_load_include('inc', 'comment_notify', 'comment_notify');
+    $this->moduleHandler->loadInclude('comment_notify', 'inc');
     $email = trim($form_state->getValue(['email']));
     $comments = comment_notify_unsubscribe_by_email($email);
     // Update the admin about the state of the subscription.

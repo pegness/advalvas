@@ -21,7 +21,7 @@ class IndiscriminateInputDefinition extends InputDefinition
     /**
      * @inheritdoc
      */
-    public function hasShortcut($name): bool
+    public function hasShortcut($name)
     {
         return true;
     }
@@ -29,7 +29,7 @@ class IndiscriminateInputDefinition extends InputDefinition
     /**
      * @inheritdoc
      */
-    public function hasOption($name): bool
+    public function hasOption($name)
     {
         return true;
     }
@@ -37,7 +37,7 @@ class IndiscriminateInputDefinition extends InputDefinition
     /**
      * @inheritdoc
      */
-    public function getOption($name): InputOption
+    public function getOption($name)
     {
         if (parent::hasOption($name)) {
             return parent::getOption($name);

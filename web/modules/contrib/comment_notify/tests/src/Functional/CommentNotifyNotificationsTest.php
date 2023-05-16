@@ -23,7 +23,7 @@ class CommentNotifyNotificationsTest extends CommentNotifyTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'comment_notify',
     'node',
     'comment',
@@ -182,6 +182,10 @@ class CommentNotifyNotificationsTest extends CommentNotifyTestBase {
     /** @var \Drupal\Core\Config\Config $config */
     $config = $this->container->get('config.factory')->getEditable('comment_notify.settings');
     $config->set('bundle_types', ['taxonomy_term--' . $vocabulary->id() . '--field_comment_taxonomy']);
+    $config->set('mail_templates.watcher.taxonomy_term', [
+      'subject' => '',
+      'body' => '',
+    ]);
     $config->save();
 
     // Allow anonymous users to post comments and get notifications.

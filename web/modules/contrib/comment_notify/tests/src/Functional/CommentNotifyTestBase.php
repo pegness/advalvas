@@ -19,7 +19,7 @@ abstract class CommentNotifyTestBase extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $defaultTheme = 'classy';
+  protected $defaultTheme = 'olivero';
 
   /**
    * Admin User.
@@ -33,7 +33,7 @@ abstract class CommentNotifyTestBase extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'comment_notify',
     'node',
     'comment',
@@ -43,7 +43,7 @@ abstract class CommentNotifyTestBase extends BrowserTestBase {
   /**
    * Test that the config page is working.
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     // Create and login administrative user.
@@ -96,8 +96,9 @@ abstract class CommentNotifyTestBase extends BrowserTestBase {
     if ($contact !== NULL && is_array($contact)) {
       $edit += $contact;
     }
+    $this->drupalGet($url);
 
-    $this->drupalPostForm($url, $edit, t('Save'));
+    $this->submitForm($edit, t('Save'));
 
     $match = [];
     // Get comment ID.

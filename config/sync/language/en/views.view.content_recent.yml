@@ -2,7 +2,7 @@ label: 'Recente inhoud'
 description: 'Recente inhoud.'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       title: 'Recente inhoud'
       exposed_form:

@@ -6,7 +6,6 @@ dependencies:
     - views.view.blogs_overview_en
   module:
     - language
-    - system
     - views
   theme:
     - advalvas
@@ -32,7 +31,3 @@ visibility:
       language: '@language.current_language_context:language_interface'
     langcodes:
       en: en
-  request_path:
-    id: request_path
-    negate: false
-    pages: '/blog/*'

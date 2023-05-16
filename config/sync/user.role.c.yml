@@ -7,6 +7,7 @@ dependencies:
     - node.type.achtergrond
     - node.type.advertentie
     - node.type.blog
+    - node.type.comics
     - node.type.custom_block
     - node.type.dossier
     - node.type.magazine
@@ -59,6 +60,7 @@ permissions:
   - 'create achtergrond content'
   - 'create advertentie content'
   - 'create blog content'
+  - 'create comics content'
   - 'create content translations'
   - 'create custom_block content'
   - 'create dossier content'
@@ -76,6 +78,7 @@ permissions:
   - 'delete any achtergrond content'
   - 'delete any advertentie content'
   - 'delete any blog content'
+  - 'delete any comics content'
   - 'delete any custom_block content'
   - 'delete any dossier content'
   - 'delete any magazine content'
@@ -89,6 +92,7 @@ permissions:
   - 'delete own achtergrond content'
   - 'delete own advertentie content'
   - 'delete own blog content'
+  - 'delete own comics content'
   - 'delete own custom_block content'
   - 'delete own dossier content'
   - 'delete own magazine content'
@@ -106,6 +110,7 @@ permissions:
   - 'edit any achtergrond content'
   - 'edit any advertentie content'
   - 'edit any blog content'
+  - 'edit any comics content'
   - 'edit any custom_block content'
   - 'edit any dossier content'
   - 'edit any magazine content'
@@ -118,6 +123,7 @@ permissions:
   - 'edit own achtergrond content'
   - 'edit own advertentie content'
   - 'edit own blog content'
+  - 'edit own comics content'
   - 'edit own comments'
   - 'edit own custom_block content'
   - 'edit own dossier content'
@@ -138,6 +144,7 @@ permissions:
   - 'translate achtergrond node'
   - 'translate blog node'
   - 'translate bloggers taxonomy_term'
+  - 'translate comics node'
   - 'translate custom_block node'
   - 'translate dossier node'
   - 'translate magazine node'

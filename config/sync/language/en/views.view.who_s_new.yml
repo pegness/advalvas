@@ -2,7 +2,7 @@ label: 'Wie is nieuw'
 description: 'Toont een lijst van de nieuwste gebruikersaccounts op de website.'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       title: 'Wie is nieuw'
       exposed_form:

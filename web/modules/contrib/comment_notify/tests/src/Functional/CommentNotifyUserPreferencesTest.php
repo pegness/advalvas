@@ -32,7 +32,7 @@ class CommentNotifyUserPreferencesTest extends CommentNotifyTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->authenticatedUser = $this->drupalCreateUser($this->permissions);
   }

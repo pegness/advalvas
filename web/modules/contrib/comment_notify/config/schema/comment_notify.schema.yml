@@ -43,6 +43,16 @@ comment_notify.settings:
                 body:
                   type: text
                   label: Body
+            taxonomy_term:
+              type: mapping
+              label: Default mail text for sending out notifications for terms
+              mapping:
+                subject:
+                  type: label
+                  label: Subject
+                body:
+                  type: text
+                  label: Body
         entity_author:
           type: mapping
           label: Notifications to owner of commented entity
@@ -50,6 +60,16 @@ comment_notify.settings:
             node:
               type: mapping
               label: Default mail text for sending out notifications for nodes
+              mapping:
+                subject:
+                  type: label
+                  label: Subject
+                body:
+                  type: text
+                  label: Body
+            taxonomy_term:
+              type: mapping
+              label: Default mail text for sending out notifications for terms
               mapping:
                 subject:
                   type: label

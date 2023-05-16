@@ -24,12 +24,12 @@ class CommentNotifyTokenReplaceTest extends TokenReplaceKernelTestBase {
    *
    * @var array
    */
-  public static $modules = ['node', 'comment', 'comment_notify'];
+  protected static $modules = ['node', 'comment', 'comment_notify'];
 
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->installConfig(['node', 'comment', 'comment_notify']);
     $this->installSchema('comment', ['comment_entity_statistics']);

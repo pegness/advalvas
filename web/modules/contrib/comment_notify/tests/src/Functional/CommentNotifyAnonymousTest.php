@@ -14,7 +14,7 @@ class CommentNotifyAnonymousTest extends CommentNotifyTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     // Allow anonymous users to post comments and get notifications.

@@ -23,7 +23,6 @@
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "require": {
-        "drupal/core": "^8 || ^9",
         "drupal/token": "^1.6"
     }
 }

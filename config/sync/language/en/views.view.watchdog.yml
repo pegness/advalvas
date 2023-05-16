@@ -1,7 +1,7 @@
 description: 'Recente logberichten'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       title: 'Recente logberichten'
       fields:

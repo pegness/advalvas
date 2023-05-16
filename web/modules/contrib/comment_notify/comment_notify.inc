@@ -163,7 +163,8 @@ function comment_notify_mark_comment_as_notified($comment) {
  *   TRUE if the comment was unsubscribed correctly.
  */
 function comment_notify_unsubscribe_by_email($mail) {
-  $comment_query = \Drupal::entityQuery('comment');
+  $comment_query = \Drupal::entityQuery('comment')
+    ->accessCheck(TRUE);
   if ($user = user_load_by_mail($mail)) {
     $comment_query->condition('uid', $user->id());
   }

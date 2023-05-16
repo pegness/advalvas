@@ -2,7 +2,7 @@ label: Bestanden
 description: 'Bestanden vinden en beheren.'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       title: Bestanden
       fields:
